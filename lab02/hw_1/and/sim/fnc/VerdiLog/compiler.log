@@ -1,0 +1,11 @@
+*design* DebussyLib (btIdent Verdi_R-2020.12-SP2)
+Command arguments:
+    +define+verilog
+    -f run.f
+        ../../rtl/and_gate.v
+        ../tb/testbench.v
+
+Highest level modules:
+testbench
+
+Total	0 error(s),   0 warning(s)

@@ -1,0 +1,5 @@
+debImport "-f" "run.f"
+wvCreateWindow
+wvCreateWindow
+schCreateWindow -delim "." -win $_nSchema1 -scope "testbench"
+debExit

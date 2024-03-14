@@ -1,0 +1,3 @@
+Command Line: /tools/synopsys/verdi/R-2020.12-SP2/platform/LINUXAMD64/bin/Novas -f run.f
+uname(Linux sse506-s1 4.18.0-513.11.1.el8_9.x86_64 #1 SMP Wed Jan 10 22:58:54 UTC 2024 x86_64)
+au time 182.652766 3.193298 2.474714 delta 429498368 429498368 total 918065152 918065152
