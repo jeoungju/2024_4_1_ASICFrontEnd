@@ -1,0 +1,168 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:53 2024
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00       26923.26       -26923.26 (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       89303448.00    -89303448.00
+                                                                    (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:53 2024
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: xn_data[0] (input port clocked by clk)
+  Endpoint: R_502 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                35000                 saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  xn_data[0] (in)                          0.00       3.00 f
+  U1506/C1 (HADDX1)                        0.56       3.56 f
+  U1509/CO (FADDX1)                        0.52       4.08 f
+  U1511/CO (FADDX1)                        0.52       4.60 f
+  U1518/CO (FADDX1)                        0.52       5.12 f
+  U1520/CO (FADDX1)                        0.52       5.64 f
+  U1522/CO (FADDX1)                        0.52       6.15 f
+  U1524/CO (FADDX1)                        0.52       6.67 f
+  U1629/S (FADDX1)                         0.54       7.21 f
+  R_502/D (DFFARX1)                        0.03       7.24 f
+  data arrival time                                   7.24
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.00       8.00
+  R_502/CLK (DFFARX1)                      0.00       8.00 r
+  library setup time                      -0.28       7.72
+  data required time                                  7.72
+  -----------------------------------------------------------
+  data required time                                  7.72
+  data arrival time                                  -7.24
+  -----------------------------------------------------------
+  slack (MET)                                         0.48
+
+
+  Startpoint: R_497 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: yn_data[4] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                35000                 saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_497/CLK (DFFASX1)                      0.00       0.00 r
+  R_497/Q (DFFASX1)                        0.71       0.71 f
+  U638/QN (NOR2X0)                         0.21       0.92 r
+  U1431/QN (NOR2X0)                        0.58       1.49 f
+  U1444/QN (AOI21X1)                       0.52       2.01 r
+  U660/Q (OA21X1)                          0.40       2.42 r
+  U821/QN (NAND2X1)                        0.19       2.61 f
+  U1466/CO (FADDX1)                        0.49       3.09 f
+  U1039/QN (NAND2X1)                       0.13       3.23 r
+  U622/QN (NAND2X0)                        0.17       3.40 f
+  U832/Q (AND2X1)                          0.38       3.78 f
+  U866/ZN (INVX0)                          0.36       4.14 r
+  U998/ZN (INVX0)                          0.26       4.40 f
+  U1479/Q (AO21X1)                         0.60       4.99 f
+  yn_data[4] (out)                         0.00       4.99 f
+  data arrival time                                   4.99
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.00       8.00
+  output external delay                   -3.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -4.99
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: u_mul_hn8/mul_abs_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_374 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                35000                 saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_mul_hn8/mul_abs_reg[1]/CLK (DFFARX1)                  0.00       0.00 r
+  u_mul_hn8/mul_abs_reg[1]/QN (DFFARX1)                   0.43       0.43 f
+  U741/Q (AND2X1)                                         0.59       1.02 f
+  U585/QN (NAND2X0)                                       0.18       1.20 r
+  U1113/Q (OR2X1)                                         0.68       1.88 r
+  U1114/QN (NOR2X0)                                       0.51       2.39 f
+  U722/QN (NAND2X0)                                       0.57       2.96 r
+  U966/QN (NOR2X0)                                        0.63       3.60 f
+  U961/QN (NOR2X0)                                        0.44       4.04 r
+  U1321/Q (AND3X1)                                        1.46       5.49 r
+  U1322/Q (AO21X1)                                        0.27       5.76 r
+  U1345/CO (FADDX1)                                       0.51       6.27 r
+  U1350/S (FADDX1)                                        0.66       6.92 f
+  U1340/QN (NOR2X0)                                       0.27       7.19 r
+  U952/Q (OA21X1)                                         0.35       7.54 r
+  U929/QN (NOR2X0)                                        0.15       7.70 f
+  R_374/D (DFFARX1)                                       0.03       7.73 f
+  data arrival time                                                  7.73
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  R_374/CLK (DFFARX1)                                     0.00       8.00 r
+  library setup time                                     -0.27       7.73
+  data required time                                                 7.73
+  --------------------------------------------------------------------------
+  data required time                                                 7.73
+  data arrival time                                                 -7.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

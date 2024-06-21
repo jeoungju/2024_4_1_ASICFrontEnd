@@ -1,0 +1,419 @@
+Info:  guide_replace 94 (Line: 723)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_8'.
+Info:  SVF Operation 94 (Line: 723) - replace.  Status: rejected
+
+Info:  guide_replace 95 (Line: 733)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_8'.
+Info:  SVF Operation 95 (Line: 733) - replace.  Status: rejected
+
+Info:  guide_replace 96 (Line: 743)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH18_D_WIDTH28'.
+Info:  SVF Operation 96 (Line: 743) - replace.  Status: rejected
+
+Info:  guide_replace 97 (Line: 753)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH18_D_WIDTH28'.
+Info:  SVF Operation 97 (Line: 753) - replace.  Status: rejected
+
+Info:  guide_replace 98 (Line: 763)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_0'.
+Info:  SVF Operation 98 (Line: 763) - replace.  Status: rejected
+
+Info:  guide_replace 99 (Line: 773)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_0'.
+Info:  SVF Operation 99 (Line: 773) - replace.  Status: rejected
+
+Info:  guide_replace 100 (Line: 783)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_1'.
+Info:  SVF Operation 100 (Line: 783) - replace.  Status: rejected
+
+Info:  guide_replace 101 (Line: 793)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_1'.
+Info:  SVF Operation 101 (Line: 793) - replace.  Status: rejected
+
+Info:  guide_replace 102 (Line: 803)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_2'.
+Info:  SVF Operation 102 (Line: 803) - replace.  Status: rejected
+
+Info:  guide_replace 103 (Line: 813)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_2'.
+Info:  SVF Operation 103 (Line: 813) - replace.  Status: rejected
+
+Info:  guide_replace 104 (Line: 823)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_3'.
+Info:  SVF Operation 104 (Line: 823) - replace.  Status: rejected
+
+Info:  guide_replace 105 (Line: 833)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_3'.
+Info:  SVF Operation 105 (Line: 833) - replace.  Status: rejected
+
+Info:  guide_replace 106 (Line: 843)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_4'.
+Info:  SVF Operation 106 (Line: 843) - replace.  Status: rejected
+
+Info:  guide_replace 107 (Line: 853)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_4'.
+Info:  SVF Operation 107 (Line: 853) - replace.  Status: rejected
+
+Info:  guide_replace 108 (Line: 863)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_5'.
+Info:  SVF Operation 108 (Line: 863) - replace.  Status: rejected
+
+Info:  guide_replace 109 (Line: 873)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_5'.
+Info:  SVF Operation 109 (Line: 873) - replace.  Status: rejected
+
+Info:  guide_replace 110 (Line: 883)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_6'.
+Info:  SVF Operation 110 (Line: 883) - replace.  Status: rejected
+
+Info:  guide_replace 111 (Line: 893)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_6'.
+Info:  SVF Operation 111 (Line: 893) - replace.  Status: rejected
+
+Info:  guide_replace 112 (Line: 903)  Could not find pre_resource 'sub_add_34' in design 'mul_D_WIDTH19_D_WIDTH28_7'.
+Info:  SVF Operation 112 (Line: 903) - replace.  Status: rejected
+
+Info:  guide_replace 113 (Line: 913)  Could not find pre_resource 'add_34_ni' in design 'mul_D_WIDTH19_D_WIDTH28_7'.
+Info:  SVF Operation 113 (Line: 913) - replace.  Status: rejected
+
+Info:  SVF Operation 115 (Line: 941) - ungroup.  Status: accepted
+Info:  SVF Operation 116 (Line: 946) - ungroup.  Status: accepted
+Info:  SVF Operation 117 (Line: 951) - ungroup.  Status: accepted
+Info:  SVF Operation 118 (Line: 956) - ungroup.  Status: accepted
+Info:  SVF Operation 119 (Line: 961) - ungroup.  Status: accepted
+Info:  SVF Operation 120 (Line: 966) - ungroup.  Status: accepted
+Info:  SVF Operation 121 (Line: 971) - ungroup.  Status: accepted
+Info:  SVF Operation 122 (Line: 976) - ungroup.  Status: accepted
+Info:  SVF Operation 123 (Line: 981) - ungroup.  Status: accepted
+Info:  SVF Operation 124 (Line: 986) - ungroup.  Status: accepted
+Info:  SVF Operation 125 (Line: 991) - ungroup.  Status: accepted
+Info:  SVF Operation 126 (Line: 996) - ungroup.  Status: accepted
+Info:  SVF Operation 127 (Line: 1001) - ungroup.  Status: accepted
+Info:  SVF Operation 128 (Line: 1006) - ungroup.  Status: accepted
+Info:  SVF Operation 129 (Line: 1011) - ungroup.  Status: accepted
+Info:  SVF Operation 130 (Line: 1016) - ungroup.  Status: accepted
+Info:  SVF Operation 131 (Line: 1021) - ungroup.  Status: accepted
+Info:  SVF Operation 132 (Line: 1026) - ungroup.  Status: accepted
+Info:  SVF Operation 133 (Line: 1031) - ungroup.  Status: accepted
+Info:  SVF Operation 134 (Line: 1036) - ungroup.  Status: accepted
+Info:  SVF Operation 135 (Line: 1041) - ungroup.  Status: accepted
+Info:  SVF Operation 136 (Line: 1046) - ungroup.  Status: accepted
+Info:  SVF Operation 137 (Line: 1051) - ungroup.  Status: accepted
+Info:  SVF Operation 138 (Line: 1056) - ungroup.  Status: accepted
+Info:  SVF Operation 139 (Line: 1061) - ungroup.  Status: accepted
+Info:  SVF Operation 140 (Line: 1066) - ungroup.  Status: accepted
+Info:  SVF Operation 141 (Line: 1071) - ungroup.  Status: accepted
+Info:  guide_replace 143 (Line: 1081)  Could not find pre_resource 'u_mul_hn4/sub_add_60' in design 'top'.
+Info:  guide_replace 143 (Line: 1081)  Could not find pre_resource 'u_mul_hn4/add_60_ni' in design 'top'.
+Info:  SVF Operation 143 (Line: 1081) - replace.  Status: rejected
+
+Info:  guide_replace 144 (Line: 1094)  Could not find pre_resource 'EXTRA_ADD_145_1' in design 'top'.
+Info:  guide_replace 144 (Line: 1094)  Could not find pre_resource 'EXTRA_ADD_145' in design 'top'.
+Info:  SVF Operation 144 (Line: 1094) - replace.  Status: rejected
+
+Info:  guide_replace 145 (Line: 1106)  Could not find pre_resource 'u_mul_hn5/sub_add_60' in design 'top'.
+Info:  guide_replace 145 (Line: 1106)  Could not find pre_resource 'u_mul_hn5/add_60_ni' in design 'top'.
+Info:  SVF Operation 145 (Line: 1106) - replace.  Status: rejected
+
+Info:  guide_replace 146 (Line: 1119)  Could not find pre_resource 'EXTRA_ADD_143_1' in design 'top'.
+Info:  guide_replace 146 (Line: 1119)  Could not find pre_resource 'EXTRA_ADD_143' in design 'top'.
+Info:  SVF Operation 146 (Line: 1119) - replace.  Status: rejected
+
+Info:  guide_replace 147 (Line: 1131)  Could not find pre_resource 'u_mul_hn6/sub_add_60' in design 'top'.
+Info:  guide_replace 147 (Line: 1131)  Could not find pre_resource 'u_mul_hn6/add_60_ni' in design 'top'.
+Info:  SVF Operation 147 (Line: 1131) - replace.  Status: rejected
+
+Info:  guide_replace 148 (Line: 1144)  Could not find pre_resource 'EXTRA_ADD_141_1' in design 'top'.
+Info:  guide_replace 148 (Line: 1144)  Could not find pre_resource 'EXTRA_ADD_141' in design 'top'.
+Info:  SVF Operation 148 (Line: 1144) - replace.  Status: rejected
+
+Info:  guide_replace 149 (Line: 1156)  Could not find pre_resource 'u_mul_hn7/sub_add_60' in design 'top'.
+Info:  guide_replace 149 (Line: 1156)  Could not find pre_resource 'u_mul_hn7/add_60_ni' in design 'top'.
+Info:  SVF Operation 149 (Line: 1156) - replace.  Status: rejected
+
+Info:  guide_replace 150 (Line: 1169)  Could not find pre_resource 'EXTRA_ADD_139_1' in design 'top'.
+Info:  guide_replace 150 (Line: 1169)  Could not find pre_resource 'EXTRA_ADD_139' in design 'top'.
+Info:  SVF Operation 150 (Line: 1169) - replace.  Status: rejected
+
+Info:  guide_replace 151 (Line: 1181)  Could not find pre_resource 'u_mul_hn2/sub_add_60' in design 'top'.
+Info:  guide_replace 151 (Line: 1181)  Could not find pre_resource 'u_mul_hn2/add_60_ni' in design 'top'.
+Info:  SVF Operation 151 (Line: 1181) - replace.  Status: rejected
+
+Info:  guide_replace 152 (Line: 1194)  Could not find pre_resource 'EXTRA_ADD_149_1' in design 'top'.
+Info:  guide_replace 152 (Line: 1194)  Could not find pre_resource 'EXTRA_ADD_149' in design 'top'.
+Info:  SVF Operation 152 (Line: 1194) - replace.  Status: rejected
+
+Info:  guide_replace 153 (Line: 1206)  Could not find pre_resource 'u_mul_hn3/sub_add_60' in design 'top'.
+Info:  guide_replace 153 (Line: 1206)  Could not find pre_resource 'u_mul_hn3/add_60_ni' in design 'top'.
+Info:  SVF Operation 153 (Line: 1206) - replace.  Status: rejected
+
+Info:  guide_replace 154 (Line: 1219)  Could not find pre_resource 'EXTRA_ADD_147_1' in design 'top'.
+Info:  guide_replace 154 (Line: 1219)  Could not find pre_resource 'EXTRA_ADD_147' in design 'top'.
+Info:  SVF Operation 154 (Line: 1219) - replace.  Status: rejected
+
+Info:  guide_replace 155 (Line: 1231)  Could not find pre_resource 'u_mul_hn8/sub_add_60' in design 'top'.
+Info:  guide_replace 155 (Line: 1231)  Could not find pre_resource 'u_mul_hn8/add_60_ni' in design 'top'.
+Info:  SVF Operation 155 (Line: 1231) - replace.  Status: rejected
+
+Info:  guide_replace 156 (Line: 1244)  Could not find pre_resource 'EXTRA_ADD_137_1' in design 'top'.
+Info:  guide_replace 156 (Line: 1244)  Could not find pre_resource 'EXTRA_ADD_137' in design 'top'.
+Info:  SVF Operation 156 (Line: 1244) - replace.  Status: rejected
+
+Info:  guide_replace 157 (Line: 1256)  Could not find pre_resource 'u_mul_hn9/sub_add_60' in design 'top'.
+Info:  guide_replace 157 (Line: 1256)  Could not find pre_resource 'u_mul_hn9/add_60_ni' in design 'top'.
+Info:  SVF Operation 157 (Line: 1256) - replace.  Status: rejected
+
+Info:  guide_replace 158 (Line: 1269)  Could not find pre_resource 'EXTRA_ADD_132_1' in design 'top'.
+Info:  guide_replace 158 (Line: 1269)  Could not find pre_resource 'EXTRA_ADD_132' in design 'top'.
+Info:  SVF Operation 158 (Line: 1269) - replace.  Status: rejected
+
+Info:  guide_replace 159 (Line: 1281)  Could not find pre_resource 'u_mul_hn0/sub_add_60' in design 'top'.
+Info:  guide_replace 159 (Line: 1281)  Could not find pre_resource 'u_mul_hn0/add_60_ni' in design 'top'.
+Info:  SVF Operation 159 (Line: 1281) - replace.  Status: rejected
+
+Info:  guide_replace 160 (Line: 1294)  Could not find pre_resource 'EXTRA_ADD_130_1' in design 'top'.
+Info:  guide_replace 160 (Line: 1294)  Could not find pre_resource 'EXTRA_ADD_130' in design 'top'.
+Info:  SVF Operation 160 (Line: 1294) - replace.  Status: rejected
+
+Info:  guide_replace 161 (Line: 1306)  Could not find pre_resource 'u_mul_hn1/sub_add_60' in design 'top'.
+Info:  guide_replace 161 (Line: 1306)  Could not find pre_resource 'u_mul_hn1/add_60_ni' in design 'top'.
+Info:  SVF Operation 161 (Line: 1306) - replace.  Status: rejected
+
+Info:  guide_replace 162 (Line: 1319)  Could not find pre_resource 'EXTRA_ADD_151_1' in design 'top'.
+Info:  guide_replace 162 (Line: 1319)  Could not find pre_resource 'EXTRA_ADD_151' in design 'top'.
+Info:  SVF Operation 162 (Line: 1319) - replace.  Status: rejected
+
+Info:  guide_replace 163 (Line: 1331)  Could not find pre_resource 'u_mul_hn0/sub_add_33' in design 'top'.
+Info:  guide_replace 163 (Line: 1331)  Could not find pre_resource 'u_mul_hn0/add_33_ni' in design 'top'.
+Info:  SVF Operation 163 (Line: 1331) - replace.  Status: rejected
+
+Info:  guide_replace 164 (Line: 1344)  Could not find pre_resource 'EXTRA_ADD_129_1' in design 'top'.
+Info:  guide_replace 164 (Line: 1344)  Could not find pre_resource 'EXTRA_ADD_129' in design 'top'.
+Info:  SVF Operation 164 (Line: 1344) - replace.  Status: rejected
+
+Info:  guide_replace 165 (Line: 1356)  Could not find pre_resource 'u_mul_hn9/sub_add_33' in design 'top'.
+Info:  guide_replace 165 (Line: 1356)  Could not find pre_resource 'u_mul_hn9/add_33_ni' in design 'top'.
+Info:  SVF Operation 165 (Line: 1356) - replace.  Status: rejected
+
+Info:  guide_replace 166 (Line: 1369)  Could not find pre_resource 'EXTRA_ADD_131_1' in design 'top'.
+Info:  guide_replace 166 (Line: 1369)  Could not find pre_resource 'EXTRA_ADD_131' in design 'top'.
+Info:  SVF Operation 166 (Line: 1369) - replace.  Status: rejected
+
+Info:  guide_replace 167 (Line: 1381)  Could not find pre_resource 'u_mul_hn8/sub_add_33' in design 'top'.
+Info:  guide_replace 167 (Line: 1381)  Could not find pre_resource 'u_mul_hn8/add_33_ni' in design 'top'.
+Info:  SVF Operation 167 (Line: 1381) - replace.  Status: rejected
+
+Info:  guide_replace 168 (Line: 1394)  Could not find pre_resource 'EXTRA_ADD_136_1' in design 'top'.
+Info:  guide_replace 168 (Line: 1394)  Could not find pre_resource 'EXTRA_ADD_136' in design 'top'.
+Info:  SVF Operation 168 (Line: 1394) - replace.  Status: rejected
+
+Info:  guide_replace 169 (Line: 1406)  Could not find pre_resource 'u_mul_hn7/sub_add_33' in design 'top'.
+Info:  guide_replace 169 (Line: 1406)  Could not find pre_resource 'u_mul_hn7/add_33_ni' in design 'top'.
+Info:  SVF Operation 169 (Line: 1406) - replace.  Status: rejected
+
+Info:  guide_replace 170 (Line: 1419)  Could not find pre_resource 'EXTRA_ADD_138_1' in design 'top'.
+Info:  guide_replace 170 (Line: 1419)  Could not find pre_resource 'EXTRA_ADD_138' in design 'top'.
+Info:  SVF Operation 170 (Line: 1419) - replace.  Status: rejected
+
+Info:  guide_replace 171 (Line: 1431)  Could not find pre_resource 'u_mul_hn6/sub_add_33' in design 'top'.
+Info:  guide_replace 171 (Line: 1431)  Could not find pre_resource 'u_mul_hn6/add_33_ni' in design 'top'.
+Info:  SVF Operation 171 (Line: 1431) - replace.  Status: rejected
+
+Info:  guide_replace 172 (Line: 1444)  Could not find pre_resource 'EXTRA_ADD_140_1' in design 'top'.
+Info:  guide_replace 172 (Line: 1444)  Could not find pre_resource 'EXTRA_ADD_140' in design 'top'.
+Info:  SVF Operation 172 (Line: 1444) - replace.  Status: rejected
+
+Info:  guide_replace 173 (Line: 1456)  Could not find pre_resource 'u_mul_hn5/sub_add_33' in design 'top'.
+Info:  guide_replace 173 (Line: 1456)  Could not find pre_resource 'u_mul_hn5/add_33_ni' in design 'top'.
+Info:  SVF Operation 173 (Line: 1456) - replace.  Status: rejected
+
+Info:  guide_replace 174 (Line: 1469)  Could not find pre_resource 'EXTRA_ADD_142_1' in design 'top'.
+Info:  guide_replace 174 (Line: 1469)  Could not find pre_resource 'EXTRA_ADD_142' in design 'top'.
+Info:  SVF Operation 174 (Line: 1469) - replace.  Status: rejected
+
+Info:  guide_replace 176 (Line: 1491)  Could not find pre_resource 'u_mul_hn4/sub_add_33' in design 'top'.
+Info:  guide_replace 176 (Line: 1491)  Could not find pre_resource 'u_mul_hn4/add_33_ni' in design 'top'.
+Info:  SVF Operation 176 (Line: 1491) - replace.  Status: rejected
+
+Info:  guide_replace 177 (Line: 1504)  Could not find pre_resource 'EXTRA_ADD_144_1' in design 'top'.
+Info:  guide_replace 177 (Line: 1504)  Could not find pre_resource 'EXTRA_ADD_144' in design 'top'.
+Info:  SVF Operation 177 (Line: 1504) - replace.  Status: rejected
+
+Info:  guide_replace 178 (Line: 1516)  Could not find pre_resource 'u_mul_hn3/sub_add_33' in design 'top'.
+Info:  guide_replace 178 (Line: 1516)  Could not find pre_resource 'u_mul_hn3/add_33_ni' in design 'top'.
+Info:  SVF Operation 178 (Line: 1516) - replace.  Status: rejected
+
+Info:  guide_replace 179 (Line: 1529)  Could not find pre_resource 'EXTRA_ADD_146_1' in design 'top'.
+Info:  guide_replace 179 (Line: 1529)  Could not find pre_resource 'EXTRA_ADD_146' in design 'top'.
+Info:  SVF Operation 179 (Line: 1529) - replace.  Status: rejected
+
+Info:  guide_replace 180 (Line: 1541)  Could not find pre_resource 'u_mul_hn2/sub_add_33' in design 'top'.
+Info:  guide_replace 180 (Line: 1541)  Could not find pre_resource 'u_mul_hn2/add_33_ni' in design 'top'.
+Info:  SVF Operation 180 (Line: 1541) - replace.  Status: rejected
+
+Info:  guide_replace 181 (Line: 1554)  Could not find pre_resource 'EXTRA_ADD_148_1' in design 'top'.
+Info:  guide_replace 181 (Line: 1554)  Could not find pre_resource 'EXTRA_ADD_148' in design 'top'.
+Info:  SVF Operation 181 (Line: 1554) - replace.  Status: rejected
+
+Info:  guide_replace 182 (Line: 1566)  Could not find pre_resource 'u_mul_hn1/sub_add_33' in design 'top'.
+Info:  guide_replace 182 (Line: 1566)  Could not find pre_resource 'u_mul_hn1/add_33_ni' in design 'top'.
+Info:  SVF Operation 182 (Line: 1566) - replace.  Status: rejected
+
+Info:  guide_replace 183 (Line: 1579)  Could not find pre_resource 'EXTRA_ADD_150_1' in design 'top'.
+Info:  guide_replace 183 (Line: 1579)  Could not find pre_resource 'EXTRA_ADD_150' in design 'top'.
+Info:  SVF Operation 183 (Line: 1579) - replace.  Status: rejected
+
+Info:  guide_merge 194 (Line: 1802)  Could not find pre_resource 'EXTRA_ADD_167' in design 'top'.
+Info:  SVF Operation 194 (Line: 1802) - merge.  Status: rejected
+
+Info:  guide_merge 195 (Line: 1816)  Could not find pre_resource 'EXTRA_ADD_169' in design 'top'.
+Info:  SVF Operation 195 (Line: 1816) - merge.  Status: rejected
+
+Info:  guide_merge 196 (Line: 1830)  Could not find pre_resource 'EXTRA_ADD_170' in design 'top'.
+Info:  SVF Operation 196 (Line: 1830) - merge.  Status: rejected
+
+Info:  guide_merge 197 (Line: 1844)  Could not find pre_resource 'EXTRA_ADD_171' in design 'top'.
+Info:  SVF Operation 197 (Line: 1844) - merge.  Status: rejected
+
+Info:  guide_merge 198 (Line: 1858)  Could not find pre_resource 'EXTRA_ADD_173' in design 'top'.
+Info:  SVF Operation 198 (Line: 1858) - merge.  Status: rejected
+
+Info:  guide_merge 199 (Line: 1872)  Could not find pre_resource 'EXTRA_ADD_174' in design 'top'.
+Info:  SVF Operation 199 (Line: 1872) - merge.  Status: rejected
+
+Info:  guide_merge 200 (Line: 1886)  Could not find pre_resource 'EXTRA_ADD_175' in design 'top'.
+Info:  SVF Operation 200 (Line: 1886) - merge.  Status: rejected
+
+Info:  guide_replace 201 (Line: 1900)  Could not find pre_resource 'EXTRA_ADD_157' in design 'top'.
+Info:  SVF Operation 201 (Line: 1900) - replace.  Status: rejected
+
+Info:  guide_replace 202 (Line: 1911)  Could not find pre_resource 'EXTRA_ADD_158' in design 'top'.
+Info:  SVF Operation 202 (Line: 1911) - replace.  Status: rejected
+
+Info:  guide_replace 203 (Line: 1922)  Could not find pre_resource 'EXTRA_ADD_159' in design 'top'.
+Info:  SVF Operation 203 (Line: 1922) - replace.  Status: rejected
+
+Info:  guide_replace 204 (Line: 1933)  Could not find pre_resource 'EXTRA_ADD_160' in design 'top'.
+Info:  SVF Operation 204 (Line: 1933) - replace.  Status: rejected
+
+Info:  guide_replace 205 (Line: 1944)  Could not find pre_resource 'EXTRA_ADD_161' in design 'top'.
+Info:  SVF Operation 205 (Line: 1944) - replace.  Status: rejected
+
+Info:  guide_replace 206 (Line: 1955)  Could not find pre_resource 'EXTRA_ADD_162' in design 'top'.
+Info:  SVF Operation 206 (Line: 1955) - replace.  Status: rejected
+
+Info:  guide_replace 207 (Line: 1966)  Could not find pre_resource 'EXTRA_ADD_163' in design 'top'.
+Info:  SVF Operation 207 (Line: 1966) - replace.  Status: rejected
+
+Info:  guide_replace 208 (Line: 1977)  Could not find pre_resource 'EXTRA_ADD_164' in design 'top'.
+Info:  SVF Operation 208 (Line: 1977) - replace.  Status: rejected
+
+Info:  guide_replace 209 (Line: 1988)  Could not find pre_resource 'EXTRA_ADD_165' in design 'top'.
+Info:  SVF Operation 209 (Line: 1988) - replace.  Status: rejected
+
+Info:  guide_replace 210 (Line: 1999)  Could not find pre_resource 'EXTRA_ADD_166' in design 'top'.
+Info:  SVF Operation 210 (Line: 1999) - replace.  Status: rejected
+
+Info:  guide_replace 211 (Line: 2010)  Could not find pre_resource 'EXTRA_ADD_168' in design 'top'.
+Info:  SVF Operation 211 (Line: 2010) - replace.  Status: rejected
+
+Info:  guide_change_names 222 (Line: 2071)  Cannot find or apply name change to cell 'EXTRA_ADD_192' in design 'top'.
+Info:  SVF Operation 222 (Line: 2071) - change_names.  Status: rejected
+
+Info:  guide_change_names 223 (Line: 2076)  Cannot find or apply name change to cell 'EXTRA_ADD_193' in design 'top'.
+Info:  SVF Operation 223 (Line: 2076) - change_names.  Status: rejected
+
+Info:  guide_change_names 224 (Line: 2081)  Cannot find or apply name change to cell 'EXTRA_ADD_194' in design 'top'.
+Info:  SVF Operation 224 (Line: 2081) - change_names.  Status: rejected
+
+Info:  guide_change_names 225 (Line: 2086)  Cannot find or apply name change to cell 'EXTRA_ADD_195' in design 'top'.
+Info:  SVF Operation 225 (Line: 2086) - change_names.  Status: rejected
+
+Info:  guide_change_names 226 (Line: 2091)  Cannot find or apply name change to cell 'EXTRA_ADD_196' in design 'top'.
+Info:  SVF Operation 226 (Line: 2091) - change_names.  Status: rejected
+
+Info:  guide_change_names 227 (Line: 2096)  Cannot find or apply name change to cell 'EXTRA_ADD_197' in design 'top'.
+Info:  SVF Operation 227 (Line: 2096) - change_names.  Status: rejected
+
+Info:  guide_change_names 228 (Line: 2101)  Cannot find or apply name change to cell 'EXTRA_ADD_198' in design 'top'.
+Info:  SVF Operation 228 (Line: 2101) - change_names.  Status: rejected
+
+Info:  guide_change_names 229 (Line: 2106)  Cannot find or apply name change to cell 'EXTRA_ADD_199' in design 'top'.
+Info:  SVF Operation 229 (Line: 2106) - change_names.  Status: rejected
+
+Info:  guide_change_names 230 (Line: 2111)  Cannot find or apply name change to cell 'EXTRA_ADD_200' in design 'top'.
+Info:  SVF Operation 230 (Line: 2111) - change_names.  Status: rejected
+
+Info:  guide_change_names 231 (Line: 2116)  Cannot find or apply name change to cell 'EXTRA_ADD_201' in design 'top'.
+Info:  SVF Operation 231 (Line: 2116) - change_names.  Status: rejected
+
+Info:  guide_change_names 232 (Line: 2121)  Cannot find or apply name change to cell 'EXTRA_ADD_202' in design 'top'.
+Info:  SVF Operation 232 (Line: 2121) - change_names.  Status: rejected
+
+guide_reg_merging 270 (Line: 2385) Trivial merge
+guide_reg_merging 270 (Line: 2385) Injected merge
+guide_reg_merging 271 (Line: 2391) Trivial merge
+guide_reg_merging 271 (Line: 2391) Injected merge
+guide_reg_constant 233 (Line: 2126) Injecting trivial constant
+guide_reg_constant 234 (Line: 2133) Injecting trivial constant
+guide_reg_constant 235 (Line: 2140) Injecting trivial constant
+guide_reg_constant 236 (Line: 2147) Injecting trivial constant
+guide_reg_constant 237 (Line: 2154) Injecting trivial constant
+guide_reg_constant 238 (Line: 2161) Injecting trivial constant
+guide_reg_constant 239 (Line: 2168) Injecting trivial constant
+guide_reg_constant 240 (Line: 2175) Injecting trivial constant
+guide_reg_constant 241 (Line: 2182) Injecting trivial constant
+guide_reg_constant 242 (Line: 2189) Injecting trivial constant
+guide_reg_constant 243 (Line: 2196) Injecting trivial constant
+guide_reg_constant 244 (Line: 2203) Injecting trivial constant
+guide_reg_constant 245 (Line: 2210) Injecting trivial constant
+guide_reg_constant 246 (Line: 2217) Injecting trivial constant
+guide_reg_constant 247 (Line: 2224) Injecting trivial constant
+guide_reg_constant 248 (Line: 2231) Injecting trivial constant
+guide_reg_constant 249 (Line: 2238) Injecting trivial constant
+guide_reg_constant 250 (Line: 2245) Injecting trivial constant
+guide_reg_constant 251 (Line: 2252) Injecting trivial constant
+guide_reg_constant 252 (Line: 2259) Injecting trivial constant
+guide_reg_constant 253 (Line: 2266) Injecting trivial constant
+guide_reg_constant 254 (Line: 2273) Injecting trivial constant
+guide_reg_constant 255 (Line: 2280) Injecting trivial constant
+guide_reg_constant 256 (Line: 2287) Injecting trivial constant
+guide_reg_constant 257 (Line: 2294) Injecting trivial constant
+guide_reg_constant 258 (Line: 2301) Injecting trivial constant
+guide_reg_constant 259 (Line: 2308) Injecting trivial constant
+guide_reg_constant 260 (Line: 2315) Injecting trivial constant
+guide_reg_constant 261 (Line: 2322) Injecting trivial constant
+guide_reg_constant 262 (Line: 2329) Injecting trivial constant
+guide_reg_constant 263 (Line: 2336) Injecting trivial constant
+guide_reg_constant 264 (Line: 2343) Injecting trivial constant
+guide_reg_constant 265 (Line: 2350) Injecting trivial constant
+guide_reg_constant 266 (Line: 2357) Injecting trivial constant
+guide_reg_constant 267 (Line: 2364) Injecting trivial constant
+guide_reg_constant 268 (Line: 2371) Injecting trivial constant
+guide_reg_constant 269 (Line: 2378) Injecting trivial constant
+Info:  guide_uniquify 272 (Line: 2397)  Cannot find object "DP_OP_191J1_129_388" in design 'top'.
+Info:  SVF Operation 272 (Line: 2397) - uniquify.  Status: rejected
+Info:  guide_uniquify 273 (Line: 2402)  Cannot find object "DP_OP_190J1_128_388" in design 'top'.
+Info:  SVF Operation 273 (Line: 2402) - uniquify.  Status: rejected
+Info:  guide_uniquify 274 (Line: 2407)  Cannot find object "DP_OP_189J1_127_388" in design 'top'.
+Info:  SVF Operation 274 (Line: 2407) - uniquify.  Status: rejected
+Info:  guide_uniquify 275 (Line: 2412)  Cannot find object "DP_OP_188J1_126_388" in design 'top'.
+Info:  SVF Operation 275 (Line: 2412) - uniquify.  Status: rejected
+Info:  guide_uniquify 276 (Line: 2417)  Cannot find object "DP_OP_187J1_125_388" in design 'top'.
+Info:  SVF Operation 276 (Line: 2417) - uniquify.  Status: rejected
+Info:  guide_uniquify 277 (Line: 2422)  Cannot find object "DP_OP_186J1_124_388" in design 'top'.
+Info:  SVF Operation 277 (Line: 2422) - uniquify.  Status: rejected
+Info:  guide_uniquify 278 (Line: 2427)  Cannot find object "DP_OP_185J1_123_388" in design 'top'.
+Info:  SVF Operation 278 (Line: 2427) - uniquify.  Status: rejected
+Info:  guide_datapath 332 (Line: 3502) Cannot find reference cell for instance 'DP_OP_191J1_129_388' in design 'top'.
+Info:  SVF Operation 332 (Line: 3502) - datapath.  Status: rejected
+
+Info:  guide_datapath 333 (Line: 3508) Cannot find reference cell for instance 'DP_OP_190J1_128_388' in design 'top'.
+Info:  SVF Operation 333 (Line: 3508) - datapath.  Status: rejected
+
+Info:  guide_datapath 334 (Line: 3514) Cannot find reference cell for instance 'DP_OP_189J1_127_388' in design 'top'.
+Info:  SVF Operation 334 (Line: 3514) - datapath.  Status: rejected
+
+Info:  guide_datapath 335 (Line: 3520) Cannot find reference cell for instance 'DP_OP_188J1_126_388' in design 'top'.
+Info:  SVF Operation 335 (Line: 3520) - datapath.  Status: rejected
+
+Info:  guide_datapath 336 (Line: 3526) Cannot find reference cell for instance 'DP_OP_187J1_125_388' in design 'top'.
+Info:  SVF Operation 336 (Line: 3526) - datapath.  Status: rejected
+
+Info:  guide_datapath 337 (Line: 3532) Cannot find reference cell for instance 'DP_OP_186J1_124_388' in design 'top'.
+Info:  SVF Operation 337 (Line: 3532) - datapath.  Status: rejected
+
+Info:  guide_datapath 338 (Line: 3538) Cannot find reference cell for instance 'DP_OP_185J1_123_388' in design 'top'.
+Info:  SVF Operation 338 (Line: 3538) - datapath.  Status: rejected
+
+Info:  Pre-verification of r:/WORK/top/mult_x_16 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/mult_x_21 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/mult_x_26 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/mult_x_33 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/mult_x_38 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/mult_x_4 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/mult_x_43 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/mult_x_9 SUCCEEDED.
+Info:  Pre-verification of r:/WORK/top/DP_OP_184J1_122_388 SUCCEEDED.

@@ -1,0 +1,3 @@
+Command Line: /tools/synopsys/verdi/R-2020.12-SP2/platform/LINUXAMD64/bin/Novas -Ultra -sv -ssf wave.fsdb -dbdir ./simv.daidir -f run.f
+uname(Linux sse506-s1 4.18.0-513.11.1.el8_9.x86_64 #1 SMP Wed Jan 10 22:58:54 UTC 2024 x86_64)
+au time 1922.534121 9.627510 22.703024 delta 422211584 422211584 total 910778368 910778368

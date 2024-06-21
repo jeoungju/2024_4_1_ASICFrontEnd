@@ -1,0 +1,11 @@
+set_app_var search_path "/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn  \
+		/tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models \
+		../rtl/  scr"
+#set_app_var target_library class.db
+#set_app_var link_library class.db
+	
+#set_app_var search_path "/tools/edk/SAED_EDK90nm/syn  \
+#		../rtl/  scr"
+set_app_var target_library saed90nm_max.db 
+set_app_var link_library "* $target_library"
+#/tools/edk/SAED_EDK90nm

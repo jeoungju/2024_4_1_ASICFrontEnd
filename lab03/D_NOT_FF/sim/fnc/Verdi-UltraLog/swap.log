@@ -1,0 +1,42 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 139264 bytes [need 136K bytes if disable swap]
+
+used block: 3 [memory(3) file(0)]
+                 [ 8K(1) 64K(2) { total 136K bytes } ]
+overhead: (9538) bytes for (3) blocks [Average: (3179) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 2(times) 5K(bytes) [1K bytes compressed data from file]
+access => 32966(times) 261M(bytes)
+          [hit ratio: 99.9939%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab03/D_NOT_FF/sim/fnc/Verdi-UltraLog)
+used swap file number: (3)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (4)
+closeHead: (1)
+closeTail: (3)
+openCnt: (3)
+fid(3): fd(1073741825) fileName(/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab03/D_NOT_FF/sim/fnc/simv.daidir/kdb.elab++/work.lib++/d_not_ff.v.tdc)
+	size(1120) lastModTime(1710983646) curModTime(1710983646)
+	mode(rb)	hot(0) cool(2) pos(0)
+fid(2): fd(25) fileName(/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab03/D_NOT_FF/sim/fnc/Verdi-UltraLog/_swap_0001#-1463778815#822716)
+	size(0) lastModTime(0) curModTime(1710986742)
+	mode(w+b)	hot(3) cool(1) pos(0)
+fid(1): fd(1073741824) fileName(/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab03/D_NOT_FF/sim/fnc/simv.daidir/kdb.elab++/work.lib++/testbench.v.tdc)
+	size(2049) lastModTime(1710983646) curModTime(1710983646)
+	mode(rb)	hot(2) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(188339a0) pre(16f695b0) next(0)
+version(200506)
+date(May 19 2021 05:00:27)

@@ -1,0 +1,2 @@
+dc_shell -f scr/syn2.tcl | tee -i log/syn2.log
+

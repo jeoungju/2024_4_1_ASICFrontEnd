@@ -1,0 +1,169 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Wed May 15 19:53:35 2024
+****************************************
+
+This design has no violated constraints.
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Wed May 15 19:53:35 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: class
+Wire Load Model Mode: top
+
+  Startpoint: Cin2[0] (input port clocked by vclk)
+  Endpoint: Cout[4] (output port clocked by vclk)
+  Path Group: COMBO
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  Cin2[0] (in)                             0.34       0.54 r
+  U116/Y (IVDAP)                           0.28       0.82 f
+  U132/Z (NR2I)                            0.92       1.74 r
+  U133/Z (MUX21L)                          1.07       2.81 r
+  U170/Z (MUX21L)                          0.85       3.66 r
+  U174/Z (ENI)                             0.35       4.02 r
+  U175/Z (ND2I)                            0.12       4.14 f
+  U176/Z (AN2I)                            0.78       4.92 f
+  U177/Z (B4IP)                            0.85       5.77 r
+  Cout[4] (out)                            0.00       5.77 r
+  data arrival time                                   5.77
+
+  clock vclk (rise edge)                   6.00       6.00
+  clock network delay (ideal)              0.00       6.00
+  output external delay                   -0.20       5.80
+  data required time                                  5.80
+  -----------------------------------------------------------
+  data required time                                  5.80
+  data arrival time                                  -5.77
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: sel (input port clocked by clk)
+  Endpoint: R1_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     0.40       1.40 r
+  sel (in)                                 0.34       1.74 r
+  U77/Z (IVDAP)                            1.68       3.42 r
+  U188/Z (ND2I)                            0.12       3.54 f
+  U189/Z (ND2I)                            0.25       3.80 r
+  R1_reg[0]/D (FD2)                        0.00       3.80 r
+  data arrival time                                   3.80
+
+  clock clk (rise edge)                    6.00       6.00
+  clock network delay (ideal)              1.00       7.00
+  clock uncertainty                       -0.15       6.85
+  R1_reg[0]/CP (FD2)                       0.00       6.85 r
+  library setup time                      -0.85       6.00
+  data required time                                  6.00
+  -----------------------------------------------------------
+  data required time                                  6.00
+  data arrival time                                  -3.80
+  -----------------------------------------------------------
+  slack (MET)                                         2.20
+
+
+  Startpoint: R1_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out1[3] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R1_reg[0]/CP (FD2)                       0.00       1.00 r
+  R1_reg[0]/QN (FD2)                       2.04       3.04 r
+  U87/Z (ND2I)                             0.26       3.31 f
+  U88/Z (ND2I)                             0.25       3.56 r
+  U90/Z (AN2I)                             0.45       4.01 r
+  U92/Z (ND2I)                             0.12       4.13 f
+  U93/Z (ND2I)                             0.25       4.38 r
+  U97/Z (ENI)                              0.51       4.89 f
+  U71/Z (IVAP)                             1.27       6.16 r
+  out1[3] (out)                            0.00       6.16 r
+  data arrival time                                   6.16
+
+  clock clk (rise edge)                    6.00       6.00
+  clock network delay (ideal)              1.00       7.00
+  clock uncertainty                       -0.15       6.85
+  output external delay                   -0.50       6.35
+  data required time                                  6.35
+  -----------------------------------------------------------
+  data required time                                  6.35
+  data arrival time                                  -6.16
+  -----------------------------------------------------------
+  slack (MET)                                         0.19
+
+
+  Startpoint: R3_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R4_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R3_reg/CP (FD2)                          0.00       1.00 r
+  R3_reg/Q (FD2)                           1.44       2.44 f
+  U106/Y (IVDA)                            1.42       3.86 r
+  U115/Z (EON1)                            0.99       4.84 f
+  R4_reg[1]/D (FD2)                        0.00       4.84 f
+  data arrival time                                   4.84
+
+  clock clk (rise edge)                    6.00       6.00
+  clock network delay (ideal)              1.00       7.00
+  clock uncertainty                       -0.15       6.85
+  R4_reg[1]/CP (FD2)                       0.00       6.85 r
+  library setup time                      -0.85       6.00
+  data required time                                  6.00
+  -----------------------------------------------------------
+  data required time                                  6.00
+  data arrival time                                  -4.84
+  -----------------------------------------------------------
+  slack (MET)                                         1.16
+
+
+1

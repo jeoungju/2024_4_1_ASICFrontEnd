@@ -1,0 +1,202 @@
+1718725428.591696: 1283710-14846ee86780: cdpl_log.c:227: in cdpl_log_open(): info: @@start_of_log@@
+1718725428.591713: 1283710-14846ee86780: cdpl_log.c:740: in cdpl_log_dump_sysinfo(): info: time: 2024/06/19 00:43:48 KST +0900
+1718725428.591716: 1283710-14846ee86780: cdpl_log.c:742: in cdpl_log_dump_sysinfo(): info: version: Q_2020.06_SP1_PROD_CDPL 
+1718725428.591719: 1283710-14846ee86780: cdpl_log.c:747: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-513.11.1.el8_9.x86_64 #1 SMP Wed Jan 10 22:58:54 UTC 2024
+1718725428.591721: 1283710-14846ee86780: cdpl_log.c:751: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1718725428.591723: 1283710-14846ee86780: cdpl_log.c:753: in cdpl_log_dump_sysinfo(): info: hostname: sse506-s1
+1718725428.591726: 1283710-14846ee86780: cdpl_log.c:229: in cdpl_log_open(): debug: path: /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK/.cdpl/master.sse506-s1.1283710.log
+1718725428.591728: 1283710-14846ee86780: cdpl_log.c:230: in cdpl_log_open(): debug: dir: /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK/.cdpl
+1718725428.591746: 1283710-14846ee86780: cdpl_server.c:544: in cdpl_sv_init(): info: new server S875122000
+1718725428.591751: 1283710-14846ee86780: cdpl_ipc.c:2756: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1718725428.598344: 1283710-14846ee86780: cdpl_server.c:670: in cdpl_sv_new_master(): info: new master M1
+1718725428.598353: 1283710-14846ee86780: cdpl_compat_master.c:2263: in cdplInitMaster(): info: bcast dir is `/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK/.cdpl'
+1718725428.598397: 1283710-14846ee86780: cdpl_server.c:5341: in cdpl_sv_ctl_master(): info: farm worker timeout set to 300
+1718725428.598400: 1283710-14846ee86780: cdpl_server.c:5390: in cdpl_sv_ctl_master(): info: maximum number of task execution attempts set to 1
+1718725428.598403: 1283710-14846ee86780: cdpl_server.c:5424: in cdpl_sv_ctl_master(): info: master security policy set to IGNORE SPAM
+1718725428.598406: 1283710-14846ee86780: cdpl_server.c:5484: in cdpl_sv_ctl_master(): warning: master will ignore spurious communication
+1718725428.598413: 1283710-14846ee86780: cdpl_farm.c:2032: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1718725428.598417: 1283710-14846ee86780: cdpl_farm.c:3233: in cdpl_farm_setcap(): debug: setting farm capacity to 1
+1718725428.598421: 1283710-14846ee86780: cdpl_compat_master.c:205: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK/.cdpl'
+1718725428.598424: 1283710-14846ee86780: cdpl_compat_master.c:225: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `27020@smu409-01:27020@117.16.175.176'
+1718725428.598427: 1283710-14846ee86780: cdpl_compat_master.c:252: in _set_farm_env(): info: exporting DISPLAY as `:30.0'
+1718725428.598433: 1283710-14846ee86780: cdpl_server.c:3050: in cdpl_sv_start(): debug: starting server
+1718725428.598436: 1283710-14846ee86780: cdpl_ipc.c:2895: in cdpl_ipc_start(): debug: starting IPC server 192.168.1.130:44205
+1718725428.598592: 1283710-14846ee86780: cdpl_server.c:751: in cdpl_sv_new_job(): info: new job J1 in M1
+1718725428.598599: 1283710-14846ee86780: cdpl_compat_master.c:1297: in _add_worker(): info: new worker type 3, min:1, max:1, cmd:`/tools/synopsys/fm/Q-2019.12-SP5/linux64/fm/bin/fm_e1_exec -binpath /tools/synopsys/fm/Q-2019.12-SP5 -parallel'
+1718725428.598604: 1283710-14846ee86780: cdpl_server.c:913: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1718725428.598608: 1283710-14846ee86780: cdpl_server.c:3104: in cdpl_sv_start_job(): info: starting job J1
+1718725428.598617: 1283710-14846ee86780: cdpl_server.c:63: in _sv_start_bin(): debug: starting bin B1 (min: 0, max: 1)
+1718725428.598627: 1283710-14845351f700: cdpl_server_ipc.c:1046: in _sv_ipc_thread(): debug: ready
+1718725428.598740: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T0 in B1 (prio 0)
+1718725428.598745: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.598756: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.598761: 1283710-14845331e700: cdpl_server_sched.c:1958: in _sv_scheduler_thread(): debug: scheduler for bin B1 started
+1718725428.598789: 1283710-14845331e700: cdpl_server_sched.c:1924: in _scheduler_run(): debug: will start a new worker
+1718725428.598826: 1283710-14845331e700: cdpl_farm.c:2978: in cdpl_farm_submit(): debug: 1 running processes
+1718725428.598833: 1283710-14845331e700: cdpl_farm.c:2994: in cdpl_farm_submit(): debug: new command C1 in bin B1
+1718725428.598952: 1283710-14845331e700: cdpl_server_sched.c:487: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1718725428.598961: 1283710-14845311d700: cdpl_farm.c:1666: in _schedule(): debug: started
+1718725428.598977: 1283710-14845311d700: cdpl_farm.c:1804: in _schedule(): debug: submitting command C1 in bin B1
+1718725428.598999: 1283710-14845311d700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /tools/synopsys/fm/Q-2019.12-SP5/linux64/fm/bin/fm_e1_exec -binpath /tools/synopsys/fm/Q-2019.12-SP5 -parallel
+1718725428.601159: 1283710-14845311d700: cdpl_farm.c:1820: in _schedule(): debug: C1 in bin B1 running on slot 0
+1718725428.601181: 1283710-14845311d700: cdpl_farm.c:1686: in _schedule(): debug: idle
+1718725428.673770: 1283710-148453720700: cdpl_ipc.c:1474: in _epoll_accept(): debug: new connection from `192.168.1.130:50898'
+1718725428.673823: 1283710-14845351f700: cdpl_server_ipc.c:1089: in _sv_ipc_thread(): debug: received ACCEPT notification
+1718725428.673842: 1283710-14845351f700: cdpl_ipc.c:1973: in cdpl_ipc_host_accept(): debug: accepted host `192.168.1.130:50898'
+1718725428.673909: 1283710-14845351f700: cdpl_server_ipc.c:1110: in _sv_ipc_thread(): debug: received HELLO message
+1718725428.673914: 1283710-14845351f700: cdpl_server_ipc.c:334: in _sv_on_hello(): debug: looking up W1
+1718725428.673924: 1283710-14845351f700: cdpl_server_ipc.c:444: in _sv_on_hello(): info: W1 is `192.168.1.130:50898'
+1718725428.673928: 1283710-14845351f700: cdpl_server_ipc.c:445: in _sv_on_hello(): debug: hello W1 (B1)
+1718725428.673933: 1283710-14845351f700: cdpl_server_ipc.c:446: in _sv_on_hello(): info: W1 log file is /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK/.cdpl/worker.W1.sse506-s1.1289358.log
+1718725428.673951: 1283710-14845351f700: cdpl_server_ipc.c:474: in _sv_on_hello(): debug: up to 1 alive workers in B1
+1718725428.673973: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T0 to worker W1
+1718725428.674177: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.674181: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T0
+1718725428.674184: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T0: utime=16 stime=6
+1718725428.674188: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T0: vsize=297748 rss=28712 shared=22828 text=32628 data=13304
+1718725428.674599: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T1 in B1 (prio 0)
+1718725428.674620: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.674625: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.674637: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T1 to worker W1
+1718725428.674777: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.674781: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T1
+1718725428.674784: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T1: utime=0 stime=0
+1718725428.674787: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T1: vsize=297748 rss=28712 shared=22828 text=32628 data=13304
+1718725428.679732: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T1
+1718725428.712053: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T2 in B1 (prio 0)
+1718725428.712063: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.712066: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.712078: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T2 to worker W1
+1718725428.712823: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.712829: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T2
+1718725428.712833: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T2: utime=0 stime=0
+1718725428.712836: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T2: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.717135: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T2
+1718725428.721856: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T3 in B1 (prio 0)
+1718725428.721863: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.721866: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.721879: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T3 to worker W1
+1718725428.722511: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.722518: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T3
+1718725428.722523: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T3: utime=0 stime=1
+1718725428.722527: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T3: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.726932: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T3
+1718725428.738448: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T4 in B1 (prio 0)
+1718725428.738459: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.738463: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.738475: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T4 to worker W1
+1718725428.741604: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.741610: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T4
+1718725428.741613: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T4: utime=3 stime=0
+1718725428.741616: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T4: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.743525: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T4
+1718725428.753752: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T5 in B1 (prio 0)
+1718725428.753760: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.753763: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.753772: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T5 to worker W1
+1718725428.758157: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.758163: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T5
+1718725428.758166: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T5: utime=4 stime=0
+1718725428.758176: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T5: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.758827: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T5
+1718725428.769036: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T6 in B1 (prio 0)
+1718725428.769043: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.769046: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.769056: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T6 to worker W1
+1718725428.772404: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.772410: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T6
+1718725428.772413: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T6: utime=3 stime=0
+1718725428.772416: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T6: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.774108: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T6
+1718725428.794399: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T7 in B1 (prio 0)
+1718725428.794411: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.794415: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.794429: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T7 to worker W1
+1718725428.798885: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.798896: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T7
+1718725428.798900: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T7: utime=5 stime=0
+1718725428.798903: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T7: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.799478: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T7
+1718725428.822641: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T8 in B1 (prio 0)
+1718725428.822654: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.822658: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.822696: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T8 to worker W1
+1718725428.829021: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.829031: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T8
+1718725428.829035: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T8: utime=6 stime=0
+1718725428.829039: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T8: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.832779: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T8
+1718725428.857530: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T9 in B1 (prio 0)
+1718725428.857544: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.857547: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.857572: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T9 to worker W1
+1718725428.864783: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.864807: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T9
+1718725428.864811: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T9: utime=6 stime=1
+1718725428.864814: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T9: vsize=297876 rss=28712 shared=22828 text=32628 data=13432
+1718725428.867668: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T9
+1718725428.894195: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T10 in B1 (prio 0)
+1718725428.894210: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.894214: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.894238: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T10 to worker W1
+1718725428.900744: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.900754: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T10
+1718725428.900758: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T10: utime=6 stime=0
+1718725428.900761: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T10: vsize=297940 rss=28712 shared=22828 text=32628 data=13496
+1718725428.901241: 1283710-14845311d700: cdpl_farm.c:1730: in _schedule(): debug: waking up
+1718725428.901265: 1283710-14845311d700: cdpl_farm.c:843: in _onexit(): debug: C1 in bin B1 exited normally on slot 0
+1718725428.901269: 1283710-14845311d700: cdpl_farm.c:672: in _release_cmd(): debug: freeing command C1 in bin B1
+1718725428.901274: 1283710-14845311d700: cdpl_farm.c:1686: in _schedule(): debug: idle
+1718725428.904334: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T10
+1718725428.929246: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T11 in B1 (prio 0)
+1718725428.929256: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725428.929259: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725428.929284: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T11 to worker W1
+1718725428.943845: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725428.943853: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T11
+1718725428.943856: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T11: utime=15 stime=0
+1718725428.943859: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T11: vsize=297940 rss=30280 shared=24232 text=32628 data=13496
+1718725428.944431: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T11
+1718725429.413990: 1283710-14846ee86780: cdpl_server.c:1840: in _sv_gen_task(): info: new task T12 in B1 (prio 0)
+1718725429.414007: 1283710-14846ee86780: cdpl_compat_master.c:3319: in cdplScheduleTasks(): debug: scheduling tasks
+1718725429.414010: 1283710-14846ee86780: cdpl_server.c:1243: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1718725429.414036: 1283710-14845331e700: cdpl_server_sched.c:719: in _assign(): info: assigning task T12 to worker W1
+1718725429.434320: 1283710-14845351f700: cdpl_server_ipc.c:1115: in _sv_ipc_thread(): debug: received FINISH message
+1718725429.434340: 1283710-14845351f700: cdpl_server_ipc.c:849: in _sv_on_finish(): info: worker W1 completed task T12
+1718725429.434346: 1283710-14845351f700: cdpl_server_ipc.c:856: in _sv_on_finish(): info: stat T12: utime=20 stime=0
+1718725429.434352: 1283710-14845351f700: cdpl_server_ipc.c:864: in _sv_on_finish(): info: statm T12: vsize=298004 rss=30280 shared=24232 text=32628 data=13560
+1718725429.439295: 1283710-14846ee86780: cdpl_server.c:221: in _sv_free_task_safe(): debug: freeing task T12
+1718725429.961905: 1283710-14846ee86780: cdpl_server.c:2878: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1718725429.961925: 1283710-14846ee86780: cdpl_server.c:2900: in cdpl_sv_halt_job_errno(): debug: signal bin B1 scheduler to stop
+1718725429.961953: 1283710-14845331e700: cdpl_server_sched.c:1960: in _sv_scheduler_thread(): debug: scheduler for bin B1 stopped
+1718725429.961980: 1283710-14845331e700: cdpl_ipc.c:1269: in _host_drop__UNSAFE(): debug: dropping host `192.168.1.130:50898'
+1718725429.962052: 1283710-14845331e700: cdpl_server_sched.c:2305: in _sv_drop_worker(): debug: down to 0 alive workers in B1
+1718725429.962060: 1283710-14845331e700: cdpl_server_sched.c:2272: in _sv_record_dropped_worker(): debug: dropping worker W1
+1718725429.962067: 1283710-14845331e700: cdpl_farm.c:3118: in cdpl_farm_dismiss(): debug: down to 0 running processes
+1718725429.962074: 1283710-14845351f700: cdpl_server_ipc.c:1100: in _sv_ipc_thread(): debug: received DROP notification
+1718725429.962090: 1283710-14845331e700: cdpl_server_sched.c:113: in _free_worker_2(): debug: freeing worker W1
+1718725429.962096: 1283710-14845331e700: cdpl_ipc.c:1991: in cdpl_ipc_host_release(): debug: releasing host `192.168.1.130:50898'
+1718725429.962116: 1283710-14846ee86780: cdpl_server.c:2867: in cdpl_sv_halt_job_errno(): info: killing job J1
+1718725429.962124: 1283710-14846ee86780: cdpl_server.c:287: in _sv_free_job(): info: freeing job J1
+1718725429.962127: 1283710-14846ee86780: cdpl_server.c:91: in _sv_free_bin(): debug: freeing bin B1
+1718725429.962136: 1283710-14846ee86780: cdpl_server.c:183: in _sv_free_task(): debug: freeing task T0
+1718725431.962301: 1283710-14846ee86780: cdpl_farm.c:2138: in cdpl_farm_free(): info: freeing farm
+1718725431.962358: 1283710-14845311d700: cdpl_farm.c:1730: in _schedule(): debug: waking up
+1718725431.962384: 1283710-14845311d700: cdpl_farm.c:1737: in _schedule(): debug: dying
+1718725431.962448: 1283710-14846ee86780: cdpl_farm.c:695: in _killall(): debug: killing all remaining commands
+1718725431.962460: 1283710-14846ee86780: cdpl_server.c:2999: in cdpl_sv_free(): info: freeing server S875122000
+1718725431.962465: 1283710-14846ee86780: cdpl_server.c:2964: in cdpl_sv_kill_errno(): info: killing server
+1718725431.962469: 1283710-14846ee86780: cdpl_ipc.c:2940: in cdpl_ipc_kill(): debug: stopping event server
+1718725431.962499: 1283710-14845351f700: cdpl_server_ipc.c:1064: in _sv_ipc_thread(): debug: leaving now
+1718725431.962528: 1283710-148453720700: cdpl_ipc.c:1930: in _epoll_main(): debug: server going down...
+1718725431.962549: 1283710-14846ee86780: cdpl_server.c:327: in _sv_free_master(): info: freeing master M1
+1718725431.962555: 1283710-14846ee86780: cdpl_hash.c:64: in cdpl_h_destroy(): debug: put operations: 1
+1718725431.962558: 1283710-14846ee86780: cdpl_hash.c:65: in cdpl_h_destroy(): debug: put collisions: 0
+1718725431.962562: 1283710-14846ee86780: cdpl_hash.c:66: in cdpl_h_destroy(): debug: get operations: 0
+1718725431.962565: 1283710-14846ee86780: cdpl_hash.c:67: in cdpl_h_destroy(): debug: get iterations: 0
+1718725431.962576: 1283710-14846ee86780: cdpl_monitor.c:1328: in cdpl_mn_free(): debug: freeing monitor server
+1718725431.962581: 1283710-14846ee86780: cdpl_ipc.c:2991: in cdpl_ipc_free(): debug: releasing IPC handle
+1718725431.962585: 1283710-14846ee86780: cdpl_ipc.c:1194: in _host_free__UNSAFE(): debug: freeing host `192.168.1.130:50898'
+1718725431.962589: 1283710-14846ee86780: cdpl_ipc.c:1236: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1718725431.962608: 1283710-14846ee86780: cdpl_ipc.c:3030: in cdpl_ipc_free(): debug: done
+1718725431.962613: 1283710-14846ee86780: cdpl_log.c:370: in cdpl_log_close(): info: @@end_of_log@@

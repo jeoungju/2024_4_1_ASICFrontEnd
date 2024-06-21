@@ -1,0 +1,150 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Mon May 13 22:10:15 2024
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   out1[3]                      3.35           5.67 r        -2.32  (VIOLATED)
+   out1[4]                      3.35           5.65 r        -2.30  (VIOLATED)
+   out3[1]                      3.45           5.60 r        -2.15  (VIOLATED)
+   out3[3]                      3.45           5.60 r        -2.15  (VIOLATED)
+   out3[4]                      3.45           5.60 r        -2.15  (VIOLATED)
+   out1[2]                      3.35           5.34 r        -1.99  (VIOLATED)
+   R1_reg[2]/D                  3.00           4.95 r        -1.95  (VIOLATED)
+   R1_reg[4]/D                  3.00           4.95 r        -1.95  (VIOLATED)
+   R2_reg[1]/D                  3.00           4.95 r        -1.95  (VIOLATED)
+   R2_reg[3]/D                  3.00           4.95 r        -1.95  (VIOLATED)
+   out2[0]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[1]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[2]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[3]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[4]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out1[1]                      3.35           5.19 f        -1.84  (VIOLATED)
+   R4_reg[0]/D                  3.00           4.65 f        -1.65  (VIOLATED)
+   out3[0]                      3.45           4.96 r        -1.51  (VIOLATED)
+   out3[2]                      3.45           4.96 r        -1.51  (VIOLATED)
+   out1[0]                      3.35           4.82 f        -1.47  (VIOLATED)
+   R4_reg[1]/D                  3.00           4.25 r        -1.25  (VIOLATED)
+   R4_reg[2]/D                  3.00           4.25 r        -1.25  (VIOLATED)
+   R4_reg[3]/D                  3.00           4.25 r        -1.25  (VIOLATED)
+   R4_reg[4]/D                  3.00           4.25 r        -1.25  (VIOLATED)
+   R3_reg/D                     3.00           4.09 r        -1.09  (VIOLATED)
+   R2_reg[4]/D                  2.95           3.99 r        -1.04  (VIOLATED)
+   R1_reg[0]/D                  3.00           3.90 r        -0.90  (VIOLATED)
+   R1_reg[1]/D                  3.00           3.90 r        -0.90  (VIOLATED)
+   R1_reg[3]/D                  3.00           3.90 r        -0.90  (VIOLATED)
+   R2_reg[0]/D                  3.00           3.90 r        -0.90  (VIOLATED)
+   R2_reg[2]/D                  3.00           3.90 r        -0.90  (VIOLATED)
+
+
+   max_delay/setup ('vclk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   Cout[2]                      2.80           4.81 r        -2.01  (VIOLATED)
+   Cout[3]                      2.80           4.79 f        -1.99  (VIOLATED)
+   Cout[4]                      2.80           4.72 r        -1.92  (VIOLATED)
+   Cout[1]                      2.80           4.43 r        -1.63  (VIOLATED)
+   Cout[0]                      2.80           3.31 r        -0.51  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Mon May 13 22:10:15 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: class
+Wire Load Model Mode: top
+
+  Startpoint: R1_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out1[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R1_reg[0]/CP (FD2)                       0.00       1.00 r
+  R1_reg[0]/QN (FD2)                       1.68       2.68 r
+  U204/Z (ND2I)                            0.28       2.96 f
+  U207/Z (ND2I)                            0.25       3.21 r
+  U208/Z (ND2I)                            0.20       3.41 f
+  U209/Z (ND2I)                            0.30       3.71 r
+  U219/Z (ND2I)                            0.12       3.83 f
+  U220/Z (ND2I)                            0.25       4.08 r
+  U224/Z (ENI)                             0.74       4.82 f
+  U225/Z (B4IP)                            0.85       5.67 r
+  out1[3] (out)                            0.00       5.67 r
+  data arrival time                                   5.67
+
+  clock clk (rise edge)                    3.00       3.00
+  clock network delay (ideal)              1.00       4.00
+  clock uncertainty                       -0.15       3.85
+  output external delay                   -0.50       3.35
+  data required time                                  3.35
+  -----------------------------------------------------------
+  data required time                                  3.35
+  data arrival time                                  -5.67
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.32
+
+
+  Startpoint: sel (input port clocked by clk)
+  Endpoint: Cout[2] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     0.40       1.40 f
+  sel (in)                                 0.28       1.68 f
+  U109/Y (IVDA)                            0.75       2.43 r
+  U140/Z (ND2I)                            0.12       2.55 f
+  U124/Z (NR2I)                            0.57       3.12 r
+  U132/Z (ND2I)                            0.12       3.24 f
+  U128/Z (ND2I)                            0.29       3.53 r
+  U203/Z2 (B2IP)                           1.28       4.81 r
+  Cout[2] (out)                            0.00       4.81 r
+  data arrival time                                   4.81
+
+  clock vclk (rise edge)                   3.00       3.00
+  clock network delay (ideal)              0.00       3.00
+  output external delay                   -0.20       2.80
+  data required time                                  2.80
+  -----------------------------------------------------------
+  data required time                                  2.80
+  data arrival time                                  -4.81
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.01
+
+
+1

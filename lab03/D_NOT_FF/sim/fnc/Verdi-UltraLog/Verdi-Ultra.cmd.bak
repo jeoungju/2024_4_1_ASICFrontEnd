@@ -1,0 +1,95 @@
+simSetSimulator "-vcssv" -exec "./simv" -args
+debImport "-sv" "-dbdir" "./simv.daidir" "-f" "run.f"
+wvCreateWindow
+wvOpenFile -win $_nWave2 \
+           {/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab03/D_NOT_FF/sim/fnc/wave.fsdb}
+srcHBSelect "testbench.u_d_not_ff" -win $_nTrace1
+wvCreateWindow
+schCreateWindow -delim "." -win $_nSchema1 -scope "testbench"
+schSetOptions -win $_nSchema4 -portName on
+schSetOptions -win $_nSchema4 -pinName on
+schSetOptions -win $_nSchema4 -instName on
+schSetOptions -win $_nSchema4 -completeName on
+schSetOptions -win $_nSchema4 -localNetName on
+schSetOptions -win $_nSchema4 -parameterList on
+schSetOptions -win $_nSchema4 -highContrastMode on
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvOpenFile -win $_nWave3 \
+           {/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab03/D_FF/sim/fnc/test.fsdb}
+schSelect -win $_nSchema4 -inst "u_d_not_ff"
+schSelect -win $_nSchema4 -inst "u_d_not_ff"
+schSelect -win $_nSchema4 -inst "u_d_not_ff"
+wvAddSignal -win $_nWave3 "/testbench/q" "/testbench/d" "/testbench/n_rst" \
+           "/testbench/clk"
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSetCursor -win $_nWave3 1.047373 -snap {("G2" 0)}
+wvZoomAll -win $_nWave3
+wvSelectGroup -win $_nWave3 {G2}
+wvSelectSignal -win $_nWave3 {( "G1" 4 )} 
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvSetPosition -win $_nWave3 {("G1" 1)}
+wvSelectSignal -win $_nWave3 {( "G1" 4 )} 
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSetPosition -win $_nWave3 {("G1" 2)}
+wvSetPosition -win $_nWave3 {("G1" 1)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 1)}
+wvSetPosition -win $_nWave3 {("G1" 2)}
+wvSelectSignal -win $_nWave3 {( "G1" 4 )} 
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 2)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 2)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSelectGroup -win $_nWave3 {G2}
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 2)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 2)}
+wvSetPosition -win $_nWave3 {("G1" 5)}
+wvSetPosition -win $_nWave3 {("G1" 5)}
+wvSetPosition -win $_nWave3 {("G1" 2)}
+wvSelectGroup -win $_nWave3 {G2}
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvSetPosition -win $_nWave3 {("G1" 5)}
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSetPosition -win $_nWave3 {("G1" 6)}
+wvSetPosition -win $_nWave3 {("G1" 6)}
+wvSetPosition -win $_nWave3 {("G1" 4)}
+wvSelectGroup -win $_nWave3 {G1}
+wvSetCursor -win $_nWave3 2.499771 -snap {("G1" 6)}
+wvRenameGroup -win $_nWave3 {G1} {CLK & N_RST}
+wvSelectGroup -win $_nWave3 {G2}
+wvSelectGroup -win $_nWave3 {CLK & N_RST/G2}
+wvSelectSignal -win $_nWave3 {( "CLK & N_RST" 2 )} 
+wvSelectGroup -win $_nWave3 {CLK & N_RST/G2}
+wvRenameGroup -win $_nWave3 {CLK & N_RST/G2} {Input}
+wvSelectGroup -win $_nWave3 {CLK & N_RST/G2}
+wvRenameGroup -win $_nWave3 {CLK & N_RST/G2} {Output}
+wvSetCursor -win $_nWave3 16.675690 -snap {("G2" 0)}
+wvSetCursor -win $_nWave3 25.820423 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave3 {( "CLK & N_RST" 4 )} 
+wvSelectSignal -win $_nWave3 {( "CLK & N_RST" 2 )} 
+wvChangeDisplayAttr -win $_nWave3 -c ID_RED5 -lw 1 -ls solid
+wvChangeDisplayAttr -win $_nWave3 -default
+wvSetCursor -win $_nWave3 17.181973 -snap {("CLK & N_RST" 4)}
+wvSetCursor -win $_nWave3 15.473268 -snap {("G2" 0)}
+wvSelectGroup -win $_nWave3 {G2}
+debExit

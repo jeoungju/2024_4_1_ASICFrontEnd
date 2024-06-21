@@ -1,0 +1,248 @@
+
+
+##################################################################################
+# © 2002-2018 Synopsys, Inc. This Synopsys product and all associated
+# documentation and files are proprietary to Synopsys, Inc. and may only be
+# used pursuant to the terms and conditions of a written license agreement with
+# Synopsys, Inc. All other use, reproduction, modification, or distribution of
+# the Synopsys product or the associated documentation or files is strictly
+# prohibited.
+##################################################################################
+
+
+
+guide
+
+## Operation Id: 1
+guide_environment \
+  { { dc_product_version O-2018.06-SP5-5 } \
+    { dc_product_build_date { Sep 04, 2019 } } \
+    { bus_dimension_separator_style ][ } \
+    { bus_extraction_style %s\[%d:%d\] } \
+    { bus_multiple_separator_style , } \
+    { bus_naming_style %s[%d] } \
+    { bus_range_separator_style : } \
+    { dc_allow_rtl_pg false } \
+    { hdlin_allow_4state_parameters TRUE } \
+    { hdlin_enable_hier_naming FALSE } \
+    { hdlin_enable_upf_compatible_naming FALSE } \
+    { hdlin_generate_naming_style %s_%d } \
+    { hdlin_generate_separator_style _ } \
+    { hdlin_infer_enumerated_types FALSE } \
+    { hdlin_interface_port_downto FALSE } \
+    { hdlin_optimize_enum_types FALSE } \
+    { hdlin_preserve_sequential none } \
+    { hdlin_sverilog_std 2012 } \
+    { hdlin_sv_packages dont_chain } \
+    { hdlin_sv_union_member_naming FALSE } \
+    { hdlin_vhdl_std 2008 } \
+    { hdlin_vrlg_std 2005 } \
+    { hdlin_while_loop_iterations 4096 } \
+    { link_portname_allow_period_to_match_underscore false } \
+    { link_portname_allow_square_bracket_to_match_underscore false } \
+    { port_complement_naming_style %s_BAR } \
+    { simplified_verification_mode FALSE } \
+    { template_naming_style %s_%p } \
+    { template_parameter_style %s%d } \
+    { template_separator_style _ } \
+    { upf_iso_filter_elements_with_applies_to ENABLE } \
+    { upf_isols_allow_instances_in_elements true } \
+    { link_library { class.db dw_foundation.sldb } } \
+    { target_library class.db } \
+    { search_path { /tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn    ../rtl/  scr } } \
+    { synopsys_root /tools/synopsys/syn/O-2018.06-SP5-5 } \
+    { cwd /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/syn } \
+    { current_design top } } 
+
+## Operation Id: 2
+guide_uniquify \
+  -design { top } \
+  { { u_full_adder_16bit/u_F_A15 F_A_0 } \
+    { u_full_adder_16bit/u_F_A14 F_A_1 } \
+    { u_full_adder_16bit/u_F_A13 F_A_2 } \
+    { u_full_adder_16bit/u_F_A12 F_A_3 } \
+    { u_full_adder_16bit/u_F_A11 F_A_4 } \
+    { u_full_adder_16bit/u_F_A10 F_A_5 } \
+    { u_full_adder_16bit/u_F_A9 F_A_6 } \
+    { u_full_adder_16bit/u_F_A8 F_A_7 } \
+    { u_full_adder_16bit/u_F_A7 F_A_8 } \
+    { u_full_adder_16bit/u_F_A6 F_A_9 } \
+    { u_full_adder_16bit/u_F_A5 F_A_10 } \
+    { u_full_adder_16bit/u_F_A4 F_A_11 } \
+    { u_full_adder_16bit/u_F_A3 F_A_12 } \
+    { u_full_adder_16bit/u_F_A2 F_A_13 } \
+    { u_full_adder_16bit/u_F_A1 F_A_14 } \
+    { u_full_adder_16bit/u_F_A0 F_A_15 } } 
+
+## Operation Id: 3
+guide_ununiquify \
+  -design { top } \
+  { { u_full_adder_16bit/u_F_A14 F_A_0 } \
+    { u_full_adder_16bit/u_F_A13 F_A_0 } \
+    { u_full_adder_16bit/u_F_A12 F_A_0 } \
+    { u_full_adder_16bit/u_F_A11 F_A_0 } \
+    { u_full_adder_16bit/u_F_A10 F_A_0 } \
+    { u_full_adder_16bit/u_F_A9 F_A_0 } \
+    { u_full_adder_16bit/u_F_A8 F_A_0 } \
+    { u_full_adder_16bit/u_F_A7 F_A_0 } \
+    { u_full_adder_16bit/u_F_A6 F_A_0 } \
+    { u_full_adder_16bit/u_F_A5 F_A_0 } \
+    { u_full_adder_16bit/u_F_A4 F_A_0 } \
+    { u_full_adder_16bit/u_F_A3 F_A_0 } \
+    { u_full_adder_16bit/u_F_A2 F_A_0 } \
+    { u_full_adder_16bit/u_F_A1 F_A_0 } \
+    { u_full_adder_16bit/u_F_A0 F_A_0 } } 
+
+## Operation Id: 4
+guide_ungroup \
+  -cells { u_full_adder_16bit } \
+  -design { top } 
+
+## Operation Id: 5
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A0 } \
+  -design { top } 
+
+## Operation Id: 6
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A15 } \
+  -design { top } 
+
+## Operation Id: 7
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A14 } \
+  -design { top } 
+
+## Operation Id: 8
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A13 } \
+  -design { top } 
+
+## Operation Id: 9
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A12 } \
+  -design { top } 
+
+## Operation Id: 10
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A11 } \
+  -design { top } 
+
+## Operation Id: 11
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A10 } \
+  -design { top } 
+
+## Operation Id: 12
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A9 } \
+  -design { top } 
+
+## Operation Id: 13
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A8 } \
+  -design { top } 
+
+## Operation Id: 14
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A7 } \
+  -design { top } 
+
+## Operation Id: 15
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A6 } \
+  -design { top } 
+
+## Operation Id: 16
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A5 } \
+  -design { top } 
+
+## Operation Id: 17
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A4 } \
+  -design { top } 
+
+## Operation Id: 18
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A3 } \
+  -design { top } 
+
+## Operation Id: 19
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A2 } \
+  -design { top } 
+
+## Operation Id: 20
+guide_ungroup \
+  -cells { u_full_adder_16bit/u_F_A1 } \
+  -design { top } 
+
+## Operation Id: 21
+guide_environment \
+  { { link_library { class.db dw_foundation.sldb } } } 
+
+## Operation Id: 22
+guide_environment \
+  { { link_library class.db } } 
+
+## Operation Id: 23
+guide_change_names \
+  -design { top } \
+  { { cell A_d_reg[15] A_d_reg_15_ } \
+    { cell A_d_reg[14] A_d_reg_14_ } \
+    { cell A_d_reg[13] A_d_reg_13_ } \
+    { cell A_d_reg[12] A_d_reg_12_ } \
+    { cell A_d_reg[11] A_d_reg_11_ } \
+    { cell A_d_reg[10] A_d_reg_10_ } \
+    { cell A_d_reg[9] A_d_reg_9_ } \
+    { cell A_d_reg[8] A_d_reg_8_ } \
+    { cell A_d_reg[7] A_d_reg_7_ } \
+    { cell A_d_reg[6] A_d_reg_6_ } \
+    { cell A_d_reg[5] A_d_reg_5_ } \
+    { cell A_d_reg[4] A_d_reg_4_ } \
+    { cell A_d_reg[3] A_d_reg_3_ } \
+    { cell A_d_reg[2] A_d_reg_2_ } \
+    { cell A_d_reg[1] A_d_reg_1_ } \
+    { cell A_d_reg[0] A_d_reg_0_ } \
+    { cell B_d_reg[15] B_d_reg_15_ } \
+    { cell B_d_reg[14] B_d_reg_14_ } \
+    { cell B_d_reg[13] B_d_reg_13_ } \
+    { cell B_d_reg[12] B_d_reg_12_ } \
+    { cell B_d_reg[11] B_d_reg_11_ } \
+    { cell B_d_reg[10] B_d_reg_10_ } \
+    { cell B_d_reg[9] B_d_reg_9_ } \
+    { cell B_d_reg[8] B_d_reg_8_ } \
+    { cell B_d_reg[7] B_d_reg_7_ } \
+    { cell B_d_reg[6] B_d_reg_6_ } \
+    { cell B_d_reg[5] B_d_reg_5_ } \
+    { cell B_d_reg[4] B_d_reg_4_ } \
+    { cell B_d_reg[3] B_d_reg_3_ } \
+    { cell B_d_reg[2] B_d_reg_2_ } \
+    { cell B_d_reg[1] B_d_reg_1_ } \
+    { cell B_d_reg[0] B_d_reg_0_ } \
+    { cell sum_dd_reg[15] sum_dd_reg_15_ } \
+    { cell sum_dd_reg[14] sum_dd_reg_14_ } \
+    { cell sum_dd_reg[13] sum_dd_reg_13_ } \
+    { cell sum_dd_reg[12] sum_dd_reg_12_ } \
+    { cell sum_dd_reg[11] sum_dd_reg_11_ } \
+    { cell sum_dd_reg[10] sum_dd_reg_10_ } \
+    { cell sum_dd_reg[9] sum_dd_reg_9_ } \
+    { cell sum_dd_reg[8] sum_dd_reg_8_ } \
+    { cell sum_dd_reg[7] sum_dd_reg_7_ } \
+    { cell sum_dd_reg[6] sum_dd_reg_6_ } \
+    { cell sum_dd_reg[5] sum_dd_reg_5_ } \
+    { cell sum_dd_reg[4] sum_dd_reg_4_ } \
+    { cell sum_dd_reg[3] sum_dd_reg_3_ } \
+    { cell sum_dd_reg[2] sum_dd_reg_2_ } \
+    { cell sum_dd_reg[1] sum_dd_reg_1_ } \
+    { cell sum_dd_reg[0] sum_dd_reg_0_ } \
+    { net sum_d[0] sum_d_0_ } } 
+
+## Operation Id: 24
+guide_environment \
+  { { write_file { -format verilog -hierarchy -output net/top_net.v } } \
+    { write_file { -format ddc -hierarchy -output mapped/top_mapped.ddc } } } 
+
+setup
+

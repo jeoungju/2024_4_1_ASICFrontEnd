@@ -1,0 +1,72 @@
+1718631601.229613: 3599798-1506d8c124c0: cdpl_log.c:221: in cdpl_log_open(): debug: @@start_of_log@@
+1718631601.229627: 3599798-1506d8c124c0: cdpl_log.c:729: in cdpl_log_dump_sysinfo(): info: time: 2024/06/17 22:40:01 KST +0900
+1718631601.229631: 3599798-1506d8c124c0: cdpl_log.c:731: in cdpl_log_dump_sysinfo(): info: version: P_2019.03_SP1_PROD_CDPL 
+1718631601.229633: 3599798-1506d8c124c0: cdpl_log.c:736: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-513.11.1.el8_9.x86_64 #1 SMP Wed Jan 10 22:58:54 UTC 2024
+1718631601.229635: 3599798-1506d8c124c0: cdpl_log.c:740: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1718631601.229638: 3599798-1506d8c124c0: cdpl_log.c:742: in cdpl_log_dump_sysinfo(): info: hostname: sse506-s1
+1718631601.229640: 3599798-1506d8c124c0: cdpl_log.c:223: in cdpl_log_open(): debug: path: /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK1/.cdpl/worker.W1.sse506-s1.3599798.log
+1718631601.229642: 3599798-1506d8c124c0: cdpl_log.c:224: in cdpl_log_open(): debug: dir: /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK1/.cdpl
+1718631601.229645: 3599798-1506d8c124c0: cdpl_worker.c:892: in cdpl_wk_new(): info: creating worker instance
+1718631601.229649: 3599798-1506d8c124c0: cdpl_ipc.c:2765: in cdpl_ipc_init(): info: using IPv4 protocol
+1718631601.233141: 3599798-1506d8c124c0: cdpl_worker.c:1126: in cdpl_wk_start(): debug: starting worker
+1718631601.233152: 3599798-1506d8c124c0: cdpl_worker.c:331: in cdpl_wk_setup(): info: CDPL_SERVER is "192.168.1.130:41685"
+1718631601.233158: 3599798-1506d8c124c0: cdpl_worker.c:354: in cdpl_wk_setup(): info: server 192.168.1.130, port 41685
+1718631601.233162: 3599798-1506d8c124c0: cdpl_worker.c:374: in cdpl_wk_setup(): info: CDPL_ID is "1:1:1:1:2021553118"
+1718631601.233169: 3599798-1506d8c124c0: cdpl_worker.c:422: in cdpl_wk_setup(): info: we are W1-B1-J1-M1-S2021553118
+1718631601.233174: 3599798-1506d8c124c0: cdpl_worker.c:424: in cdpl_wk_setup(): info: we are on host sse506-s1
+1718631601.233178: 3599798-1506d8c124c0: cdpl_worker.c:450: in cdpl_wk_daemonize(): debug: will *not* daemonize
+1718631601.233183: 3599798-1506d8c124c0: cdpl_ipc.c:3064: in cdpl_ipc_connect(): info: connecting to 192.168.1.130:41685
+1718631601.233267: 3599798-1506d8c124c0: cdpl_ipc.c:3133: in cdpl_ipc_connect(): info: connected as `192.168.1.130:37368'
+1718631601.233279: 3599798-1506d8c124c0: cdpl_ipc.c:1990: in cdpl_ipc_host_accept(): debug: accepted host `192.168.1.130:41685'
+1718631601.233286: 3599798-1506d8c124c0: cdpl_ipc.c:2907: in cdpl_ipc_start(): debug: starting IPC server 192.168.1.130:40005
+1718631601.233450: 3599798-1506c906c700: cdpl_worker.c:692: in cdpl_wk_listen(): debug: ready
+1718631601.233471: 3599798-1506d8c124c0: cdpl_compat_worker.c:302: in cdplStartWorker(): info: SNPSLMD_LICENSE_FILE is 27020@smu409-01:27020@117.16.175.176
+1718631601.233601: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.233664: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T0
+1718631601.233695: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T0
+1718631601.236438: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.236451: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T1
+1718631601.236481: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T1
+1718631601.273445: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.273458: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T2
+1718631601.273973: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T2
+1718631601.282618: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.282632: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T3
+1718631601.283139: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T3
+1718631601.298232: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.298245: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T4
+1718631601.301055: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T4
+1718631601.313163: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.313176: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T5
+1718631601.316994: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T5
+1718631601.328157: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.328173: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T6
+1718631601.331138: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T6
+1718631601.352591: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.352610: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T7
+1718631601.356787: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T7
+1718631601.381360: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.381381: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T8
+1718631601.387535: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T8
+1718631601.414717: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.414737: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T9
+1718631601.421744: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T9
+1718631601.448576: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.448594: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T10
+1718631601.454657: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T10
+1718631601.483154: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.483174: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T11
+1718631601.497399: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T11
+1718631601.963976: 3599798-1506c906c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received ASSIGN message
+1718631601.964003: 3599798-1506d8c124c0: cdpl_worker.c:1303: in cdpl_wk_wait_timeout(): info: starting task T12
+1718631601.984014: 3599798-1506d8c124c0: cdpl_worker.c:1419: in cdpl_wk_finalize(): info: finishing task T12
+1718631602.434807: 3599798-1506c926d700: cdpl_ipc.c:802: in _readv(): warning: read(): EOF
+1718631602.434829: 3599798-1506c926d700: cdpl_ipc.c:1675: in _epoll_recv(): debug: _readv(): Broken pipe
+1718631602.434834: 3599798-1506c926d700: cdpl_ipc.c:1910: in _epoll_main(): debug: _epoll_recv(): Broken pipe
+1718631602.434840: 3599798-1506c926d700: cdpl_ipc.c:1286: in _host_drop__UNSAFE(): debug: dropping host `192.168.1.130:41685'
+1718631602.434901: 3599798-1506c906c700: cdpl_worker.c:725: in cdpl_wk_listen(): debug: received DROP notification
+1718631602.434913: 3599798-1506c906c700: cdpl_worker.c:729: in cdpl_wk_listen(): debug: we were dropped by the server
+1718631602.434917: 3599798-1506c906c700: cdpl_worker.c:570: in _wk_kill(): debug: killing worker
+1718631602.434921: 3599798-1506c906c700: cdpl_ipc.c:2952: in cdpl_ipc_kill(): debug: stopping event server
+1718631602.434934: 3599798-1506c906c700: cdpl_worker.c:706: in cdpl_wk_listen(): debug: leaving now
+1718631602.434937: 3599798-1506c926d700: cdpl_ipc.c:1947: in _epoll_main(): debug: server going down...

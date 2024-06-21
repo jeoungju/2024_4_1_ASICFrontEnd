@@ -1,0 +1,49 @@
+debImport "-sv" "-f" "run.f"
+srcHBSelect "testbench.u_top" -win $_nTrace1
+wvCreateWindow
+schCreateWindow -delim "." -win $_nSchema1 -scope "testbench"
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 \
+           {/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/sim/fnc/test.fsdb}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/testbench"
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/testbench/clk} \
+{/testbench/n_rst} \
+{/testbench/r_addr\[10:0\]} \
+{/testbench/xn_data\[7:0\]} \
+{/testbench/yn_data\[7:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetCursor -win $_nWave2 132.485830 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/testbench/clk} \
+{/testbench/n_rst} \
+{/testbench/r_addr\[10:0\]} \
+{/testbench/xn_data\[7:0\]} \
+{/testbench/yn_data\[7:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvGetSignalClose -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSetRadix -win $_nWave2 -2Com
+wvBusWaveform -win $_nWave2 -analog
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetCursor -win $_nWave2 458.443031 -snap {("G1" 5)}
+wvZoomAll -win $_nWave2
+wvSetCursor -win $_nWave2 14247.484095 -snap {("G1" 5)}
+debExit

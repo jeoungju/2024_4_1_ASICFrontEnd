@@ -1,0 +1,164 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 11 22:29:40 2024
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   out1[4]                      3.35           5.93 r        -2.58  (VIOLATED)
+   out1[3]                      3.35           5.67 r        -2.32  (VIOLATED)
+   out1[0]                      3.35           5.36 r        -2.01  (VIOLATED)
+   out1[2]                      3.35           5.32 r        -1.97  (VIOLATED)
+   out1[1]                      3.35           5.29 f        -1.94  (VIOLATED)
+   out2[0]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[1]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[2]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[3]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[4]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out3[1]                      3.45           5.23 r        -1.78  (VIOLATED)
+   out3[2]                      3.45           5.23 r        -1.78  (VIOLATED)
+   out3[0]                      3.45           5.07 r        -1.62  (VIOLATED)
+   out3[3]                      3.45           5.07 r        -1.62  (VIOLATED)
+   out3[4]                      3.45           5.07 r        -1.62  (VIOLATED)
+   R4_reg[1]/D                  3.00           4.58 r        -1.58  (VIOLATED)
+   R4_reg[2]/D                  3.00           4.53 r        -1.53  (VIOLATED)
+   R4_reg[3]/D                  3.00           4.37 r        -1.37  (VIOLATED)
+   R4_reg[4]/D                  3.00           4.27 r        -1.27  (VIOLATED)
+   R1_reg[1]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[2]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[3]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[4]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R2_reg[2]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R2_reg[3]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R2_reg[4]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[0]/D                  3.00           3.73 r        -0.73  (VIOLATED)
+   R2_reg[0]/D                  3.00           3.73 r        -0.73  (VIOLATED)
+   R2_reg[1]/D                  3.00           3.73 r        -0.73  (VIOLATED)
+   R4_reg[0]/D                  3.00           3.60 f        -0.60  (VIOLATED)
+   R3_reg/D                     3.00           3.27 r        -0.27  (VIOLATED)
+
+
+   max_delay/setup ('vclk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   Cout[4]                      2.80           4.98 r        -2.18  (VIOLATED)
+   Cout[3]                      2.80           4.75 r        -1.95  (VIOLATED)
+   Cout[1]                      2.80           4.67 r        -1.87  (VIOLATED)
+   Cout[2]                      2.80           4.67 r        -1.87  (VIOLATED)
+   Cout[0]                      2.80           3.64 r        -0.84  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 11 22:29:40 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: class
+Wire Load Model Mode: top
+
+  Startpoint: R1_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out1[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R1_reg[0]/CP (FD2)                       0.00       1.00 r
+  R1_reg[0]/Q (FD2)                        1.44       2.44 f
+  U63/Z (IVI)                              0.24       2.68 r
+  U112/Z (ND2I)                            0.12       2.81 f
+  U115/Z (IVI)                             0.24       3.05 r
+  U117/Z (ND2I)                            0.12       3.17 f
+  U118/Z (ND2I)                            0.30       3.46 r
+  U120/Z (IVI)                             0.12       3.59 f
+  U123/Z (ND2I)                            0.25       3.84 r
+  U124/Z (ND2I)                            0.12       3.96 f
+  U126/Z (ND2I)                            0.25       4.21 r
+  U128/Z (ND2I)                            0.12       4.33 f
+  U67/Z (ENI)                              0.74       5.07 f
+  U68/Z (B4IP)                             0.85       5.93 r
+  out1[4] (out)                            0.00       5.93 r
+  data arrival time                                   5.93
+
+  clock clk (rise edge)                    3.00       3.00
+  clock network delay (ideal)              1.00       4.00
+  clock uncertainty                       -0.15       3.85
+  output external delay                   -0.50       3.35
+  data required time                                  3.35
+  -----------------------------------------------------------
+  data required time                                  3.35
+  data arrival time                                  -5.93
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.58
+
+
+  Startpoint: Cin1[0] (input port clocked by vclk)
+  Endpoint: Cout[4] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  Cin1[0] (in)                             0.37       0.57 r
+  u_combo/Cin1[0] (combo)                  0.00       0.57 r
+  u_combo/U43/Z (IVI)                      0.18       0.76 f
+  u_combo/U44/Z (ND2I)                     0.30       1.05 r
+  u_combo/U21/Z (IVI)                      0.12       1.18 f
+  u_combo/U22/Z (ND2I)                     0.29       1.47 r
+  u_combo/U42/Z (AO3P)                     0.50       1.96 f
+  u_combo/U40/Z (ND2I)                     0.25       2.22 r
+  u_combo/U73/Z (ND2I)                     0.12       2.34 f
+  u_combo/U74/Z (NR2I)                     0.57       2.91 r
+  u_combo/U79/Z (NR2I)                     0.20       3.11 f
+  u_combo/U80/Z (ND2I)                     0.25       3.36 r
+  u_combo/U81/Z (ND2I)                     0.12       3.49 f
+  u_combo/U92/Z (ND2I)                     0.37       3.85 r
+  u_combo/Cout[4] (combo)                  0.00       3.85 r
+  U59/Z (B4I)                              0.28       4.13 f
+  U60/Z (B4IP)                             0.85       4.98 r
+  Cout[4] (out)                            0.00       4.98 r
+  data arrival time                                   4.98
+
+  clock vclk (rise edge)                   3.00       3.00
+  clock network delay (ideal)              0.00       3.00
+  output external delay                   -0.20       2.80
+  data required time                                  2.80
+  -----------------------------------------------------------
+  data required time                                  2.80
+  data arrival time                                  -4.98
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.18
+
+
+1

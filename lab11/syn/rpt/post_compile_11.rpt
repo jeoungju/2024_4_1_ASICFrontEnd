@@ -1,0 +1,148 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Mon Jun 17 01:25:13 2024
+****************************************
+
+This design has no violated constraints.
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Mon Jun 17 01:25:13 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: class
+Wire Load Model Mode: top
+
+  Startpoint: A[0] (input port clocked by clk)
+  Endpoint: A_d_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     0.45       1.45 r
+  A[0] (in)                                0.20       1.65 r
+  A_d_reg[0]/D (FD2)                       0.00       1.65 r
+  data arrival time                                   1.65
+
+  clock clk (rise edge)                    9.00       9.00
+  clock network delay (ideal)              1.00      10.00
+  clock uncertainty                       -0.15       9.85
+  A_d_reg[0]/CP (FD2)                      0.00       9.85 r
+  library setup time                      -0.85       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.65
+  -----------------------------------------------------------
+  slack (MET)                                         7.35
+
+
+  Startpoint: sum_dd_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sum[0] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  sum_dd_reg[0]/CP (FD2)                   0.00       1.00 r
+  sum_dd_reg[0]/Q (FD2)                    5.62       6.62 r
+  sum[0] (out)                             0.00       6.62 r
+  data arrival time                                   6.62
+
+  clock clk (rise edge)                    9.00       9.00
+  clock network delay (ideal)              1.00      10.00
+  clock uncertainty                       -0.15       9.85
+  output external delay                   -0.50       9.35
+  data required time                                  9.35
+  -----------------------------------------------------------
+  data required time                                  9.35
+  data arrival time                                  -6.62
+  -----------------------------------------------------------
+  slack (MET)                                         2.73
+
+
+  Startpoint: B_d_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sum_dd_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  B_d_reg[1]/CP (FD2)                      0.00       1.00 r
+  B_d_reg[1]/Q (FD2)                       1.88       2.88 r
+  U140/Z (ND2I)                            0.20       3.08 f
+  U141/Z (AN2I)                            0.61       3.69 f
+  U144/Z (ND2I)                            0.25       3.94 r
+  U145/Z (ND2I)                            0.20       4.14 f
+  U146/Z (ND2I)                            0.25       4.39 r
+  U147/Z (ND2I)                            0.20       4.59 f
+  U148/Z (ND2I)                            0.25       4.84 r
+  U149/Z (ND2I)                            0.12       4.96 f
+  U151/Z (ND2I)                            0.30       5.26 r
+  U152/Z (ND2I)                            0.12       5.38 f
+  U154/Z (ND2I)                            0.30       5.68 r
+  U155/Z (ND2I)                            0.12       5.80 f
+  U157/Z (ND2I)                            0.30       6.10 r
+  U158/Z (ND2I)                            0.12       6.22 f
+  U160/Z (ND2I)                            0.30       6.51 r
+  U161/Z (ND2I)                            0.12       6.64 f
+  U163/Z (ND2I)                            0.25       6.89 r
+  U164/Z (ND2I)                            0.12       7.01 f
+  U166/Z (ND2I)                            0.30       7.31 r
+  U167/Z (ND2I)                            0.12       7.43 f
+  U169/Z (ND2I)                            0.30       7.72 r
+  U170/Z (ND2I)                            0.12       7.84 f
+  U172/Z (ND2I)                            0.30       8.14 r
+  U173/Z (ND2I)                            0.12       8.26 f
+  U175/Z (ND2I)                            0.30       8.56 r
+  U212/Z (ENI)                             0.42       8.98 f
+  sum_dd_reg[15]/D (FD2)                   0.00       8.98 f
+  data arrival time                                   8.98
+
+  clock clk (rise edge)                    9.00       9.00
+  clock network delay (ideal)              1.00      10.00
+  clock uncertainty                       -0.15       9.85
+  sum_dd_reg[15]/CP (FD2)                  0.00       9.85 r
+  library setup time                      -0.85       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -8.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1

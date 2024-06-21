@@ -1,0 +1,770 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version O-2018.06-SP5-5 for linux64 - Sep 04, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# .tcl file
+read_verilog {my_design.v combo.v}
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/gtech.db'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'class'
+  Loading link library 'gtech'
+Loading verilog files: '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/my_design.v' '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/combo.v' 
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/my_design.v
+Compiling source file /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/combo.v
+
+Inferred memory devices in process
+	in routine my_design line 21 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R1_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine my_design line 30 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R2_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine my_design line 39 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R3_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine my_design line 48 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R4_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/rtl/my_design.db:my_design'
+Loaded 2 designs.
+Current design is 'my_design'.
+my_design combo
+current_design my_design
+Current design is 'my_design'.
+{my_design}
+write_file -format ddc -hier -output unmapped/my_design_unmapped.ddc
+Writing ddc file 'unmapped/my_design_unmapped.ddc'.
+1
+# 
+redirect -tee -file rpt/pre_compile.rpt {link}
+
+  Linking design 'my_design'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  class (library)             /tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db
+
+1
+redirect -append -tee -file rpt/pre_compile.rpt {check_design}   
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP5-5
+Date:        Thu Apr 25 01:32:10 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Shorted outputs (LINT-31)                                       4
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'combo', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'combo', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[0]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[1]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[2]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[3]'. (LINT-31)
+1
+redirect -append -tee -file rpt/pre_compile.rpt {source my_design.con}
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+1
+redirect -append -tee -file rpt/pre_compile.rpt {report_port -verbose}
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : port
+        -verbose
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:10 2024
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+Cin1[0]        in      0.0000   0.0000   --      10.00   --         
+Cin1[1]        in      0.0000   0.0000   --      10.00   --         
+Cin1[2]        in      0.0000   0.0000   --      10.00   --         
+Cin1[3]        in      0.0000   0.0000   --      10.00   --         
+Cin1[4]        in      0.0000   0.0000   --      10.00   --         
+Cin2[0]        in      0.0000   0.0000   --      10.00   --         
+Cin2[1]        in      0.0000   0.0000   --      10.00   --         
+Cin2[2]        in      0.0000   0.0000   --      10.00   --         
+Cin2[3]        in      0.0000   0.0000   --      10.00   --         
+Cin2[4]        in      0.0000   0.0000   --      10.00   --         
+clk            in      0.0000   0.0000   --      --      --         
+data1[0]       in      0.0000   0.0000   --      10.00   --         
+data1[1]       in      0.0000   0.0000   --      10.00   --         
+data1[2]       in      0.0000   0.0000   --      10.00   --         
+data1[3]       in      0.0000   0.0000   --      10.00   --         
+data1[4]       in      0.0000   0.0000   --      10.00   --         
+data2[0]       in      0.0000   0.0000   --      10.00   --         
+data2[1]       in      0.0000   0.0000   --      10.00   --         
+data2[2]       in      0.0000   0.0000   --      10.00   --         
+data2[3]       in      0.0000   0.0000   --      10.00   --         
+data2[4]       in      0.0000   0.0000   --      10.00   --         
+n_rst          in      0.0000   0.0000   --      10.00   --         
+sel            in      0.0000   0.0000   --      10.00   --         
+Cout[0]        out    30.0000   0.0000   --      --      --         
+Cout[1]        out    30.0000   0.0000   --      --      --         
+Cout[2]        out    30.0000   0.0000   --      --      --         
+Cout[3]        out    30.0000   0.0000   --      --      --         
+Cout[4]        out    30.0000   0.0000   --      --      --         
+out1[0]        out    30.0000   0.0000   --      --      --         
+out1[1]        out    30.0000   0.0000   --      --      --         
+out1[2]        out    30.0000   0.0000   --      --      --         
+out1[3]        out    30.0000   0.0000   --      --      --         
+out1[4]        out    30.0000   0.0000   --      --      --         
+out2[0]        out    30.0000   0.0000   --      --      --         
+out2[1]        out    30.0000   0.0000   --      --      --         
+out2[2]        out    30.0000   0.0000   --      --      --         
+out2[3]        out    30.0000   0.0000   --      --      --         
+out2[4]        out    30.0000   0.0000   --      --      --         
+out3[0]        out    30.0000   0.0000   --      --      --         
+out3[1]        out    30.0000   0.0000   --      --      --         
+out3[2]        out    30.0000   0.0000   --      --      --         
+out3[3]        out    30.0000   0.0000   --      --      --         
+out3[4]        out    30.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+Cin1[0]            1      --              --              --        -- 
+Cin1[1]            1      --              --              --        -- 
+Cin1[2]            1      --              --              --        -- 
+Cin1[3]            1      --              --              --        -- 
+Cin1[4]            1      --              --              --        -- 
+Cin2[0]            1      --              --              --        -- 
+Cin2[1]            1      --              --              --        -- 
+Cin2[2]            1      --              --              --        -- 
+Cin2[3]            1      --              --              --        -- 
+Cin2[4]            1      --              --              --        -- 
+clk                1      --              --              --        -- 
+data1[0]           1      --              --              --        -- 
+data1[1]           1      --              --              --        -- 
+data1[2]           1      --              --              --        -- 
+data1[3]           1      --              --              --        -- 
+data1[4]           1      --              --              --        -- 
+data2[0]           1      --              --              --        -- 
+data2[1]           1      --              --              --        -- 
+data2[2]           1      --              --              --        -- 
+data2[3]           1      --              --              --        -- 
+data2[4]           1      --              --              --        -- 
+n_rst              1      --              --              --        -- 
+sel                1      --              --              --        -- 
+Cout[0]            1      --              --              --        -- 
+Cout[1]            1      --              --              --        -- 
+Cout[2]            1      --              --              --        -- 
+Cout[3]            1      --              --              --        -- 
+Cout[4]            1      --              --              --        -- 
+out1[0]            1      --              --              --        -- 
+out1[1]            1      --              --              --        -- 
+out1[2]            1      --              --              --        -- 
+out1[3]            1      --              --              --        -- 
+out1[4]            1      --              --              --        -- 
+out2[0]            1      --              --              --        -- 
+out2[1]            1      --              --              --        -- 
+out2[2]            1      --              --              --        -- 
+out2[3]            1      --              --              --        -- 
+out2[4]            1      --              --              --        -- 
+out3[0]            1      --              --              --        -- 
+out3[1]            1      --              --              --        -- 
+out3[2]            1      --              --              --        -- 
+out3[3]            1      --              --              --        -- 
+out3[4]            1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+Cin1[0]       --      --      0.20    0.20  vclk      --    
+Cin1[1]       --      --      0.20    0.20  vclk      --    
+Cin1[2]       --      --      0.20    0.20  vclk      --    
+Cin1[3]       --      --      0.20    0.20  vclk      --    
+Cin1[4]       --      --      0.20    0.20  vclk      --    
+Cin2[0]       --      --      0.20    0.20  vclk      --    
+Cin2[1]       --      --      0.20    0.20  vclk      --    
+Cin2[2]       --      --      0.20    0.20  vclk      --    
+Cin2[3]       --      --      0.20    0.20  vclk      --    
+Cin2[4]       --      --      0.20    0.20  vclk      --    
+clk           --      --      --      --      --      -- 
+data1[0]      --      --      0.45    0.45  clk       --    
+data1[1]      --      --      0.45    0.45  clk       --    
+data1[2]      --      --      0.45    0.45  clk       --    
+data1[3]      --      --      0.45    0.45  clk       --    
+data1[4]      --      --      0.45    0.45  clk       --    
+data2[0]      --      --      0.45    0.45  clk       --    
+data2[1]      --      --      0.45    0.45  clk       --    
+data2[2]      --      --      0.45    0.45  clk       --    
+data2[3]      --      --      0.45    0.45  clk       --    
+data2[4]      --      --      0.45    0.45  clk       --    
+n_rst         --      --      --      --      --      -- 
+sel           --      --      0.40    0.40  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+Cin1[0]        -- /IV             -- /IV             -- /  --     N
+Cin1[1]        -- /IV             -- /IV             -- /  --     N
+Cin1[2]        -- /IV             -- /IV             -- /  --     N
+Cin1[3]        -- /IV             -- /IV             -- /  --     N
+Cin1[4]        -- /IV             -- /IV             -- /  --     N
+Cin2[0]        -- /IV             -- /IV             -- /  --     N
+Cin2[1]        -- /IV             -- /IV             -- /  --     N
+Cin2[2]        -- /IV             -- /IV             -- /  --     N
+Cin2[3]        -- /IV             -- /IV             -- /  --     N
+Cin2[4]        -- /IV             -- /IV             -- /  --     N
+data1[0]       -- /IV             -- /IV             -- /  --     N
+data1[1]       -- /IV             -- /IV             -- /  --     N
+data1[2]       -- /IV             -- /IV             -- /  --     N
+data1[3]       -- /IV             -- /IV             -- /  --     N
+data1[4]       -- /IV             -- /IV             -- /  --     N
+data2[0]       -- /IV             -- /IV             -- /  --     N
+data2[1]       -- /IV             -- /IV             -- /  --     N
+data2[2]       -- /IV             -- /IV             -- /  --     N
+data2[3]       -- /IV             -- /IV             -- /  --     N
+data2[4]       -- /IV             -- /IV             -- /  --     N
+n_rst          -- /IV             -- /IV             -- /  --     N
+sel            -- /IV             -- /IV             -- /  --     N
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+Cin1[0]       --      --     --      --     --      --     --     --        -- 
+Cin1[1]       --      --     --      --     --      --     --     --        -- 
+Cin1[2]       --      --     --      --     --      --     --     --        -- 
+Cin1[3]       --      --     --      --     --      --     --     --        -- 
+Cin1[4]       --      --     --      --     --      --     --     --        -- 
+Cin2[0]       --      --     --      --     --      --     --     --        -- 
+Cin2[1]       --      --     --      --     --      --     --     --        -- 
+Cin2[2]       --      --     --      --     --      --     --     --        -- 
+Cin2[3]       --      --     --      --     --      --     --     --        -- 
+Cin2[4]       --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+data1[0]      --      --     --      --     --      --     --     --        -- 
+data1[1]      --      --     --      --     --      --     --     --        -- 
+data1[2]      --      --     --      --     --      --     --     --        -- 
+data1[3]      --      --     --      --     --      --     --     --        -- 
+data1[4]      --      --     --      --     --      --     --     --        -- 
+data2[0]      --      --     --      --     --      --     --     --        -- 
+data2[1]      --      --     --      --     --      --     --     --        -- 
+data2[2]      --      --     --      --     --      --     --     --        -- 
+data2[3]      --      --     --      --     --      --     --     --        -- 
+data2[4]      --      --     --      --     --      --     --     --        -- 
+n_rst         --      --     --      --     --      --     --     --        -- 
+sel           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+Cin1[0]       --      --      --      -- 
+Cin1[1]       --      --      --      -- 
+Cin1[2]       --      --      --      -- 
+Cin1[3]       --      --      --      -- 
+Cin1[4]       --      --      --      -- 
+Cin2[0]       --      --      --      -- 
+Cin2[1]       --      --      --      -- 
+Cin2[2]       --      --      --      -- 
+Cin2[3]       --      --      --      -- 
+Cin2[4]       --      --      --      -- 
+clk           --      --      --      -- 
+data1[0]      --      --      --      -- 
+data1[1]      --      --      --      -- 
+data1[2]      --      --      --      -- 
+data1[3]      --      --      --      -- 
+data1[4]      --      --      --      -- 
+data2[0]      --      --      --      -- 
+data2[1]      --      --      --      -- 
+data2[2]      --      --      --      -- 
+data2[3]      --      --      --      -- 
+data2[4]      --      --      --      -- 
+n_rst         --      --      --      -- 
+sel           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+Cout[0]       --      --      0.20    0.20  vclk      0.00  
+Cout[1]       --      --      0.20    0.20  vclk      0.00  
+Cout[2]       --      --      0.20    0.20  vclk      0.00  
+Cout[3]       --      --      0.20    0.20  vclk      0.00  
+Cout[4]       --      --      0.20    0.20  vclk      0.00  
+out1[0]       --      --      0.50    0.50  clk       0.00  
+out1[1]       --      --      0.50    0.50  clk       0.00  
+out1[2]       --      --      0.50    0.50  clk       0.00  
+out1[3]       --      --      0.50    0.50  clk       0.00  
+out1[4]       --      --      0.50    0.50  clk       0.00  
+out2[0]       --      --      2.04    2.04  clk       0.00  
+out2[1]       --      --      2.04    2.04  clk       0.00  
+out2[2]       --      --      2.04    2.04  clk       0.00  
+out2[3]       --      --      2.04    2.04  clk       0.00  
+out2[4]       --      --      2.04    2.04  clk       0.00  
+out3[0]       --      --      0.40    0.40  clk       0.00  
+out3[1]       --      --      0.40    0.40  clk       0.00  
+out3[2]       --      --      0.40    0.40  clk       0.00  
+out3[3]       --      --      0.40    0.40  clk       0.00  
+out3[4]       --      --      0.40    0.40  clk       0.00  
+
+1
+redirect -append -tee -file rpt/pre_compile.rpt {report_clock}
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : clocks
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:10 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              3.00   {0 1.5}                       {clk}
+vclk             3.00   {0 1.5}                       {}
+--------------------------------------------------------------------------------
+1
+redirect -append -tee -file rpt/pre_compile.rpt {report_clock -skew}
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : clock_skew
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:10 2024
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk              0.30      0.30         -         -         -      0.15
+
+                 Max Source Latency                  Min Source Latency
+            Early    Early    Late    Late      Early    Early    Late    Late
+Object      Rise     Fall     Rise    Fall      Rise     Fall     Rise    Fall
+--------------------------------------------------------------------------------
+clk         0.70     0.70     0.70    0.70         -        -        -       -
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk              0.12      0.12      0.12      0.12
+1
+redirect -append -tee -file rpt/pre_compile.rpt {check_timing}
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 21 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+data1[4]
+data1[3]
+data1[2]
+data1[1]
+data1[0]
+data2[4]
+data2[3]
+data2[2]
+data2[1]
+data2[0]
+sel
+Cin1[4]
+Cin1[3]
+Cin1[2]
+Cin1[1]
+Cin1[0]
+Cin2[4]
+Cin2[3]
+Cin2[2]
+Cin2[1]
+Cin2[0]
+1
+redirect -tee -file rpt/compile.rpt {compile}
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 6 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'combo'
+  Processing 'my_design'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'my_design_DW01_sub_0'
+  Processing 'combo_DW01_sub_0'
+  Processing 'combo_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     441.0      2.73      64.9      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     424.0      3.07      66.6      25.2                          
+    0:00:01     432.0      2.83      59.3      25.2                          
+    0:00:01     436.0      2.73      59.3      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     439.0      2.65      59.7      25.2 Cout[4]                  
+    0:00:01     443.0      2.65      60.1      25.2 out1[4]                  
+    0:00:01     445.0      2.63      59.6      25.2 Cout[4]                  
+    0:00:01     448.0      2.63      60.2      25.2 Cout[4]                  
+    0:00:01     452.0      2.63      60.1      25.2 Cout[4]                  
+    0:00:01     452.0      2.63      60.1      25.2                          
+    0:00:01     449.0      2.63      63.6      25.2                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     449.0      2.63      63.6      25.2                          
+    0:00:01     455.0      2.63      63.5       0.0                          
+    0:00:01     458.0      2.63      61.7       0.0                          
+    0:00:01     463.0      2.63      60.7       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     463.0      2.63      60.7       0.0                          
+    0:00:01     463.0      2.63      60.7       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     449.0      2.58      60.8       0.0                          
+    0:00:01     449.0      2.58      60.8       0.0                          
+    0:00:01     458.0      2.58      60.8       0.0                          
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+redirect -tee -file rpt/post_compile.rpt {report_constraint -all}
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:11 2024
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   out1[4]                      3.35           5.93 r        -2.58  (VIOLATED)
+   out1[3]                      3.35           5.67 r        -2.32  (VIOLATED)
+   out1[0]                      3.35           5.36 r        -2.01  (VIOLATED)
+   out1[2]                      3.35           5.32 r        -1.97  (VIOLATED)
+   out1[1]                      3.35           5.29 f        -1.94  (VIOLATED)
+   out2[0]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[1]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[2]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[3]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out2[4]                      1.81           3.73 f        -1.92  (VIOLATED)
+   out3[1]                      3.45           5.23 r        -1.78  (VIOLATED)
+   out3[2]                      3.45           5.23 r        -1.78  (VIOLATED)
+   out3[0]                      3.45           5.07 r        -1.62  (VIOLATED)
+   out3[3]                      3.45           5.07 r        -1.62  (VIOLATED)
+   out3[4]                      3.45           5.07 r        -1.62  (VIOLATED)
+   R4_reg[1]/D                  3.00           4.58 r        -1.58  (VIOLATED)
+   R4_reg[2]/D                  3.00           4.53 r        -1.53  (VIOLATED)
+   R4_reg[3]/D                  3.00           4.37 r        -1.37  (VIOLATED)
+   R4_reg[4]/D                  3.00           4.27 r        -1.27  (VIOLATED)
+   R1_reg[1]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[2]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[3]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[4]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R2_reg[2]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R2_reg[3]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R2_reg[4]/D                  3.00           4.12 r        -1.12  (VIOLATED)
+   R1_reg[0]/D                  3.00           3.73 r        -0.73  (VIOLATED)
+   R2_reg[0]/D                  3.00           3.73 r        -0.73  (VIOLATED)
+   R2_reg[1]/D                  3.00           3.73 r        -0.73  (VIOLATED)
+   R4_reg[0]/D                  3.00           3.60 f        -0.60  (VIOLATED)
+   R3_reg/D                     3.00           3.27 r        -0.27  (VIOLATED)
+
+
+   max_delay/setup ('vclk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   Cout[4]                      2.80           4.98 r        -2.18  (VIOLATED)
+   Cout[3]                      2.80           4.75 r        -1.95  (VIOLATED)
+   Cout[1]                      2.80           4.67 r        -1.87  (VIOLATED)
+   Cout[2]                      2.80           4.67 r        -1.87  (VIOLATED)
+   Cout[0]                      2.80           3.64 r        -0.84  (VIOLATED)
+
+
+1
+redirect -append -tee -file rpt/post_compile.rpt {report_timing}
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:11 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: class
+Wire Load Model Mode: top
+
+  Startpoint: R1_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out1[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R1_reg[0]/CP (FD2)                       0.00       1.00 r
+  R1_reg[0]/Q (FD2)                        1.44       2.44 f
+  U63/Z (IVI)                              0.24       2.68 r
+  U112/Z (ND2I)                            0.12       2.81 f
+  U115/Z (IVI)                             0.24       3.05 r
+  U117/Z (ND2I)                            0.12       3.17 f
+  U118/Z (ND2I)                            0.30       3.46 r
+  U120/Z (IVI)                             0.12       3.59 f
+  U123/Z (ND2I)                            0.25       3.84 r
+  U124/Z (ND2I)                            0.12       3.96 f
+  U126/Z (ND2I)                            0.25       4.21 r
+  U128/Z (ND2I)                            0.12       4.33 f
+  U67/Z (ENI)                              0.74       5.07 f
+  U68/Z (B4IP)                             0.85       5.93 r
+  out1[4] (out)                            0.00       5.93 r
+  data arrival time                                   5.93
+
+  clock clk (rise edge)                    3.00       3.00
+  clock network delay (ideal)              1.00       4.00
+  clock uncertainty                       -0.15       3.85
+  output external delay                   -0.50       3.35
+  data required time                                  3.35
+  -----------------------------------------------------------
+  data required time                                  3.35
+  data arrival time                                  -5.93
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.58
+
+
+  Startpoint: Cin1[0] (input port clocked by vclk)
+  Endpoint: Cout[4] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  Cin1[0] (in)                             0.37       0.57 r
+  u_combo/Cin1[0] (combo)                  0.00       0.57 r
+  u_combo/U43/Z (IVI)                      0.18       0.76 f
+  u_combo/U44/Z (ND2I)                     0.30       1.05 r
+  u_combo/U21/Z (IVI)                      0.12       1.18 f
+  u_combo/U22/Z (ND2I)                     0.29       1.47 r
+  u_combo/U42/Z (AO3P)                     0.50       1.96 f
+  u_combo/U40/Z (ND2I)                     0.25       2.22 r
+  u_combo/U73/Z (ND2I)                     0.12       2.34 f
+  u_combo/U74/Z (NR2I)                     0.57       2.91 r
+  u_combo/U79/Z (NR2I)                     0.20       3.11 f
+  u_combo/U80/Z (ND2I)                     0.25       3.36 r
+  u_combo/U81/Z (ND2I)                     0.12       3.49 f
+  u_combo/U92/Z (ND2I)                     0.37       3.85 r
+  u_combo/Cout[4] (combo)                  0.00       3.85 r
+  U59/Z (B4I)                              0.28       4.13 f
+  U60/Z (B4IP)                             0.85       4.98 r
+  Cout[4] (out)                            0.00       4.98 r
+  data arrival time                                   4.98
+
+  clock vclk (rise edge)                   3.00       3.00
+  clock network delay (ideal)              0.00       3.00
+  output external delay                   -0.20       2.80
+  data required time                                  2.80
+  -----------------------------------------------------------
+  data required time                                  2.80
+  data arrival time                                  -4.98
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -2.18
+
+
+1
+write_file -f verilog -hier -output net/my_design_net.v
+Writing verilog file '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab06/syn/net/my_design_net.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write_file -f ddc -hier -output mapped/my_design_mapped.ddc
+Writing ddc file 'mapped/my_design_mapped.ddc'.
+1
+1
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> Warning: Can't find port 'all_outputs' in design 'my_design'. (UID-95)
+dc_shell> {out1[4] out1[3] out1[2] out1[1] out1[0] out2[4] out2[3] out2[2] out2[1] out2[0] out3[4] out3[3] out3[2] out3[1] out3[0] Cout[4] Cout[3] Cout[2] Cout[1] Cout[0]}
+dc_shell> {data1[4] data1[3] data1[2] data1[1] data1[0] data2[4] data2[3] data2[2] data2[1] data2[0] Cin1[4] Cin1[3] Cin1[2] Cin1[1] Cin1[0] Cin2[4] Cin2[3] Cin2[2] Cin2[1] Cin2[0] out1[4] out1[3] out1[2] out1[1] out1[0] out2[4] out2[3] out2[2] out2[1] out2[0] out3[4] out3[3] out3[2] out3[1] out3[0] Cout[4] Cout[3] Cout[2] Cout[1] Cout[0] clk n_rst sel}
+dc_shell> {clk vclk}
+dc_shell> Warning: Can't find objects matching 'R1/*' in design 'my_design'. (UID-95)
+dc_shell> {R1_reg[4]/D R1_reg[4]/CP R1_reg[4]/CD R1_reg[4]/Q R1_reg[4]/QN R1_reg[3]/D R1_reg[3]/CP R1_reg[3]/CD R1_reg[3]/Q R1_reg[3]/QN R1_reg[2]/D R1_reg[2]/CP R1_reg[2]/CD R1_reg[2]/Q R1_reg[2]/QN R2_reg[4]/D R2_reg[4]/CP R2_reg[4]/CD R2_reg[4]/Q R2_reg[4]/QN R4_reg[4]/D R4_reg[4]/CP R4_reg[4]/CD R4_reg[4]/Q R4_reg[4]/QN R4_reg[3]/D R4_reg[3]/CP R4_reg[3]/CD R4_reg[3]/Q R4_reg[3]/QN R4_reg[2]/D R4_reg[2]/CP R4_reg[2]/CD R4_reg[2]/Q R4_reg[2]/QN R4_reg[1]/D R4_reg[1]/CP R4_reg[1]/CD R4_reg[1]/Q R4_reg[1]/QN R4_reg[0]/D R4_reg[0]/CP R4_reg[0]/CD R4_reg[0]/Q R4_reg[0]/QN u_combo/Cin1[4] u_combo/Cin1[3] u_combo/Cin1[2] u_combo/Cin1[1] u_combo/Cin1[0] u_combo/sel u_combo/Cin2[4] u_combo/Cin2[3] u_combo/Cin2[2] u_combo/Cin2[1] u_combo/Cin2[0] u_combo/Cout[4] u_combo/Cout[3] u_combo/Cout[2] u_combo/Cout[1] u_combo/Cout[0] R2_reg[2]/D R2_reg[2]/CP R2_reg[2]/CD R2_reg[2]/Q R2_reg[2]/QN R1_reg[1]/D R1_reg[1]/CP R1_reg[1]/CD R1_reg[1]/Q R1_reg[1]/QN R2_reg[0]/D R2_reg[0]/CP R2_reg[0]/CD R2_reg[0]/Q R2_reg[0]/QN R2_reg[1]/D R2_reg[1]/CP R2_reg[1]/CD R2_reg[1]/Q R2_reg[1]/QN R1_reg[0]/D R1_reg[0]/CP R1_reg[0]/CD R1_reg[0]/Q R1_reg[0]/QN R3_reg/D R3_reg/CP R3_reg/CD R3_reg/Q R3_reg/QN R2_reg[3]/D R2_reg[3]/CP R2_reg[3]/CD R2_reg[3]/Q R2_reg[3]/QN U35/A U35/B U35/C U35/Z ...}
+dc_shell> Warning: Can't find objects matching 'combo/*' in design 'my_design'. (UID-95)
+dc_shell> {u_combo/Cin1[4] u_combo/Cin1[3] u_combo/Cin1[2] u_combo/Cin1[1] u_combo/Cin1[0] u_combo/sel u_combo/Cin2[4] u_combo/Cin2[3] u_combo/Cin2[2] u_combo/Cin2[1] u_combo/Cin2[0] u_combo/Cout[4] u_combo/Cout[3] u_combo/Cout[2] u_combo/Cout[1] u_combo/Cout[0]}
+dc_shell> {u_combo/Cin1[4] u_combo/Cin1[3] u_combo/Cin1[2] u_combo/Cin1[1] u_combo/Cin1[0] u_combo/Cin2[4] u_combo/Cin2[3] u_combo/Cin2[2] u_combo/Cin2[1] u_combo/Cin2[0] u_combo/sel u_combo/n1 u_combo/n2 u_combo/n3 u_combo/n4 u_combo/n5 u_combo/n6 u_combo/n7 u_combo/n8 u_combo/n9 u_combo/n10 u_combo/n11 u_combo/n12 u_combo/n13 u_combo/n14 u_combo/n15 u_combo/n16 u_combo/n17 u_combo/n18 u_combo/n19 u_combo/n20 u_combo/n21 u_combo/n22 u_combo/n23 u_combo/n24 u_combo/n25 u_combo/n26 u_combo/n27 u_combo/n28 u_combo/n29 u_combo/n30 u_combo/n31 u_combo/n32 u_combo/n33 u_combo/n34 u_combo/n35 u_combo/n36 u_combo/n37 u_combo/n38 u_combo/n39 u_combo/n40 u_combo/n41 u_combo/n42 u_combo/n43 u_combo/n44 u_combo/n45 u_combo/n46 u_combo/n47 u_combo/n48 u_combo/n49 u_combo/n50 u_combo/n51 u_combo/n52 u_combo/n53 u_combo/n54 u_combo/n55 u_combo/n56 u_combo/n57 u_combo/n58 u_combo/n59 u_combo/n60 u_combo/n61 u_combo/n62 u_combo/n63 u_combo/n64 u_combo/n65 u_combo/n66 u_combo/n67 u_combo/n68 u_combo/n69 u_combo/n70 u_combo/n71 u_combo/n72 u_combo/n73 u_combo/n74 u_combo/n75 u_combo/n76 u_combo/n77 u_combo/n78 u_combo/n79 u_combo/n80 u_combo/n81 u_combo/n82 u_combo/n83 u_combo/n84 u_combo/n85 u_combo/n86 u_combo/n87 u_combo/Cout[4] u_combo/Cout[3] ...}
+dc_shell> {Cin1[4] Cin1[3] Cin1[2] Cin1[1] Cin1[0] Cin2[4] Cin2[3] Cin2[2] Cin2[1] Cin2[0]}
+dc_shell> {clk}
+dc_shell> {data1[4] data1[3] data1[2] data1[1] data1[0] data2[4] data2[3] data2[2] data2[1] data2[0]}
+dc_shell> {my_design combo}
+dc_shell> dc_shell> {my_design combo}
+dc_shell> {R2_reg[3] R3_reg R1_reg[0] R2_reg[1] R2_reg[0] R1_reg[1] R2_reg[2] R4_reg[0] R4_reg[1] R4_reg[2] R4_reg[3] R4_reg[4] R2_reg[4] R1_reg[2] R1_reg[3] R1_reg[4]}
+dc_shell> all_registers
+dc_shell> {R2_reg[3] R3_reg R1_reg[0] R2_reg[1] R2_reg[0] R1_reg[1] R2_reg[2] R4_reg[0] R4_reg[1] R4_reg[2] R4_reg[3] R4_reg[4] R2_reg[4] R1_reg[2] R1_reg[3] R1_reg[4]}
+dc_shell> {clk n_rst data1[4] data1[3] data1[2] data1[1] data1[0] data2[4] data2[3] data2[2] data2[1] data2[0] sel Cin1[4] Cin1[3] Cin1[2] Cin1[1] Cin1[0] Cin2[4] Cin2[3] Cin2[2] Cin2[1] Cin2[0]}
+dc_shell> {R1_reg[4]/D R1_reg[4]/CP R1_reg[4]/CD R1_reg[4]/Q R1_reg[4]/QN R1_reg[3]/D R1_reg[3]/CP R1_reg[3]/CD R1_reg[3]/Q R1_reg[3]/QN R1_reg[2]/D R1_reg[2]/CP R1_reg[2]/CD R1_reg[2]/Q R1_reg[2]/QN R2_reg[4]/D R2_reg[4]/CP R2_reg[4]/CD R2_reg[4]/Q R2_reg[4]/QN R4_reg[4]/D R4_reg[4]/CP R4_reg[4]/CD R4_reg[4]/Q R4_reg[4]/QN R4_reg[3]/D R4_reg[3]/CP R4_reg[3]/CD R4_reg[3]/Q R4_reg[3]/QN R4_reg[2]/D R4_reg[2]/CP R4_reg[2]/CD R4_reg[2]/Q R4_reg[2]/QN R4_reg[1]/D R4_reg[1]/CP R4_reg[1]/CD R4_reg[1]/Q R4_reg[1]/QN R4_reg[0]/D R4_reg[0]/CP R4_reg[0]/CD R4_reg[0]/Q R4_reg[0]/QN u_combo/Cin1[4] u_combo/Cin1[3] u_combo/Cin1[2] u_combo/Cin1[1] u_combo/Cin1[0] u_combo/sel u_combo/Cin2[4] u_combo/Cin2[3] u_combo/Cin2[2] u_combo/Cin2[1] u_combo/Cin2[0] u_combo/Cout[4] u_combo/Cout[3] u_combo/Cout[2] u_combo/Cout[1] u_combo/Cout[0] R2_reg[2]/D R2_reg[2]/CP R2_reg[2]/CD R2_reg[2]/Q R2_reg[2]/QN R1_reg[1]/D R1_reg[1]/CP R1_reg[1]/CD R1_reg[1]/Q R1_reg[1]/QN R2_reg[0]/D R2_reg[0]/CP R2_reg[0]/CD R2_reg[0]/Q R2_reg[0]/QN R2_reg[1]/D R2_reg[1]/CP R2_reg[1]/CD R2_reg[1]/Q R2_reg[1]/QN R1_reg[0]/D R1_reg[0]/CP R1_reg[0]/CD R1_reg[0]/Q R1_reg[0]/QN R3_reg/D R3_reg/CP R3_reg/CD R3_reg/Q R3_reg/QN R2_reg[3]/D R2_reg[3]/CP R2_reg[3]/CD R2_reg[3]/Q R2_reg[3]/QN U35/A U35/B U35/C U35/Z ...}
+dc_shell> {data1[4] data1[3] data1[2] data1[1] data1[0] data2[4] data2[3] data2[2] data2[1] data2[0] Cin1[4] Cin1[3] Cin1[2] Cin1[1] Cin1[0] Cin2[4] Cin2[3] Cin2[2] Cin2[1] Cin2[0] out1[4] out1[2] out1[0] Cout[4] Cout[3] Cout[2] Cout[1] Cout[0] R1[4] R1[3] R1[2] R1[1] R2[4] R2[3] R2[2] R2[0] clk n_rst sel n118 n119 n120 N8 N9 N10 N11 N12 N14 N15 N16 N17 N18 R3 N29 N30 N31 N32 N33 n25 n26 n27 n28 n29 n30 n31 n32 n33 n34 n35 n36 n37 n38 n39 n40 n41 out3[1] n43 n44 n45 n46 out1[3] out1[1] n49 n51 n53 n54 n55 n56 n57 n58 n59 n60 n61 n62 n63 out2[0] n65 out2[1] n67 out2[2] ...}
+dc_shell> Error: unknown command 'topo' (CMD-005)
+dc_shell> Error: unknown option '-topo' (CMD-010)
+Error: unknown command '-topo' (CMD-005)
+dc_shell> 
+Thank you...

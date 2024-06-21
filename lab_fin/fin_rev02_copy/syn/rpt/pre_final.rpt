@@ -1,0 +1,633 @@
+
+  Linking design 'top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (8 designs)               /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/syn/top.db, etc
+  saed90nm_max (library)      /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db
+
+1
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP5-5
+Date:        Wed Jun 19 00:38:39 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                             105
+    Cells do not drive (LINT-1)                                     6
+    Connected to power or ground (LINT-32)                         80
+    Nets connected to multiple pins on same cell (LINT-33)         19
+
+Nets                                                               11
+    Unloaded nets (LINT-2)                                         11
+--------------------------------------------------------------------------------
+
+Warning: In design 'mul_D_WIDTH19_D_WIDTH28', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH19_D_WIDTH28', cell 'B_8' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH19_D_WIDTH28', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH18_D_WIDTH28', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH18_D_WIDTH28', cell 'B_8' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH18_D_WIDTH28', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'top', net 'add_fin_step4[0]' driven by pin 'u_add_final/dout[0]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[1]' driven by pin 'u_add_final/dout[1]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[2]' driven by pin 'u_add_final/dout[2]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[3]' driven by pin 'u_add_final/dout[3]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[4]' driven by pin 'u_add_final/dout[4]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[5]' driven by pin 'u_add_final/dout[5]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[6]' driven by pin 'u_add_final/dout[6]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[7]' driven by pin 'u_add_final/dout[7]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[8]' driven by pin 'u_add_final/dout[8]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[17]' driven by pin 'u_add_final/dout[17]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[18]' driven by pin 'u_add_final/dout[18]' has no loads. (LINT-2)
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 1. 
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[2]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn0'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[3]', 'mul_b[1]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn2'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[1]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[3]', 'mul_b[2]'', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn3'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[3]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn3'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[4]', 'mul_b[2]'', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn4'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[3]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[4]', 'mul_b[2]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn5'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn6'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[4]', 'mul_b[3]', 'mul_b[1]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn6'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[5]', 'mul_b[2]'', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn7'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[5]'', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn7'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[6]', 'mul_b[4]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn8'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[3]'', 'mul_b[2]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn8'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[6]', 'mul_b[5]'', 'mul_b[4]', 'mul_b[1]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn9'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[6]', 'mul_b[5]'', 'mul_b[4]', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_add_mul_hn_8_9'. (LINT-33)
+   Net 'mul_hn_9[14]' is connected to pins 'din_b[15]', 'din_b[14]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_add_final'. (LINT-33)
+   Net 'add_89_step1[16]' is connected to pins 'din_b[18]', 'din_b[17]'', 'din_b[16]'.
+1
+1
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT18_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT17_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT16_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT16_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH18_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : port
+        -verbose
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:39 2024
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000   --      --      --         
+n_rst          in      0.0000   0.0000   --      --      --         
+xn_data[0]     in      0.0000   0.0000   --      --      --         
+xn_data[1]     in      0.0000   0.0000   --      --      --         
+xn_data[2]     in      0.0000   0.0000   --      --      --         
+xn_data[3]     in      0.0000   0.0000   --      --      --         
+xn_data[4]     in      0.0000   0.0000   --      --      --         
+xn_data[5]     in      0.0000   0.0000   --      --      --         
+xn_data[6]     in      0.0000   0.0000   --      --      --         
+xn_data[7]     in      0.0000   0.0000   --      --      --         
+yn_data[0]     out     0.0000   0.0000   --      --      --         
+yn_data[1]     out     0.0000   0.0000   --      --      --         
+yn_data[2]     out     0.0000   0.0000   --      --      --         
+yn_data[3]     out     0.0000   0.0000   --      --      --         
+yn_data[4]     out     0.0000   0.0000   --      --      --         
+yn_data[5]     out     0.0000   0.0000   --      --      --         
+yn_data[6]     out     0.0000   0.0000   --      --      --         
+yn_data[7]     out     0.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+n_rst              1      --              --              --        -- 
+xn_data[0]         1      --              --              --        -- 
+xn_data[1]         1      --              --              --        -- 
+xn_data[2]         1      --              --              --        -- 
+xn_data[3]         1      --              --              --        -- 
+xn_data[4]         1      --              --              --        -- 
+xn_data[5]         1      --              --              --        -- 
+xn_data[6]         1      --              --              --        -- 
+xn_data[7]         1      --              --              --        -- 
+yn_data[0]         1      --              --              --        -- 
+yn_data[1]         1      --              --              --        -- 
+yn_data[2]         1      --              --              --        -- 
+yn_data[3]         1      --              --              --        -- 
+yn_data[4]         1      --              --              --        -- 
+yn_data[5]         1      --              --              --        -- 
+yn_data[6]         1      --              --              --        -- 
+yn_data[7]         1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      -- 
+n_rst         --      --      --      --      --      -- 
+xn_data[0]    --      --      3.00    3.00  clk       --    
+xn_data[1]    --      --      3.00    3.00  clk       --    
+xn_data[2]    --      --      3.00    3.00  clk       --    
+xn_data[3]    --      --      3.00    3.00  clk       --    
+xn_data[4]    --      --      3.00    3.00  clk       --    
+xn_data[5]    --      --      3.00    3.00  clk       --    
+xn_data[6]    --      --      3.00    3.00  clk       --    
+xn_data[7]    --      --      3.00    3.00  clk       --    
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+n_rst         --      --     --      --     --      --     --     --        -- 
+xn_data[0]    --      --     --      --     --      --     --     --        -- 
+xn_data[1]    --      --     --      --     --      --     --     --        -- 
+xn_data[2]    --      --     --      --     --      --     --     --        -- 
+xn_data[3]    --      --     --      --     --      --     --     --        -- 
+xn_data[4]    --      --     --      --     --      --     --     --        -- 
+xn_data[5]    --      --     --      --     --      --     --     --        -- 
+xn_data[6]    --      --     --      --     --      --     --     --        -- 
+xn_data[7]    --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+n_rst         --      --      --      -- 
+xn_data[0]    --      --      --      -- 
+xn_data[1]    --      --      --      -- 
+xn_data[2]    --      --      --      -- 
+xn_data[3]    --      --      --      -- 
+xn_data[4]    --      --      --      -- 
+xn_data[5]    --      --      --      -- 
+xn_data[6]    --      --      --      -- 
+xn_data[7]    --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+yn_data[0]    --      --      3.00    3.00  clk       0.00  
+yn_data[1]    --      --      3.00    3.00  clk       0.00  
+yn_data[2]    --      --      3.00    3.00  clk       0.00  
+yn_data[3]    --      --      3.00    3.00  clk       0.00  
+yn_data[4]    --      --      3.00    3.00  clk       0.00  
+yn_data[5]    --      --      3.00    3.00  clk       0.00  
+yn_data[6]    --      --      3.00    3.00  clk       0.00  
+yn_data[7]    --      --      3.00    3.00  clk       0.00  
+
+1
+Information: Updating graph... (UID-83)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:39 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              8.00   {0 4}                         {clk}
+--------------------------------------------------------------------------------
+1
+Information: Changed wire load model for 'DW01_add_width20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_20_20_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_19_19_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_18_18_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_18_18_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width7_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_7_7_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_14_1_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_14_14_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clock_skew
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:39 2024
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk              0.00      0.00         -         -         -      0.00
+
+                 Max Source Latency                  Min Source Latency
+            Early    Early    Late    Late      Early    Early    Late    Late
+Object      Rise     Fall     Rise    Fall      Rise     Fall     Rise    Fall
+--------------------------------------------------------------------------------
+clk         0.00     0.00     0.00    0.00         -        -        -       -
+1
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 8 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+xn_data[7]
+xn_data[6]
+xn_data[5]
+xn_data[4]
+xn_data[3]
+xn_data[2]
+xn_data[1]
+xn_data[0]
+1

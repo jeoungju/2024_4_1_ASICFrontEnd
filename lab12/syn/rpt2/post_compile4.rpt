@@ -1,0 +1,52 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu May 23 10:37:14 2024
+****************************************
+
+This design has no violated constraints.
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu May 23 10:37:14 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: class
+Wire Load Model Mode: top
+
+  Startpoint: R1_reg[0] (rising edge-triggered flip-flop)
+  Endpoint: out1[4] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  R1_reg[0]/CP (FD2)                       0.00       0.00 r
+  R1_reg[0]/QN (FD2)                       2.04       2.04 r
+  U81/Z (ND2I)                             0.26       2.31 f
+  U86/Z (AO5)                              2.32       4.62 r
+  U91/Z (AO5)                              0.81       5.43 f
+  U95/Z (AO5)                              1.74       7.18 r
+  U96/Z (EOI)                              1.04       8.21 f
+  out1[4] (out)                            0.00       8.21 f
+  data arrival time                                   8.21
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

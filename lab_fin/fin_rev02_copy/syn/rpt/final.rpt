@@ -1,0 +1,432 @@
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 116 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 9 instances of design 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0'. (OPT-1056)
+Information: Uniquified 9 instances of design 'mul_D_WIDTH19_D_WIDTH28'. (OPT-1056)
+Information: Uniquified 5 instances of design 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0'. (OPT-1056)
+Information: Uniquified 2 instances of design 'add_SIGN_BIT1_INT_BIT16_FLT_BIT0'. (OPT-1056)
+  Simplifying Design 'top'
+
+Loaded alib file './alib-52/saed90nm_max.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy u_add_xn0_xn18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_0_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_0_1_2_3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_01234567 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_final before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn8_xn10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn7_xn11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn6_xn12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn5_xn13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn4_xn14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn3_xn15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn2_xn16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn1_xn17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_8_9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_6_7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_4_5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_2_3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_4_5_6_7 before Pass 1 (OPT-776)
+Information: Ungrouping 28 of 29 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'top'
+Information: The register 'u_mul_hn1/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn6/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn8/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn9/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: In design 'top', the register 'u_mul_hn3/b_sign_d_reg' is removed because it is merged to 'u_mul_hn2/b_sign_d_reg'. (OPT-1215)
+Information: In design 'top', the register 'u_mul_hn4/b_sign_d_reg' is removed because it is merged to 'u_mul_hn2/b_sign_d_reg'. (OPT-1215)
+Information: In design 'top', the register 'xn_data_10_reg[7]' is removed because it is merged to 'u_mul_hn9/a_sign_d_reg'. (OPT-1215)
+ Implement Synthetic for 'top'.
+Information: The register 'u_mul_hn0/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn8/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn6/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn4/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn4/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: Added key list 'DesignWare' to design 'top'. (DDB-72)
+Information: The register 'u_mul_hn1/a_sign_d_reg' will be removed. (OPT-1207)
+Information: The register 'u_mul_hn5/a_sign_d_reg' will be removed. (OPT-1207)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: In design 'top', the register 'xn_data_10_reg[0]' is removed because it is merged to 'u_mul_hn9/mul_abs_reg[0]'. (OPT-1215)
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+Information: The register 'u_mul_hn2/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'top_DP_OP_184J1_122_388_1'
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03   21759.9     14.27     491.0       0.0                           75229968.0000
+    0:00:04   22194.0      6.93     385.1       0.0                           78747176.0000
+    0:00:04   22194.0      6.93     385.1       0.0                           78747176.0000
+    0:00:04   22205.0      6.89     383.8       0.0                           78765760.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:04   21542.4      6.82     349.0       0.0                           73102920.0000
+    0:00:05   21497.2      6.82     348.5       0.0                           72852232.0000
+    0:00:05   21497.2      6.82     348.5       0.0                           72852232.0000
+    0:00:05   21528.6      6.55     345.5       0.0                           72907024.0000
+    0:00:05   21528.6      6.55     345.5       0.0                           72907024.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21899.1      5.27     265.5       0.0                           75050632.0000
+    0:00:06   21899.1      5.27     265.5       0.0                           75050632.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06   21899.1      5.27     265.5       0.0                           75050632.0000
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+    0:00:07   21994.9      4.72     234.8       0.0 u_mul_hn6/mul_abs_reg[11]/D 75035896.0000
+    0:00:07   22168.2      4.51     217.1       0.0                           76327184.0000
+    0:00:07   22168.2      4.51     217.1       0.0                           76327184.0000
+    0:00:07   22168.2      4.51     217.1       0.0                           76327184.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:09   22227.1      4.30     211.5       0.0                           76502536.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:09   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:09   21893.5      4.51     215.8       0.0                           73490704.0000
+    0:00:09   21865.9      4.45     214.5       0.0                           73407424.0000
+    0:00:09   21865.9      4.45     214.5       0.0                           73407424.0000
+    0:00:09   21869.6      4.45     216.2       0.0                           73576680.0000
+    0:00:09   21702.8      4.45     218.0       0.0                           71718136.0000
+    0:00:10   21818.9      4.29     208.3       0.0                           73283392.0000
+    0:00:10   21823.5      4.27     205.3       0.0                           73399664.0000
+    0:00:10   21823.5      4.27     205.3       0.0                           73399664.0000
+    0:00:10   21810.6      4.27     205.2       0.0                           73203120.0000
+Loading db file '/tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Loaded alib file './alib-52/saed90nm_max.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00   21810.6      4.27     205.2       0.0                           73203120.0000
+    0:00:00   21810.6      4.27     205.2       0.0                           73203120.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01   25457.4      0.15       0.4       0.0                           81311104.0000
+    0:00:01   25457.4      0.15       0.4       0.0                           81311104.0000
+    0:00:01   25429.7      0.15       0.6       0.0                           81267840.0000
+    0:00:01   25429.7      0.15       0.6       0.0                           81267840.0000
+    0:00:01   25433.4      0.10       0.5       0.0                           81352496.0000
+    0:00:01   25433.4      0.10       0.5       0.0                           81352496.0000
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02   27002.5      0.00       0.0       0.0                           80874320.0000
+    0:00:02   27002.5      0.00       0.0       0.0                           80874320.0000
+    0:00:02   26926.0      0.00       0.0       0.0                           79510400.0000
+    0:00:02   26926.0      0.00       0.0       0.0                           79510400.0000
+    0:00:02   26923.3      0.00       0.0       0.0                           79489952.0000
+Loading db file '/tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1

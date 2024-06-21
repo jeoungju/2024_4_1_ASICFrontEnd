@@ -1,0 +1,5 @@
+Writing verilog file '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/Design/syn/mapped/my_design_icc2/my_design.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+1
+Error: unknown command 'all_active_scenarios' (CMD-005)

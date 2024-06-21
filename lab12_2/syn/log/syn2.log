@@ -1,0 +1,1021 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version O-2018.06-SP5-5 for linux64 - Sep 04, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# .tcl file
+read_verilog {my_design.v combo.v}
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/gtech.db'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'class'
+  Loading link library 'gtech'
+Loading verilog files: '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/my_design.v' '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/combo.v' 
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/my_design.v
+Compiling source file /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/combo.v
+
+Inferred memory devices in process
+	in routine my_design line 22 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R1_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine my_design line 31 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R2_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine my_design line 49 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R3_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine my_design line 58 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/my_design.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R4_reg        | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/rtl/my_design.db:my_design'
+Loaded 2 designs.
+Current design is 'my_design'.
+my_design combo
+current_design my_design
+Current design is 'my_design'.
+{my_design}
+# 
+redirect -tee -file rpt2/pre_compile.rpt {link}
+
+  Linking design 'my_design'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  class (library)             /tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db
+
+1
+redirect -append -tee -file rpt2/pre_compile.rpt {check_design}   
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP5-5
+Date:        Thu May 16 09:56:10 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Shorted outputs (LINT-31)                                       4
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'combo', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'combo', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[0]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[1]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[2]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[3]'. (LINT-31)
+1
+redirect -append -tee -file rpt2/pre_compile.rpt {source my_design3.con}
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+Warning: Path group 'CLK' has no paths; it will not affect optimization. (UID-281)
+1
+redirect -append -tee -file rpt2/pre_compile.rpt {report_port -verbose}
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : port
+        -verbose
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu May 16 09:56:10 2024
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+Cin1[0]        in      0.0000   0.0000   --      10.00   --         
+Cin1[1]        in      0.0000   0.0000   --      10.00   --         
+Cin1[2]        in      0.0000   0.0000   --      10.00   --         
+Cin1[3]        in      0.0000   0.0000   --      10.00   --         
+Cin1[4]        in      0.0000   0.0000   --      10.00   --         
+Cin2[0]        in      0.0000   0.0000   --      10.00   --         
+Cin2[1]        in      0.0000   0.0000   --      10.00   --         
+Cin2[2]        in      0.0000   0.0000   --      10.00   --         
+Cin2[3]        in      0.0000   0.0000   --      10.00   --         
+Cin2[4]        in      0.0000   0.0000   --      10.00   --         
+clk            in      0.0000   0.0000   --      --      --         
+data1[0]       in      0.0000   0.0000   --      10.00   --         
+data1[1]       in      0.0000   0.0000   --      10.00   --         
+data1[2]       in      0.0000   0.0000   --      10.00   --         
+data1[3]       in      0.0000   0.0000   --      10.00   --         
+data1[4]       in      0.0000   0.0000   --      10.00   --         
+data2[0]       in      0.0000   0.0000   --      10.00   --         
+data2[1]       in      0.0000   0.0000   --      10.00   --         
+data2[2]       in      0.0000   0.0000   --      10.00   --         
+data2[3]       in      0.0000   0.0000   --      10.00   --         
+data2[4]       in      0.0000   0.0000   --      10.00   --         
+n_rst          in      0.0000   0.0000   --      10.00   --         
+sel            in      0.0000   0.0000   --      10.00   --         
+Cout[0]        out    30.0000   0.0000   --      --      --         
+Cout[1]        out    30.0000   0.0000   --      --      --         
+Cout[2]        out    30.0000   0.0000   --      --      --         
+Cout[3]        out    30.0000   0.0000   --      --      --         
+Cout[4]        out    30.0000   0.0000   --      --      --         
+out1[0]        out    30.0000   0.0000   --      --      --         
+out1[1]        out    30.0000   0.0000   --      --      --         
+out1[2]        out    30.0000   0.0000   --      --      --         
+out1[3]        out    30.0000   0.0000   --      --      --         
+out1[4]        out    30.0000   0.0000   --      --      --         
+out2[0]        out    30.0000   0.0000   --      --      --         
+out2[1]        out    30.0000   0.0000   --      --      --         
+out2[2]        out    30.0000   0.0000   --      --      --         
+out2[3]        out    30.0000   0.0000   --      --      --         
+out2[4]        out    30.0000   0.0000   --      --      --         
+out3[0]        out    30.0000   0.0000   --      --      --         
+out3[1]        out    30.0000   0.0000   --      --      --         
+out3[2]        out    30.0000   0.0000   --      --      --         
+out3[3]        out    30.0000   0.0000   --      --      --         
+out3[4]        out    30.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+Cin1[0]            1      --              --              --        -- 
+Cin1[1]            1      --              --              --        -- 
+Cin1[2]            1      --              --              --        -- 
+Cin1[3]            1      --              --              --        -- 
+Cin1[4]            1      --              --              --        -- 
+Cin2[0]            1      --              --              --        -- 
+Cin2[1]            1      --              --              --        -- 
+Cin2[2]            1      --              --              --        -- 
+Cin2[3]            1      --              --              --        -- 
+Cin2[4]            1      --              --              --        -- 
+clk                1      --              --              --        -- 
+data1[0]           1      --              --              --        -- 
+data1[1]           1      --              --              --        -- 
+data1[2]           1      --              --              --        -- 
+data1[3]           1      --              --              --        -- 
+data1[4]           1      --              --              --        -- 
+data2[0]           1      --              --              --        -- 
+data2[1]           1      --              --              --        -- 
+data2[2]           1      --              --              --        -- 
+data2[3]           1      --              --              --        -- 
+data2[4]           1      --              --              --        -- 
+n_rst              1      --              --              --        -- 
+sel                1      --              --              --        -- 
+Cout[0]            1      --              --              --        -- 
+Cout[1]            1      --              --              --        -- 
+Cout[2]            1      --              --              --        -- 
+Cout[3]            1      --              --              --        -- 
+Cout[4]            1      --              --              --        -- 
+out1[0]            1      --              --              --        -- 
+out1[1]            1      --              --              --        -- 
+out1[2]            1      --              --              --        -- 
+out1[3]            1      --              --              --        -- 
+out1[4]            1      --              --              --        -- 
+out2[0]            1      --              --              --        -- 
+out2[1]            1      --              --              --        -- 
+out2[2]            1      --              --              --        -- 
+out2[3]            1      --              --              --        -- 
+out2[4]            1      --              --              --        -- 
+out3[0]            1      --              --              --        -- 
+out3[1]            1      --              --              --        -- 
+out3[2]            1      --              --              --        -- 
+out3[3]            1      --              --              --        -- 
+out3[4]            1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+Cin1[0]       --      --      0.20    0.20  vclk      --    
+Cin1[1]       --      --      0.20    0.20  vclk      --    
+Cin1[2]       --      --      0.20    0.20  vclk      --    
+Cin1[3]       --      --      0.20    0.20  vclk      --    
+Cin1[4]       --      --      0.20    0.20  vclk      --    
+Cin2[0]       --      --      0.20    0.20  vclk      --    
+Cin2[1]       --      --      0.20    0.20  vclk      --    
+Cin2[2]       --      --      0.20    0.20  vclk      --    
+Cin2[3]       --      --      0.20    0.20  vclk      --    
+Cin2[4]       --      --      0.20    0.20  vclk      --    
+clk           --      --      --      --      --      -- 
+data1[0]      --      --      0.45    0.45  clk       --    
+data1[1]      --      --      0.45    0.45  clk       --    
+data1[2]      --      --      0.45    0.45  clk       --    
+data1[3]      --      --      0.45    0.45  clk       --    
+data1[4]      --      --      0.45    0.45  clk       --    
+data2[0]      --      --      0.45    0.45  clk       --    
+data2[1]      --      --      0.45    0.45  clk       --    
+data2[2]      --      --      0.45    0.45  clk       --    
+data2[3]      --      --      0.45    0.45  clk       --    
+data2[4]      --      --      0.45    0.45  clk       --    
+n_rst         --      --      --      --      --      -- 
+sel           --      --      0.40    0.40  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+Cin1[0]        -- /IV             -- /IV             -- /  --     N
+Cin1[1]        -- /IV             -- /IV             -- /  --     N
+Cin1[2]        -- /IV             -- /IV             -- /  --     N
+Cin1[3]        -- /IV             -- /IV             -- /  --     N
+Cin1[4]        -- /IV             -- /IV             -- /  --     N
+Cin2[0]        -- /IV             -- /IV             -- /  --     N
+Cin2[1]        -- /IV             -- /IV             -- /  --     N
+Cin2[2]        -- /IV             -- /IV             -- /  --     N
+Cin2[3]        -- /IV             -- /IV             -- /  --     N
+Cin2[4]        -- /IV             -- /IV             -- /  --     N
+data1[0]       -- /IV             -- /IV             -- /  --     N
+data1[1]       -- /IV             -- /IV             -- /  --     N
+data1[2]       -- /IV             -- /IV             -- /  --     N
+data1[3]       -- /IV             -- /IV             -- /  --     N
+data1[4]       -- /IV             -- /IV             -- /  --     N
+data2[0]       -- /IV             -- /IV             -- /  --     N
+data2[1]       -- /IV             -- /IV             -- /  --     N
+data2[2]       -- /IV             -- /IV             -- /  --     N
+data2[3]       -- /IV             -- /IV             -- /  --     N
+data2[4]       -- /IV             -- /IV             -- /  --     N
+n_rst          -- /IV             -- /IV             -- /  --     N
+sel            -- /IV             -- /IV             -- /  --     N
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+Cin1[0]       --      --     --      --     --      --     --     --        -- 
+Cin1[1]       --      --     --      --     --      --     --     --        -- 
+Cin1[2]       --      --     --      --     --      --     --     --        -- 
+Cin1[3]       --      --     --      --     --      --     --     --        -- 
+Cin1[4]       --      --     --      --     --      --     --     --        -- 
+Cin2[0]       --      --     --      --     --      --     --     --        -- 
+Cin2[1]       --      --     --      --     --      --     --     --        -- 
+Cin2[2]       --      --     --      --     --      --     --     --        -- 
+Cin2[3]       --      --     --      --     --      --     --     --        -- 
+Cin2[4]       --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+data1[0]      --      --     --      --     --      --     --     --        -- 
+data1[1]      --      --     --      --     --      --     --     --        -- 
+data1[2]      --      --     --      --     --      --     --     --        -- 
+data1[3]      --      --     --      --     --      --     --     --        -- 
+data1[4]      --      --     --      --     --      --     --     --        -- 
+data2[0]      --      --     --      --     --      --     --     --        -- 
+data2[1]      --      --     --      --     --      --     --     --        -- 
+data2[2]      --      --     --      --     --      --     --     --        -- 
+data2[3]      --      --     --      --     --      --     --     --        -- 
+data2[4]      --      --     --      --     --      --     --     --        -- 
+n_rst         --      --     --      --     --      --     --     --        -- 
+sel           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+Cin1[0]       --      --      --      -- 
+Cin1[1]       --      --      --      -- 
+Cin1[2]       --      --      --      -- 
+Cin1[3]       --      --      --      -- 
+Cin1[4]       --      --      --      -- 
+Cin2[0]       --      --      --      -- 
+Cin2[1]       --      --      --      -- 
+Cin2[2]       --      --      --      -- 
+Cin2[3]       --      --      --      -- 
+Cin2[4]       --      --      --      -- 
+clk           --      --      --      -- 
+data1[0]      --      --      --      -- 
+data1[1]      --      --      --      -- 
+data1[2]      --      --      --      -- 
+data1[3]      --      --      --      -- 
+data1[4]      --      --      --      -- 
+data2[0]      --      --      --      -- 
+data2[1]      --      --      --      -- 
+data2[2]      --      --      --      -- 
+data2[3]      --      --      --      -- 
+data2[4]      --      --      --      -- 
+n_rst         --      --      --      -- 
+sel           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+Cout[0]       --      --      0.20    0.20  vclk      0.00  
+Cout[1]       --      --      0.20    0.20  vclk      0.00  
+Cout[2]       --      --      0.20    0.20  vclk      0.00  
+Cout[3]       --      --      0.20    0.20  vclk      0.00  
+Cout[4]       --      --      0.20    0.20  vclk      0.00  
+out1[0]       --      --      0.50    0.50  clk       0.00  
+out1[1]       --      --      0.50    0.50  clk       0.00  
+out1[2]       --      --      0.50    0.50  clk       0.00  
+out1[3]       --      --      0.50    0.50  clk       0.00  
+out1[4]       --      --      0.50    0.50  clk       0.00  
+out2[0]       --      --      2.04    2.04  clk       0.00  
+out2[1]       --      --      2.04    2.04  clk       0.00  
+out2[2]       --      --      2.04    2.04  clk       0.00  
+out2[3]       --      --      2.04    2.04  clk       0.00  
+out2[4]       --      --      2.04    2.04  clk       0.00  
+out3[0]       --      --      0.40    0.40  clk       0.00  
+out3[1]       --      --      0.40    0.40  clk       0.00  
+out3[2]       --      --      0.40    0.40  clk       0.00  
+out3[3]       --      --      0.40    0.40  clk       0.00  
+out3[4]       --      --      0.40    0.40  clk       0.00  
+
+1
+redirect -append -tee -file rpt2/pre_compile.rpt {report_clock}
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : clocks
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu May 16 09:56:10 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              6.00   {0 3}                         {clk}
+vclk             6.00   {0 3}                         {}
+--------------------------------------------------------------------------------
+1
+redirect -append -tee -file rpt2/pre_compile.rpt {report_clock -skew}
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : clock_skew
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu May 16 09:56:10 2024
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk              0.30      0.30         -         -         -      0.15
+
+                 Max Source Latency                  Min Source Latency
+            Early    Early    Late    Late      Early    Early    Late    Late
+Object      Rise     Fall     Rise    Fall      Rise     Fall     Rise    Fall
+--------------------------------------------------------------------------------
+clk         0.70     0.70     0.70    0.70         -        -        -       -
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk              0.12      0.12      0.12      0.12
+1
+redirect -append -tee -file rpt2/pre_compile.rpt {check_timing}
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 21 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+data1[4]
+data1[3]
+data1[2]
+data1[1]
+data1[0]
+data2[4]
+data2[3]
+data2[2]
+data2[1]
+data2[0]
+sel
+Cin1[4]
+Cin1[3]
+Cin1[2]
+Cin1[1]
+Cin1[0]
+Cin2[4]
+Cin2[3]
+Cin2[2]
+Cin2[1]
+Cin2[0]
+1
+write_file -format ddc -hier -output unmapped/my_design_unmapped.ddc
+Writing ddc file 'unmapped/my_design_unmapped.ddc'.
+1
+set_svf out/my_design.svf
+1
+redirect -tee -file rpt2/compile.rpt {compile_ultra}
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 6 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'my_design'
+
+Loaded alib file './alib-52/class.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy u_combo before Pass 1 (OPT-776)
+Information: Ungrouping 1 of 2 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'my_design'
+ Implement Synthetic for 'my_design'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Warning: Target library(s) are not characterized for internal power.  Compile with power constraints is NOT recommended. (PWR-13)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'my_design'. (DDB-72)
+  Mapping Optimization (Phase 1)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     396.0      0.45       1.1      25.2                              0.0000
+    0:00:00     402.0      0.00       0.0      25.2                              0.0000
+    0:00:00     402.0      0.00       0.0      25.2                              0.0000
+    0:00:00     402.0      0.00       0.0      25.2                              0.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:00     396.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     392.0      0.00       0.0      25.2                              0.0000
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:00:00     394.0      0.00       0.0       0.0                              0.0000
+    0:00:00     394.0      0.00       0.0       0.0                              0.0000
+    0:00:00     394.0      0.00       0.0       0.0                              0.0000
+    0:00:00     394.0      0.00       0.0       0.0                              0.0000
+    0:00:00     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01     394.0      0.00       0.0       0.0                              0.0000
+    0:00:01     393.0      0.00       0.0       0.0                              0.0000
+    0:00:01     393.0      0.00       0.0       0.0                              0.0000
+    0:00:01     393.0      0.00       0.0       0.0                              0.0000
+    0:00:01     393.0      0.00       0.0       0.0                              0.0000
+    0:00:01     381.0      0.00       0.0       0.0                              0.0000
+    0:00:01     381.0      0.00       0.0       0.0                              0.0000
+    0:00:01     381.0      0.00       0.0       0.0                              0.0000
+    0:00:01     381.0      0.00       0.0       0.0                              0.0000
+    0:00:01     380.0      0.00       0.0       0.0                              0.0000
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+redirect -tee -file rpt2/compile.rpt {compile_ultra -incremental}
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+
+Information: There are 4 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/class.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Warning: Target library(s) are not characterized for internal power.  Compile with power constraints is NOT recommended. (PWR-13)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     380.0      0.00       0.0       0.0                              0.0000
+    0:00:00     378.0      0.00       0.0       0.0                              0.0000
+    0:00:00     378.0      0.00       0.0       0.0                              0.0000
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# netlist optimize
+redirect -tee -file rpt2/pre_compile.rpt {source my_design3.con}
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+Warning: Path group 'CLK' has no paths; it will not affect optimization. (UID-281)
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+redirect -tee -file rpt2/compile.rpt {compile_ultra -retime -timing -incremental}
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 4 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Warning: Target library(s) are not characterized for internal power.  Compile with power constraints is NOT recommended. (PWR-13)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     378.0      0.00       0.0       0.0                              0.0000
+    0:00:00     378.0      0.00       0.0       0.0                              0.0000
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     378.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+    0:00:00     391.0      0.00       0.0       0.0                              0.0000
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# netlist optimize
+set_app_var verilogout_no_tri true
+true
+redirect -tee -file rpt2/post_compile4.rpt {report_constraint -all}
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu May 16 09:56:12 2024
+****************************************
+
+This design has no violated constraints.
+
+1
+redirect -append -tee -file rpt2/post_compile4.rpt {report_timing}
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu May 16 09:56:12 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: class
+Wire Load Model Mode: top
+
+  Startpoint: Cin2[0] (input port clocked by vclk)
+  Endpoint: Cout[4] (output port clocked by vclk)
+  Path Group: COMBO
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.20       0.20 r
+  Cin2[0] (in)                             0.34       0.54 r
+  U116/Y (IVDAP)                           0.28       0.82 f
+  U132/Z (NR2I)                            0.92       1.74 r
+  U133/Z (MUX21L)                          1.07       2.81 r
+  U170/Z (MUX21L)                          0.85       3.66 r
+  U174/Z (ENI)                             0.35       4.02 r
+  U175/Z (ND2I)                            0.12       4.14 f
+  U176/Z (AN2I)                            0.78       4.92 f
+  U177/Z (B4IP)                            0.85       5.77 r
+  Cout[4] (out)                            0.00       5.77 r
+  data arrival time                                   5.77
+
+  clock vclk (rise edge)                   6.00       6.00
+  clock network delay (ideal)              0.00       6.00
+  output external delay                   -0.20       5.80
+  data required time                                  5.80
+  -----------------------------------------------------------
+  data required time                                  5.80
+  data arrival time                                  -5.77
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: sel (input port clocked by clk)
+  Endpoint: R1_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  input external delay                     0.40       1.40 r
+  sel (in)                                 0.34       1.74 r
+  U77/Z (IVDAP)                            1.68       3.42 r
+  U188/Z (ND2I)                            0.12       3.54 f
+  U189/Z (ND2I)                            0.25       3.80 r
+  R1_reg[0]/D (FD2)                        0.00       3.80 r
+  data arrival time                                   3.80
+
+  clock clk (rise edge)                    6.00       6.00
+  clock network delay (ideal)              1.00       7.00
+  clock uncertainty                       -0.15       6.85
+  R1_reg[0]/CP (FD2)                       0.00       6.85 r
+  library setup time                      -0.85       6.00
+  data required time                                  6.00
+  -----------------------------------------------------------
+  data required time                                  6.00
+  data arrival time                                  -3.80
+  -----------------------------------------------------------
+  slack (MET)                                         2.20
+
+
+  Startpoint: R1_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out1[3] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R1_reg[0]/CP (FD2)                       0.00       1.00 r
+  R1_reg[0]/QN (FD2)                       2.04       3.04 r
+  U87/Z (ND2I)                             0.26       3.31 f
+  U88/Z (ND2I)                             0.25       3.56 r
+  U90/Z (AN2I)                             0.45       4.01 r
+  U92/Z (ND2I)                             0.12       4.13 f
+  U93/Z (ND2I)                             0.25       4.38 r
+  U97/Z (ENI)                              0.51       4.89 f
+  U71/Z (IVAP)                             1.27       6.16 r
+  out1[3] (out)                            0.00       6.16 r
+  data arrival time                                   6.16
+
+  clock clk (rise edge)                    6.00       6.00
+  clock network delay (ideal)              1.00       7.00
+  clock uncertainty                       -0.15       6.85
+  output external delay                   -0.50       6.35
+  data required time                                  6.35
+  -----------------------------------------------------------
+  data required time                                  6.35
+  data arrival time                                  -6.16
+  -----------------------------------------------------------
+  slack (MET)                                         0.19
+
+
+  Startpoint: R3_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R4_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  my_design          05x05                 class
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R3_reg/CP (FD2)                          0.00       1.00 r
+  R3_reg/Q (FD2)                           1.44       2.44 f
+  U106/Y (IVDA)                            1.42       3.86 r
+  U115/Z (EON1)                            0.99       4.84 f
+  R4_reg[1]/D (FD2)                        0.00       4.84 f
+  data arrival time                                   4.84
+
+  clock clk (rise edge)                    6.00       6.00
+  clock network delay (ideal)              1.00       7.00
+  clock uncertainty                       -0.15       6.85
+  R4_reg[1]/CP (FD2)                       0.00       6.85 r
+  library setup time                      -0.85       6.00
+  data required time                                  6.00
+  -----------------------------------------------------------
+  data required time                                  6.00
+  data arrival time                                  -4.84
+  -----------------------------------------------------------
+  slack (MET)                                         1.16
+
+
+1
+# netlist optimize
+change_names -rules verilog -hier
+1
+write_file -f verilog -hier -output net/my_design_net.v
+Writing verilog file '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab11/syn/net/my_design_net.v'.
+1
+write_file -f ddc -hier -output mapped/my_design_mapped.ddc
+Writing ddc file 'mapped/my_design_mapped.ddc'.
+1
+1
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> 
+Thank you...

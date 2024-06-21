@@ -1,0 +1,5 @@
+Command Line: /tools/synopsys/verdi/R-2020.12-SP2/platform/LINUXAMD64/bin/Novas -Ultra -sv -ssf wave.fsdb -dbdir ./simv.daidir -f run.f
+uname(Linux sse506-s1 4.18.0-513.11.1.el8_9.x86_64 #1 SMP Wed Jan 10 22:58:54 UTC 2024 x86_64)
+type= DND_STRING
+testbench.u_my_design
+au time 25.512116 2.496295 0.494672 delta 446705664 446705664 total 935272448 935272448

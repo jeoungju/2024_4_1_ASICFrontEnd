@@ -1,0 +1,30 @@
+# Area and Timing Constraints
+
+reset_design; 
+# Good practice step
+
+# Reg – to – Reg
+set_max_area 0
+
+create_clock -period 8 [get_ports clk]
+
+set_clock_uncertainty -setup 0 [get_clocks clk]; 
+
+#set_clock_transition 0.12 [get_clocks clk]
+
+set_clock_latency -source -max 1 [get_clocks clk]; 
+# source latency
+
+set_clock_latency -max 1 [get_clocks clk]; 
+# network latency
+
+
+# Input delay = Tclk - uncertainly - input_delay(max) - reg_setup
+set_input_delay -max 3 -clock clk [get_ports xn_data]
+
+# Output delay
+set_output_delay -max 3 -clock clk [get_ports yn_data]
+
+group_path -name INPUTS -from [all_inputs]
+group_path -name OUTPUTS -to [all_outputs]
+

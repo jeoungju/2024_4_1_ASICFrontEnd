@@ -1,0 +1,30 @@
+
+  Linking design 'my_design'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  class (library)             /tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db
+
+1
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP5-5
+Date:        Thu Apr 11 11:46:38 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Shorted outputs (LINT-31)                                       4
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'combo', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'combo', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[0]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[1]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[2]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[3]'. (LINT-31)
+Error: could not open script file "my_design.con" (CMD-015)

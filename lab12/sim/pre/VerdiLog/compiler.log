@@ -1,0 +1,351 @@
+*design* DebussyLib (btIdent Verdi_R-2020.12-SP2)
+Command arguments:
+    +define+verilog
+    -f run_pre.f
+        -v /home/user/PDK/FE/Verilog_Model/m18gm180s_verilog_081128/m18gm180s_neg.v
+        ../../syn/net/my_design_net.v
+        ../tb/restbench.v
+
+
+*Error* failed to open source file "../tb/restbench.v" with read access: No such file or directory
+
+
+*Warning* failed to open library file "/home/user/PDK/FE/Verilog_Model/m18gm180s_verilog_081128/m18gm180s_neg.v" with read access: No such file or directory
+
+Highest level modules:
+my_design
+
+
+*Error* view FD2 is not defined for instance R1_reg_4_
+"../../syn/net/my_design_net.v", 34: 
+
+*Error* view FD2 is not defined for instance R1_reg_3_
+"../../syn/net/my_design_net.v", 35: 
+
+*Error* view FD2 is not defined for instance R1_reg_2_
+"../../syn/net/my_design_net.v", 36: 
+
+*Error* view FD2 is not defined for instance R1_reg_1_
+"../../syn/net/my_design_net.v", 37: 
+
+*Error* view FD2 is not defined for instance R1_reg_0_
+"../../syn/net/my_design_net.v", 38: 
+
+*Error* view FD2 is not defined for instance R2_reg_4_
+"../../syn/net/my_design_net.v", 39: 
+
+*Error* view FD2 is not defined for instance R2_reg_3_
+"../../syn/net/my_design_net.v", 40: 
+
+*Error* view FD2 is not defined for instance R2_reg_2_
+"../../syn/net/my_design_net.v", 41: 
+
+*Error* view FD2 is not defined for instance R2_reg_1_
+"../../syn/net/my_design_net.v", 42: 
+
+*Error* view FD2 is not defined for instance R2_reg_0_
+"../../syn/net/my_design_net.v", 43: 
+
+*Error* view FD2 is not defined for instance R3_reg
+"../../syn/net/my_design_net.v", 44: 
+
+*Error* view FD2 is not defined for instance R4_reg_4_
+"../../syn/net/my_design_net.v", 45: 
+
+*Error* view FD2 is not defined for instance R4_reg_3_
+"../../syn/net/my_design_net.v", 46: 
+
+*Error* view FD2 is not defined for instance R4_reg_2_
+"../../syn/net/my_design_net.v", 47: 
+
+*Error* view FD2 is not defined for instance R4_reg_1_
+"../../syn/net/my_design_net.v", 48: 
+
+*Error* view FD2 is not defined for instance R4_reg_0_
+"../../syn/net/my_design_net.v", 49: 
+
+*Error* view NR2I is not defined for instance U71
+"../../syn/net/my_design_net.v", 50: 
+
+*Error* view NR2I is not defined for instance U72
+"../../syn/net/my_design_net.v", 51: 
+
+*Error* view NR2I is not defined for instance U73
+"../../syn/net/my_design_net.v", 52: 
+
+*Error* view NR2I is not defined for instance U74
+"../../syn/net/my_design_net.v", 53: 
+
+*Error* view NR2I is not defined for instance U75
+"../../syn/net/my_design_net.v", 54: 
+
+*Error* view NR2I is not defined for instance U76
+"../../syn/net/my_design_net.v", 55: 
+
+*Error* view NR2I is not defined for instance U84
+"../../syn/net/my_design_net.v", 63: 
+
+*Error* view NR2I is not defined for instance U85
+"../../syn/net/my_design_net.v", 64: 
+
+*Error* view NR2I is not defined for instance U86
+"../../syn/net/my_design_net.v", 65: 
+
+*Error* view NR2I is not defined for instance U89
+"../../syn/net/my_design_net.v", 68: 
+
+*Error* view NR2I is not defined for instance U97
+"../../syn/net/my_design_net.v", 76: 
+
+*Error* view NR2I is not defined for instance U99
+"../../syn/net/my_design_net.v", 78: 
+
+*Error* view NR2I is not defined for instance U100
+"../../syn/net/my_design_net.v", 79: 
+
+*Error* view NR2I is not defined for instance U101
+"../../syn/net/my_design_net.v", 80: 
+
+*Error* view NR2I is not defined for instance U102
+"../../syn/net/my_design_net.v", 81: 
+
+*Error* view NR2I is not defined for instance U107
+"../../syn/net/my_design_net.v", 86: 
+
+*Error* view NR2I is not defined for instance U109
+"../../syn/net/my_design_net.v", 88: 
+
+*Error* view NR2I is not defined for instance U110
+"../../syn/net/my_design_net.v", 89: 
+
+*Error* view NR2I is not defined for instance U116
+"../../syn/net/my_design_net.v", 95: 
+
+*Error* view NR2I is not defined for instance U118
+"../../syn/net/my_design_net.v", 97: 
+
+*Error* view NR2I is not defined for instance U119
+"../../syn/net/my_design_net.v", 98: 
+
+*Error* view ND2I is not defined for instance U77
+"../../syn/net/my_design_net.v", 56: 
+
+*Error* view ND2I is not defined for instance U79
+"../../syn/net/my_design_net.v", 58: 
+
+*Error* view ND2I is not defined for instance U80
+"../../syn/net/my_design_net.v", 59: 
+
+*Error* view ND2I is not defined for instance U81
+"../../syn/net/my_design_net.v", 60: 
+
+*Error* view ND2I is not defined for instance U131
+"../../syn/net/my_design_net.v", 110: 
+
+*Error* view ND2I is not defined for instance U132
+"../../syn/net/my_design_net.v", 111: 
+
+*Error* view ND2I is not defined for instance U134
+"../../syn/net/my_design_net.v", 113: 
+
+*Error* view ND2I is not defined for instance U136
+"../../syn/net/my_design_net.v", 115: 
+
+*Error* view ND2I is not defined for instance U137
+"../../syn/net/my_design_net.v", 116: 
+
+*Error* view ND2I is not defined for instance U138
+"../../syn/net/my_design_net.v", 117: 
+
+*Error* view ND2I is not defined for instance U139
+"../../syn/net/my_design_net.v", 118: 
+
+*Error* view ND2I is not defined for instance U140
+"../../syn/net/my_design_net.v", 119: 
+
+*Error* view ND2I is not defined for instance U141
+"../../syn/net/my_design_net.v", 120: 
+
+*Error* view ND2I is not defined for instance U142
+"../../syn/net/my_design_net.v", 121: 
+
+*Error* view ND2I is not defined for instance U143
+"../../syn/net/my_design_net.v", 122: 
+
+*Error* view ND2I is not defined for instance U144
+"../../syn/net/my_design_net.v", 123: 
+
+*Error* view ND2I is not defined for instance U145
+"../../syn/net/my_design_net.v", 124: 
+
+*Error* view ND2I is not defined for instance U146
+"../../syn/net/my_design_net.v", 125: 
+
+*Error* view ND2I is not defined for instance U147
+"../../syn/net/my_design_net.v", 126: 
+
+*Error* view ND2I is not defined for instance U148
+"../../syn/net/my_design_net.v", 127: 
+
+*Error* view ND2I is not defined for instance U149
+"../../syn/net/my_design_net.v", 128: 
+
+*Error* view ND2I is not defined for instance U150
+"../../syn/net/my_design_net.v", 129: 
+
+*Error* view ND2I is not defined for instance U151
+"../../syn/net/my_design_net.v", 130: 
+
+*Error* view ND2I is not defined for instance U152
+"../../syn/net/my_design_net.v", 131: 
+
+*Error* view ND2I is not defined for instance U153
+"../../syn/net/my_design_net.v", 132: 
+
+*Error* view ND2I is not defined for instance U154
+"../../syn/net/my_design_net.v", 133: 
+
+*Error* view ND2I is not defined for instance U155
+"../../syn/net/my_design_net.v", 134: 
+
+*Error* view ND2I is not defined for instance U156
+"../../syn/net/my_design_net.v", 135: 
+
+*Error* view ND2I is not defined for instance U157
+"../../syn/net/my_design_net.v", 136: 
+
+*Error* view ND2I is not defined for instance U158
+"../../syn/net/my_design_net.v", 137: 
+
+*Error* view ND2I is not defined for instance U159
+"../../syn/net/my_design_net.v", 138: 
+
+*Error* view ND2I is not defined for instance U160
+"../../syn/net/my_design_net.v", 139: 
+
+*Error* view ND2I is not defined for instance U161
+"../../syn/net/my_design_net.v", 140: 
+
+*Error* view ND2I is not defined for instance U162
+"../../syn/net/my_design_net.v", 141: 
+
+*Error* view ND2I is not defined for instance U163
+"../../syn/net/my_design_net.v", 142: 
+
+*Error* view ND2I is not defined for instance U164
+"../../syn/net/my_design_net.v", 143: 
+
+*Error* view ND2I is not defined for instance U165
+"../../syn/net/my_design_net.v", 144: 
+
+*Error* view ENI is not defined for instance U78
+"../../syn/net/my_design_net.v", 57: 
+
+*Error* view ENI is not defined for instance U83
+"../../syn/net/my_design_net.v", 62: 
+
+*Error* view ENI is not defined for instance U88
+"../../syn/net/my_design_net.v", 67: 
+
+*Error* view ENI is not defined for instance U114
+"../../syn/net/my_design_net.v", 93: 
+
+*Error* view ENI is not defined for instance U124
+"../../syn/net/my_design_net.v", 103: 
+
+*Error* view ENI is not defined for instance U128
+"../../syn/net/my_design_net.v", 107: 
+
+*Error* view AO5 is not defined for instance U82
+"../../syn/net/my_design_net.v", 61: 
+
+*Error* view AO5 is not defined for instance U87
+"../../syn/net/my_design_net.v", 66: 
+
+*Error* view AO5 is not defined for instance U91
+"../../syn/net/my_design_net.v", 70: 
+
+*Error* view AO5 is not defined for instance U112
+"../../syn/net/my_design_net.v", 91: 
+
+*Error* view AO5 is not defined for instance U121
+"../../syn/net/my_design_net.v", 100: 
+
+*Error* view AO5 is not defined for instance U126
+"../../syn/net/my_design_net.v", 105: 
+
+*Error* view AO6 is not defined for instance U90
+"../../syn/net/my_design_net.v", 69: 
+
+*Error* view EOI is not defined for instance U92
+"../../syn/net/my_design_net.v", 71: 
+
+*Error* view EOI is not defined for instance U105
+"../../syn/net/my_design_net.v", 84: 
+
+*Error* view EOI is not defined for instance U123
+"../../syn/net/my_design_net.v", 102: 
+
+*Error* view IVDA is not defined for instance U93
+"../../syn/net/my_design_net.v", 72: 
+
+*Error* view IVDA is not defined for instance U94
+"../../syn/net/my_design_net.v", 73: 
+
+*Error* view IVDA is not defined for instance U96
+"../../syn/net/my_design_net.v", 75: 
+
+*Error* view IVDA is not defined for instance U98
+"../../syn/net/my_design_net.v", 77: 
+
+*Error* view IVDA is not defined for instance U103
+"../../syn/net/my_design_net.v", 82: 
+
+*Error* view IVDA is not defined for instance U106
+"../../syn/net/my_design_net.v", 85: 
+
+*Error* view IVDA is not defined for instance U108
+"../../syn/net/my_design_net.v", 87: 
+
+*Error* view IVDA is not defined for instance U115
+"../../syn/net/my_design_net.v", 94: 
+
+*Error* view IVDA is not defined for instance U117
+"../../syn/net/my_design_net.v", 96: 
+
+*Error* view AO2 is not defined for instance U95
+"../../syn/net/my_design_net.v", 74: 
+
+*Error* view AO2 is not defined for instance U104
+"../../syn/net/my_design_net.v", 83: 
+
+*Error* view AO2 is not defined for instance U113
+"../../syn/net/my_design_net.v", 92: 
+
+*Error* view AO2 is not defined for instance U122
+"../../syn/net/my_design_net.v", 101: 
+
+*Error* view AO2 is not defined for instance U127
+"../../syn/net/my_design_net.v", 106: 
+
+*Error* view AO4 is not defined for instance U111
+"../../syn/net/my_design_net.v", 90: 
+
+*Error* view AO4 is not defined for instance U120
+"../../syn/net/my_design_net.v", 99: 
+
+*Error* view AO4 is not defined for instance U125
+"../../syn/net/my_design_net.v", 104: 
+
+*Error* view AO4 is not defined for instance U129
+"../../syn/net/my_design_net.v", 108: 
+
+*Error* view AO4 is not defined for instance U130
+"../../syn/net/my_design_net.v", 109: 
+
+*Error* view AO4 is not defined for instance U133
+"../../syn/net/my_design_net.v", 112: 
+
+*Error* view AO7 is not defined for instance U135
+"../../syn/net/my_design_net.v", 114: 
+Total	112 error(s),   1 warning(s)

@@ -1,0 +1,3 @@
+Command Line: /tools/synopsys/verdi/R-2020.12-SP2/platform/LINUXAMD64/bin/Novas -f run_pre.f -ssf test_pre.fsdb
+uname(Linux sse506-s1 4.18.0-513.11.1.el8_9.x86_64 #1 SMP Wed Jan 10 22:58:54 UTC 2024 x86_64)
+au time 9.714400 1.862937 0.283481 delta 220225536 220225536 total 708792320 708792320

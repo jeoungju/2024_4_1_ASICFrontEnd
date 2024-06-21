@@ -1,0 +1,3 @@
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+Warning: Path group 'CLK' has no paths; it will not affect optimization. (UID-281)
+1

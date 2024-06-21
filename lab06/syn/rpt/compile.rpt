@@ -1,0 +1,118 @@
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 6 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'combo'
+  Processing 'my_design'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'my_design_DW01_sub_0'
+  Processing 'combo_DW01_sub_0'
+  Processing 'combo_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     441.0      2.73      64.9      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     436.0      3.07      66.2      25.2                          
+    0:00:01     424.0      3.07      66.6      25.2                          
+    0:00:01     432.0      2.83      59.3      25.2                          
+    0:00:01     436.0      2.73      59.3      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     436.0      2.73      59.1      25.2                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     436.0      2.73      59.1      25.2                          
+    0:00:01     439.0      2.65      59.7      25.2 Cout[4]                  
+    0:00:01     443.0      2.65      60.1      25.2 out1[4]                  
+    0:00:01     445.0      2.63      59.6      25.2 Cout[4]                  
+    0:00:01     448.0      2.63      60.2      25.2 Cout[4]                  
+    0:00:01     452.0      2.63      60.1      25.2 Cout[4]                  
+    0:00:01     452.0      2.63      60.1      25.2                          
+    0:00:01     449.0      2.63      63.6      25.2                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     449.0      2.63      63.6      25.2                          
+    0:00:01     455.0      2.63      63.5       0.0                          
+    0:00:01     458.0      2.63      61.7       0.0                          
+    0:00:01     463.0      2.63      60.7       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     463.0      2.63      60.7       0.0                          
+    0:00:01     463.0      2.63      60.7       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     452.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     450.0      2.63      60.4       0.0                          
+    0:00:01     449.0      2.58      60.8       0.0                          
+    0:00:01     449.0      2.58      60.8       0.0                          
+    0:00:01     458.0      2.58      60.8       0.0                          
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1

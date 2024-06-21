@@ -1,0 +1,102 @@
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Warning: Target library(s) are not characterized for internal power.  Compile with power constraints is NOT recommended. (PWR-13)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     470.0      2.32      56.5       0.0                              0.0000
+    0:00:00     470.0      2.32      56.5       0.0                              0.0000
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:00     532.0      2.24      62.1       0.0                              0.0000
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00     532.0      2.24      62.1       0.0                              0.0000
+    0:00:00     532.0      2.24      62.1       0.0                              0.0000
+    0:00:00     532.0      2.24      62.8       0.0                              0.0000
+    0:00:00     532.0      2.24      62.8       0.0                              0.0000
+    0:00:00     532.0      2.24      62.8       0.0                              0.0000
+    0:00:00     532.0      2.24      62.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     537.0      2.09      59.8       0.0                              0.0000
+    0:00:00     556.0      2.06      55.8       0.0                              0.0000
+    0:00:00     556.0      2.06      55.8       0.0                              0.0000
+    0:00:01     556.0      2.06      55.8       0.0                              0.0000
+    0:00:01     556.0      2.06      55.8       0.0                              0.0000
+    0:00:01     556.0      2.06      55.8       0.0                              0.0000
+    0:00:01     563.0      2.06      57.8       0.0                              0.0000
+    0:00:01     562.0      2.06      57.9       0.0                              0.0000
+    0:00:01     564.0      2.12      58.3       0.0                              0.0000
+    0:00:01     564.0      2.12      58.3       0.0                              0.0000
+    0:00:02     564.0      2.11      58.3       0.0                              0.0000
+    0:00:02     564.0      2.11      58.3       0.0                              0.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02     564.0      2.11      58.3       0.0                              0.0000
+    0:00:02     564.0      2.11      58.3       0.0                              0.0000
+    0:00:02     540.0      2.11      57.9       0.0                              0.0000
+    0:00:02     538.0      2.11      57.0       0.0                              0.0000
+    0:00:02     536.0      2.06      56.9       0.0                              0.0000
+    0:00:02     534.0      2.06      56.6       0.0                              0.0000
+    0:00:02     534.0      2.06      56.6       0.0                              0.0000
+    0:00:02     529.0      2.06      56.6       0.0                              0.0000
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1

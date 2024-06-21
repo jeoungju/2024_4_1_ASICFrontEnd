@@ -1,0 +1,5 @@
+set_app_var search_path "/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn  \
+		../rtl/  scr"
+set_app_var target_library class.db
+set_app_var link_library class.db
+	

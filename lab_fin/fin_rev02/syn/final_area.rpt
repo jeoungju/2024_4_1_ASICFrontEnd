@@ -1,0 +1,150 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:41:28 2024
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+Number of ports:                           18
+Number of nets:                          1877
+Number of cells:                         1552
+Number of combinational cells:           1154
+Number of sequential cells:               398
+Number of macros/black boxes:               0
+Number of buf/inv:                        223
+Number of references:                      29
+
+Combinational area:              12518.092822
+Buf/Inv area:                     1247.846431
+Noncombinational area:           12773.376183
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1631.788525
+
+Total cell area:                 25291.469005
+Total area:                      26923.257529
+1
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 18:51:24 2024
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+Number of ports:                           18
+Number of nets:                          1451
+Number of cells:                         1221
+Number of combinational cells:            955
+Number of sequential cells:               265
+Number of macros/black boxes:               0
+Number of buf/inv:                        121
+Number of references:                      30
+
+Combinational area:              11478.527988
+Buf/Inv area:                      669.081617
+Noncombinational area:            8547.840137
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1267.213821
+
+Total cell area:                 20026.368126
+Total area:                      21293.581947
+1
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 18:52:26 2024
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+Number of ports:                           18
+Number of nets:                          1346
+Number of cells:                         1106
+Number of combinational cells:            840
+Number of sequential cells:               265
+Number of macros/black boxes:               0
+Number of buf/inv:                         99
+Number of references:                      30
+
+Combinational area:              10667.519971
+Buf/Inv area:                      547.430414
+Noncombinational area:            8547.840137
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1198.051812
+
+Total cell area:                 19215.360108
+Total area:                      20413.411921
+1
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 18:53:08 2024
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+Number of ports:                           18
+Number of nets:                          1351
+Number of cells:                         1110
+Number of combinational cells:            844
+Number of sequential cells:               265
+Number of macros/black boxes:               0
+Number of buf/inv:                         99
+Number of references:                      30
+
+Combinational area:              10682.265572
+Buf/Inv area:                      547.430414
+Noncombinational area:            8547.840137
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1198.927443
+
+Total cell area:                 19230.105709
+Total area:                      20429.033152
+1
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 18:53:59 2024
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+Number of ports:                           18
+Number of nets:                          1906
+Number of cells:                         1588
+Number of combinational cells:           1161
+Number of sequential cells:               427
+Number of macros/black boxes:               0
+Number of buf/inv:                        218
+Number of references:                      33
+
+Combinational area:              12451.737634
+Buf/Inv area:                     1247.846429
+Noncombinational area:           13694.054592
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1705.172571
+
+Total cell area:                 26145.792226
+Total area:                      27850.964797
+1

@@ -1,0 +1,3 @@
+../../rtl/combo.v
+../../rtl/my_design.v
+../tb/testbench.v

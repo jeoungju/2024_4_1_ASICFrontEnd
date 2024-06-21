@@ -1,0 +1,116 @@
+debImport "-sv" "-f" "run.f"
+srcHBSelect "testbench.u_top" -win $_nTrace1
+srcHBSelect "testbench.u_top" -win $_nTrace1
+srcSetScope "testbench.u_top" -delim "." -win $_nTrace1
+srcHBSelect "testbench.u_top" -win $_nTrace1
+wvCreateWindow
+schCreateWindow -delim "." -win $_nSchema1 -scope "testbench.u_top"
+srcHBSelect "testbench" -win $_nTrace1
+srcHBSelect "testbench" -win $_nTrace1
+srcSetScope "testbench" -delim "." -win $_nTrace1
+srcHBSelect "testbench" -win $_nTrace1
+srcHBSelect "testbench.u_top" -win $_nTrace1
+wvCreateWindow
+schCreateWindow -delim "." -win $_nSchema1 -scope "testbench"
+wvSetPosition -win $_nWave4 {("G1" 0)}
+wvOpenFile -win $_nWave4 \
+           {/home1/std6/ASIC/2024_4_1_ASICFrontEnd/FINAL_PROJECT/sim/fnc/test.fsdb}
+wvGetSignalOpen -win $_nWave4
+wvGetSignalSetScope -win $_nWave4 "/testbench"
+wvSetPosition -win $_nWave4 {("G1" 7)}
+wvSetPosition -win $_nWave4 {("G1" 7)}
+wvAddSignal -win $_nWave4 -clear
+wvAddSignal -win $_nWave4 -group {"G1" \
+{/testbench/clk} \
+{/testbench/i\[31:0\]} \
+{/testbench/n_rst} \
+{/testbench/r_addr\[10:0\]} \
+{/testbench/start} \
+{/testbench/xn_data\[7:0\]} \
+{/testbench/yn_data\[7:0\]} \
+}
+wvAddSignal -win $_nWave4 -group {"G2" \
+}
+wvSelectSignal -win $_nWave4 {( "G1" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave4 {("G1" 7)}
+wvSetPosition -win $_nWave4 {("G1" 7)}
+wvSetPosition -win $_nWave4 {("G1" 7)}
+wvAddSignal -win $_nWave4 -clear
+wvAddSignal -win $_nWave4 -group {"G1" \
+{/testbench/clk} \
+{/testbench/i\[31:0\]} \
+{/testbench/n_rst} \
+{/testbench/r_addr\[10:0\]} \
+{/testbench/start} \
+{/testbench/xn_data\[7:0\]} \
+{/testbench/yn_data\[7:0\]} \
+}
+wvAddSignal -win $_nWave4 -group {"G2" \
+}
+wvSelectSignal -win $_nWave4 {( "G1" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave4 {("G1" 7)}
+wvGetSignalClose -win $_nWave4
+wvSetCursor -win $_nWave4 797.279046 -snap {("G1" 6)}
+wvZoomAll -win $_nWave4
+wvZoom -win $_nWave4 0.000000 1203.903644
+wvGetSignalOpen -win $_nWave4
+wvGetSignalSetScope -win $_nWave4 "/testbench"
+wvGetSignalSetScope -win $_nWave4 "/testbench"
+wvGetSignalSetScope -win $_nWave4 "/testbench/u_top"
+wvSetPosition -win $_nWave4 {("G1" 8)}
+wvSetPosition -win $_nWave4 {("G1" 8)}
+wvAddSignal -win $_nWave4 -clear
+wvAddSignal -win $_nWave4 -group {"G1" \
+{/testbench/clk} \
+{/testbench/i\[31:0\]} \
+{/testbench/n_rst} \
+{/testbench/r_addr\[10:0\]} \
+{/testbench/start} \
+{/testbench/xn_data\[7:0\]} \
+{/testbench/yn_data\[7:0\]} \
+{/testbench/u_top/start_d} \
+}
+wvAddSignal -win $_nWave4 -group {"G2" \
+}
+wvSelectSignal -win $_nWave4 {( "G1" 8 )} 
+wvSetPosition -win $_nWave4 {("G1" 8)}
+wvSetCursor -win $_nWave4 29.244623 -snap {("G1" 8)}
+wvSetCursor -win $_nWave4 34.815027 -snap {("G1" 8)}
+wvSetCursor -win $_nWave4 20.192716 -snap {("G1" 5)}
+wvSetPosition -win $_nWave4 {("G1" 9)}
+wvSetPosition -win $_nWave4 {("G1" 9)}
+wvAddSignal -win $_nWave4 -clear
+wvAddSignal -win $_nWave4 -group {"G1" \
+{/testbench/clk} \
+{/testbench/i\[31:0\]} \
+{/testbench/n_rst} \
+{/testbench/r_addr\[10:0\]} \
+{/testbench/start} \
+{/testbench/xn_data\[7:0\]} \
+{/testbench/yn_data\[7:0\]} \
+{/testbench/u_top/start_d} \
+{/testbench/u_top/cnt\[12:0\]} \
+}
+wvAddSignal -win $_nWave4 -group {"G2" \
+}
+wvSelectSignal -win $_nWave4 {( "G1" 9 )} 
+wvSetPosition -win $_nWave4 {("G1" 9)}
+wvSetCursor -win $_nWave4 176.164038 -snap {("G1" 6)}
+wvDisplayGridCount -win $_nWave2 -off
+wvGetSignalClose -win $_nWave2
+wvDisplayGridCount -win $_nWave4 -off
+wvGetSignalClose -win $_nWave4
+wvReloadFile -win $_nWave4
+wvSelectSignal -win $_nWave4 {( "G1" 7 )} 
+wvSetCursor -win $_nWave4 220.727273 -snap {("G1" 7)}
+wvSetRadix -win $_nWave4 -2Com
+wvBusWaveform -win $_nWave4 -analog
+wvSetPosition -win $_nWave4 {("G1" 9)}
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+wvZoomAll -win $_nWave4
+wvScrollUp -win $_nWave4 1
+debExit

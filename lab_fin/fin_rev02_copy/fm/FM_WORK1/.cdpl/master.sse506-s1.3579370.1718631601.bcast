@@ -1,0 +1,7 @@
+# Master Broadcast File
+time 1718631601
+pid 3579370
+log /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK1/.cdpl/master.sse506-s1.3579370.log
+tcp 192.168.1.130:41685
+wlog /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/fm/FM_WORK1/.cdpl/worker.W1.sse506-s1.3599798.log
+status done

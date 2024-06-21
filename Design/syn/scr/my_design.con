@@ -1,0 +1,46 @@
+# Area and Timing Constraints
+
+reset_design; 
+# Good practice step
+
+set_max_area 245000
+
+# Reg – to – Reg
+
+ # Clock frequency 333.33Mhz
+create_clock -period 3 [get_ports clk]
+
+create_clock -period 3 -name vclk; 
+# VIRTUAL clock for comb logic
+
+set_clock_uncertainty -setup 0.15 [get_clocks clk]; 
+# skew, 30ps => 2a + jitter, 40ps => a + margin, 50ps ===> 0.06 + 0.04 + 0.05ns
+
+set_clock_transition 0.12 [get_clocks clk]
+
+set_clock_latency -source -max 0.7 [get_clocks clk]; 
+# source latency
+
+set_clock_latency -max 0.3 [get_clocks clk]; 
+# network latency
+
+# input / output delay
+
+# Input delay = Tclk - uncertainly - input_delay(max) - reg_setup
+# 		3 - 0.15 - 2.2 - 0.2 = 0.45
+set_input_delay -max 0.45 -clock clk [get_ports "data1 data2"]
+# 1.4 - 0.7 - 0.3 
+set_input_delay -max 0.4 -clock clk [get_ports sel] 
+
+set_output_delay -max 0.5 -clock clk [get_ports out1]
+set_output_delay -max 2.04 -clock clk [get_ports out2]
+set_output_delay -max 0.4 -clock clk [get_ports out3]
+
+
+# vclk 2.45
+# 3 - 0.15(uncertainly setup) = 2.85
+# 2.85 - input_delay - setup_time = 2.45  => input_delay = 0.2
+set_input_delay -max 0.2 -clock vclk [get_ports "Cin1 Cin2"]
+
+set_output_delay -max 0.2 -clock vclk [get_ports "Cout"]
+

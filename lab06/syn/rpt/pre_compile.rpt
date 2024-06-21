@@ -1,0 +1,362 @@
+
+  Linking design 'my_design'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  class (library)             /tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db
+
+1
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP5-5
+Date:        Thu Apr 25 01:32:10 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Shorted outputs (LINT-31)                                       4
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'combo', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'combo', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[0]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[1]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[2]'. (LINT-31)
+Warning: In design 'my_design', output port 'out3[4]' is connected directly to output port 'out3[3]'. (LINT-31)
+1
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : port
+        -verbose
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:10 2024
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+Cin1[0]        in      0.0000   0.0000   --      10.00   --         
+Cin1[1]        in      0.0000   0.0000   --      10.00   --         
+Cin1[2]        in      0.0000   0.0000   --      10.00   --         
+Cin1[3]        in      0.0000   0.0000   --      10.00   --         
+Cin1[4]        in      0.0000   0.0000   --      10.00   --         
+Cin2[0]        in      0.0000   0.0000   --      10.00   --         
+Cin2[1]        in      0.0000   0.0000   --      10.00   --         
+Cin2[2]        in      0.0000   0.0000   --      10.00   --         
+Cin2[3]        in      0.0000   0.0000   --      10.00   --         
+Cin2[4]        in      0.0000   0.0000   --      10.00   --         
+clk            in      0.0000   0.0000   --      --      --         
+data1[0]       in      0.0000   0.0000   --      10.00   --         
+data1[1]       in      0.0000   0.0000   --      10.00   --         
+data1[2]       in      0.0000   0.0000   --      10.00   --         
+data1[3]       in      0.0000   0.0000   --      10.00   --         
+data1[4]       in      0.0000   0.0000   --      10.00   --         
+data2[0]       in      0.0000   0.0000   --      10.00   --         
+data2[1]       in      0.0000   0.0000   --      10.00   --         
+data2[2]       in      0.0000   0.0000   --      10.00   --         
+data2[3]       in      0.0000   0.0000   --      10.00   --         
+data2[4]       in      0.0000   0.0000   --      10.00   --         
+n_rst          in      0.0000   0.0000   --      10.00   --         
+sel            in      0.0000   0.0000   --      10.00   --         
+Cout[0]        out    30.0000   0.0000   --      --      --         
+Cout[1]        out    30.0000   0.0000   --      --      --         
+Cout[2]        out    30.0000   0.0000   --      --      --         
+Cout[3]        out    30.0000   0.0000   --      --      --         
+Cout[4]        out    30.0000   0.0000   --      --      --         
+out1[0]        out    30.0000   0.0000   --      --      --         
+out1[1]        out    30.0000   0.0000   --      --      --         
+out1[2]        out    30.0000   0.0000   --      --      --         
+out1[3]        out    30.0000   0.0000   --      --      --         
+out1[4]        out    30.0000   0.0000   --      --      --         
+out2[0]        out    30.0000   0.0000   --      --      --         
+out2[1]        out    30.0000   0.0000   --      --      --         
+out2[2]        out    30.0000   0.0000   --      --      --         
+out2[3]        out    30.0000   0.0000   --      --      --         
+out2[4]        out    30.0000   0.0000   --      --      --         
+out3[0]        out    30.0000   0.0000   --      --      --         
+out3[1]        out    30.0000   0.0000   --      --      --         
+out3[2]        out    30.0000   0.0000   --      --      --         
+out3[3]        out    30.0000   0.0000   --      --      --         
+out3[4]        out    30.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+Cin1[0]            1      --              --              --        -- 
+Cin1[1]            1      --              --              --        -- 
+Cin1[2]            1      --              --              --        -- 
+Cin1[3]            1      --              --              --        -- 
+Cin1[4]            1      --              --              --        -- 
+Cin2[0]            1      --              --              --        -- 
+Cin2[1]            1      --              --              --        -- 
+Cin2[2]            1      --              --              --        -- 
+Cin2[3]            1      --              --              --        -- 
+Cin2[4]            1      --              --              --        -- 
+clk                1      --              --              --        -- 
+data1[0]           1      --              --              --        -- 
+data1[1]           1      --              --              --        -- 
+data1[2]           1      --              --              --        -- 
+data1[3]           1      --              --              --        -- 
+data1[4]           1      --              --              --        -- 
+data2[0]           1      --              --              --        -- 
+data2[1]           1      --              --              --        -- 
+data2[2]           1      --              --              --        -- 
+data2[3]           1      --              --              --        -- 
+data2[4]           1      --              --              --        -- 
+n_rst              1      --              --              --        -- 
+sel                1      --              --              --        -- 
+Cout[0]            1      --              --              --        -- 
+Cout[1]            1      --              --              --        -- 
+Cout[2]            1      --              --              --        -- 
+Cout[3]            1      --              --              --        -- 
+Cout[4]            1      --              --              --        -- 
+out1[0]            1      --              --              --        -- 
+out1[1]            1      --              --              --        -- 
+out1[2]            1      --              --              --        -- 
+out1[3]            1      --              --              --        -- 
+out1[4]            1      --              --              --        -- 
+out2[0]            1      --              --              --        -- 
+out2[1]            1      --              --              --        -- 
+out2[2]            1      --              --              --        -- 
+out2[3]            1      --              --              --        -- 
+out2[4]            1      --              --              --        -- 
+out3[0]            1      --              --              --        -- 
+out3[1]            1      --              --              --        -- 
+out3[2]            1      --              --              --        -- 
+out3[3]            1      --              --              --        -- 
+out3[4]            1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+Cin1[0]       --      --      0.20    0.20  vclk      --    
+Cin1[1]       --      --      0.20    0.20  vclk      --    
+Cin1[2]       --      --      0.20    0.20  vclk      --    
+Cin1[3]       --      --      0.20    0.20  vclk      --    
+Cin1[4]       --      --      0.20    0.20  vclk      --    
+Cin2[0]       --      --      0.20    0.20  vclk      --    
+Cin2[1]       --      --      0.20    0.20  vclk      --    
+Cin2[2]       --      --      0.20    0.20  vclk      --    
+Cin2[3]       --      --      0.20    0.20  vclk      --    
+Cin2[4]       --      --      0.20    0.20  vclk      --    
+clk           --      --      --      --      --      -- 
+data1[0]      --      --      0.45    0.45  clk       --    
+data1[1]      --      --      0.45    0.45  clk       --    
+data1[2]      --      --      0.45    0.45  clk       --    
+data1[3]      --      --      0.45    0.45  clk       --    
+data1[4]      --      --      0.45    0.45  clk       --    
+data2[0]      --      --      0.45    0.45  clk       --    
+data2[1]      --      --      0.45    0.45  clk       --    
+data2[2]      --      --      0.45    0.45  clk       --    
+data2[3]      --      --      0.45    0.45  clk       --    
+data2[4]      --      --      0.45    0.45  clk       --    
+n_rst         --      --      --      --      --      -- 
+sel           --      --      0.40    0.40  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+Cin1[0]        -- /IV             -- /IV             -- /  --     N
+Cin1[1]        -- /IV             -- /IV             -- /  --     N
+Cin1[2]        -- /IV             -- /IV             -- /  --     N
+Cin1[3]        -- /IV             -- /IV             -- /  --     N
+Cin1[4]        -- /IV             -- /IV             -- /  --     N
+Cin2[0]        -- /IV             -- /IV             -- /  --     N
+Cin2[1]        -- /IV             -- /IV             -- /  --     N
+Cin2[2]        -- /IV             -- /IV             -- /  --     N
+Cin2[3]        -- /IV             -- /IV             -- /  --     N
+Cin2[4]        -- /IV             -- /IV             -- /  --     N
+data1[0]       -- /IV             -- /IV             -- /  --     N
+data1[1]       -- /IV             -- /IV             -- /  --     N
+data1[2]       -- /IV             -- /IV             -- /  --     N
+data1[3]       -- /IV             -- /IV             -- /  --     N
+data1[4]       -- /IV             -- /IV             -- /  --     N
+data2[0]       -- /IV             -- /IV             -- /  --     N
+data2[1]       -- /IV             -- /IV             -- /  --     N
+data2[2]       -- /IV             -- /IV             -- /  --     N
+data2[3]       -- /IV             -- /IV             -- /  --     N
+data2[4]       -- /IV             -- /IV             -- /  --     N
+n_rst          -- /IV             -- /IV             -- /  --     N
+sel            -- /IV             -- /IV             -- /  --     N
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+Cin1[0]       --      --     --      --     --      --     --     --        -- 
+Cin1[1]       --      --     --      --     --      --     --     --        -- 
+Cin1[2]       --      --     --      --     --      --     --     --        -- 
+Cin1[3]       --      --     --      --     --      --     --     --        -- 
+Cin1[4]       --      --     --      --     --      --     --     --        -- 
+Cin2[0]       --      --     --      --     --      --     --     --        -- 
+Cin2[1]       --      --     --      --     --      --     --     --        -- 
+Cin2[2]       --      --     --      --     --      --     --     --        -- 
+Cin2[3]       --      --     --      --     --      --     --     --        -- 
+Cin2[4]       --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+data1[0]      --      --     --      --     --      --     --     --        -- 
+data1[1]      --      --     --      --     --      --     --     --        -- 
+data1[2]      --      --     --      --     --      --     --     --        -- 
+data1[3]      --      --     --      --     --      --     --     --        -- 
+data1[4]      --      --     --      --     --      --     --     --        -- 
+data2[0]      --      --     --      --     --      --     --     --        -- 
+data2[1]      --      --     --      --     --      --     --     --        -- 
+data2[2]      --      --     --      --     --      --     --     --        -- 
+data2[3]      --      --     --      --     --      --     --     --        -- 
+data2[4]      --      --     --      --     --      --     --     --        -- 
+n_rst         --      --     --      --     --      --     --     --        -- 
+sel           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+Cin1[0]       --      --      --      -- 
+Cin1[1]       --      --      --      -- 
+Cin1[2]       --      --      --      -- 
+Cin1[3]       --      --      --      -- 
+Cin1[4]       --      --      --      -- 
+Cin2[0]       --      --      --      -- 
+Cin2[1]       --      --      --      -- 
+Cin2[2]       --      --      --      -- 
+Cin2[3]       --      --      --      -- 
+Cin2[4]       --      --      --      -- 
+clk           --      --      --      -- 
+data1[0]      --      --      --      -- 
+data1[1]      --      --      --      -- 
+data1[2]      --      --      --      -- 
+data1[3]      --      --      --      -- 
+data1[4]      --      --      --      -- 
+data2[0]      --      --      --      -- 
+data2[1]      --      --      --      -- 
+data2[2]      --      --      --      -- 
+data2[3]      --      --      --      -- 
+data2[4]      --      --      --      -- 
+n_rst         --      --      --      -- 
+sel           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+Cout[0]       --      --      0.20    0.20  vclk      0.00  
+Cout[1]       --      --      0.20    0.20  vclk      0.00  
+Cout[2]       --      --      0.20    0.20  vclk      0.00  
+Cout[3]       --      --      0.20    0.20  vclk      0.00  
+Cout[4]       --      --      0.20    0.20  vclk      0.00  
+out1[0]       --      --      0.50    0.50  clk       0.00  
+out1[1]       --      --      0.50    0.50  clk       0.00  
+out1[2]       --      --      0.50    0.50  clk       0.00  
+out1[3]       --      --      0.50    0.50  clk       0.00  
+out1[4]       --      --      0.50    0.50  clk       0.00  
+out2[0]       --      --      2.04    2.04  clk       0.00  
+out2[1]       --      --      2.04    2.04  clk       0.00  
+out2[2]       --      --      2.04    2.04  clk       0.00  
+out2[3]       --      --      2.04    2.04  clk       0.00  
+out2[4]       --      --      2.04    2.04  clk       0.00  
+out3[0]       --      --      0.40    0.40  clk       0.00  
+out3[1]       --      --      0.40    0.40  clk       0.00  
+out3[2]       --      --      0.40    0.40  clk       0.00  
+out3[3]       --      --      0.40    0.40  clk       0.00  
+out3[4]       --      --      0.40    0.40  clk       0.00  
+
+1
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : clocks
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:10 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              3.00   {0 1.5}                       {clk}
+vclk             3.00   {0 1.5}                       {}
+--------------------------------------------------------------------------------
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : clock_skew
+Design : my_design
+Version: O-2018.06-SP5-5
+Date   : Thu Apr 25 01:32:10 2024
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk              0.30      0.30         -         -         -      0.15
+
+                 Max Source Latency                  Min Source Latency
+            Early    Early    Late    Late      Early    Early    Late    Late
+Object      Rise     Fall     Rise    Fall      Rise     Fall     Rise    Fall
+--------------------------------------------------------------------------------
+clk         0.70     0.70     0.70    0.70         -        -        -       -
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk              0.12      0.12      0.12      0.12
+1
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 21 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+data1[4]
+data1[3]
+data1[2]
+data1[1]
+data1[0]
+data2[4]
+data2[3]
+data2[2]
+data2[1]
+data2[0]
+sel
+Cin1[4]
+Cin1[3]
+Cin1[2]
+Cin1[1]
+Cin1[0]
+Cin2[4]
+Cin2[3]
+Cin2[2]
+Cin2[1]
+Cin2[0]
+1

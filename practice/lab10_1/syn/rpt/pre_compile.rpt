@@ -1,0 +1,6 @@
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+Error: unknown command 'sel data1 data2' (CMD-005)
+Error: unknown command 'out1 out2 out3' (CMD-005)
+Error: unknown command 'Cin1 Cin2' (CMD-005)
+Warning: Path group 'CLK' has no paths; it will not affect optimization. (UID-281)
+1

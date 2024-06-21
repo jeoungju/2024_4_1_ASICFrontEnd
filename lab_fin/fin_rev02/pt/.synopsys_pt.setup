@@ -1,0 +1,4 @@
+alias page_on {set sh_enable_page_mode true}
+alias page_off {set sh_enable_page_mode false}
+
+history keep 200

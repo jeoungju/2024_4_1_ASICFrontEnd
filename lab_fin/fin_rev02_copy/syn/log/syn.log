@@ -1,0 +1,1594 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version O-2018.06-SP5-5 for linux64 - Sep 04, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# .tcl file
+#read_verilog {top.sv mul.sv add.sv}
+#analyze -format verilog {top.sv mul.sv add.sv}
+#analyze -format sverilog {top.sv mul.sv add.sv}
+analyze -format sverilog {/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv}
+Running PRESTO HDLC
+Compiling source file /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv
+Presto compilation completed successfully.
+Loading db file '/tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+1
+analyze -format sverilog {/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/mul.sv}
+Running PRESTO HDLC
+Compiling source file /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/mul.sv
+Presto compilation completed successfully.
+1
+analyze -format sverilog {/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/add.sv}
+Running PRESTO HDLC
+Compiling source file /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/add.sv
+Presto compilation completed successfully.
+1
+elaborate top
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/gtech.db'
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_max'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine top line 66 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_0_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 75 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_1_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 84 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_2_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 93 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_3_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 102 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_4_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 111 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_5_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 120 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_6_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 129 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_7_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 138 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_8_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 147 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    xn_data_9_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 156 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_10_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 165 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_11_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 174 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_12_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 183 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_13_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 192 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_14_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 201 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_15_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 210 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_16_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 219 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_17_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 228 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   xn_data_18_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 567 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     yn_data_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'top'.
+Information: Building the design 'add' instantiated from design 'top' with
+	the parameters "SIGN_BIT=1,INT_BIT=7,FLT_BIT=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mul' instantiated from design 'top' with
+	the parameters "D_WIDTH1=9,D_WIDTH2=8". (HDL-193)
+
+Inferred memory devices in process
+	in routine mul_D_WIDTH19_D_WIDTH28 line 38 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/mul.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     mul_abs_reg     | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine mul_D_WIDTH19_D_WIDTH28 line 48 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/mul.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    b_sign_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    a_sign_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mul' instantiated from design 'top' with
+	the parameters "D_WIDTH1=8,D_WIDTH2=8". (HDL-193)
+
+Inferred memory devices in process
+	in routine mul_D_WIDTH18_D_WIDTH28 line 38 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/mul.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     mul_abs_reg     | Flip-flop |  14   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine mul_D_WIDTH18_D_WIDTH28 line 48 in file
+		'/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/rtl/mul.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    b_sign_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    a_sign_d_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'add' instantiated from design 'top' with
+	the parameters "SIGN_BIT=1,INT_BIT=15,FLT_BIT=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add' instantiated from design 'top' with
+	the parameters "SIGN_BIT=1,INT_BIT=16,FLT_BIT=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add' instantiated from design 'top' with
+	the parameters "SIGN_BIT=1,INT_BIT=17,FLT_BIT=0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'add' instantiated from design 'top' with
+	the parameters "SIGN_BIT=1,INT_BIT=18,FLT_BIT=0". (HDL-193)
+Presto compilation completed successfully.
+1
+write_file -format ddc -hier -output unmapped/top_unmapped.ddc
+Writing ddc file 'unmapped/top_unmapped.ddc'.
+1
+# 
+redirect -tee -file rpt/pre_final.rpt {link}
+
+  Linking design 'top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (8 designs)               /home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/syn/top.db, etc
+  saed90nm_max (library)      /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db
+
+1
+redirect -append -tee -file rpt/pre_final.rpt {check_design}   
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP5-5
+Date:        Wed Jun 19 00:38:39 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                             105
+    Cells do not drive (LINT-1)                                     6
+    Connected to power or ground (LINT-32)                         80
+    Nets connected to multiple pins on same cell (LINT-33)         19
+
+Nets                                                               11
+    Unloaded nets (LINT-2)                                         11
+--------------------------------------------------------------------------------
+
+Warning: In design 'mul_D_WIDTH19_D_WIDTH28', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH19_D_WIDTH28', cell 'B_8' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH19_D_WIDTH28', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH18_D_WIDTH28', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH18_D_WIDTH28', cell 'B_8' does not drive any nets. (LINT-1)
+Warning: In design 'mul_D_WIDTH18_D_WIDTH28', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'top', net 'add_fin_step4[0]' driven by pin 'u_add_final/dout[0]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[1]' driven by pin 'u_add_final/dout[1]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[2]' driven by pin 'u_add_final/dout[2]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[3]' driven by pin 'u_add_final/dout[3]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[4]' driven by pin 'u_add_final/dout[4]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[5]' driven by pin 'u_add_final/dout[5]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[6]' driven by pin 'u_add_final/dout[6]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[7]' driven by pin 'u_add_final/dout[7]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[8]' driven by pin 'u_add_final/dout[8]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[17]' driven by pin 'u_add_final/dout[17]' has no loads. (LINT-2)
+Warning: In design 'top', net 'add_fin_step4[18]' driven by pin 'u_add_final/dout[18]' has no loads. (LINT-2)
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[7]' is connected to logic 0. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[6]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[5]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[4]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[3]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[2]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[1]' is connected to logic 1. 
+Warning: In design 'top', a pin on submodule 'u_mul_hn9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'mul_b[0]' is connected to logic 1. 
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[2]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn0'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[3]', 'mul_b[1]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn2'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[1]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[3]', 'mul_b[2]'', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn3'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[3]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn3'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[4]', 'mul_b[2]'', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn4'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[3]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[4]', 'mul_b[2]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn5'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[5]', 'mul_b[4]', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn6'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[6]'', 'mul_b[4]', 'mul_b[3]', 'mul_b[1]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn6'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[5]', 'mul_b[2]'', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn7'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[5]'', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn7'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[6]', 'mul_b[4]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn8'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'mul_b[7]', 'mul_b[3]'', 'mul_b[2]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn8'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[6]', 'mul_b[5]'', 'mul_b[4]', 'mul_b[1]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_mul_hn9'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'mul_b[6]', 'mul_b[5]'', 'mul_b[4]', 'mul_b[3]', 'mul_b[2]', 'mul_b[1]', 'mul_b[0]'.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_add_mul_hn_8_9'. (LINT-33)
+   Net 'mul_hn_9[14]' is connected to pins 'din_b[15]', 'din_b[14]''.
+Warning: In design 'top', the same net is connected to more than one pin on submodule 'u_add_final'. (LINT-33)
+   Net 'add_89_step1[16]' is connected to pins 'din_b[18]', 'din_b[17]'', 'din_b[16]'.
+1
+redirect -append -tee -file rpt/pre_final.rpt {source top.con}
+1
+redirect -append -tee -file rpt/pre_final.rpt {report_port -verbose}
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT18_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT17_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT16_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT16_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH18_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'mul_D_WIDTH19_D_WIDTH28' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : port
+        -verbose
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:39 2024
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000   --      --      --         
+n_rst          in      0.0000   0.0000   --      --      --         
+xn_data[0]     in      0.0000   0.0000   --      --      --         
+xn_data[1]     in      0.0000   0.0000   --      --      --         
+xn_data[2]     in      0.0000   0.0000   --      --      --         
+xn_data[3]     in      0.0000   0.0000   --      --      --         
+xn_data[4]     in      0.0000   0.0000   --      --      --         
+xn_data[5]     in      0.0000   0.0000   --      --      --         
+xn_data[6]     in      0.0000   0.0000   --      --      --         
+xn_data[7]     in      0.0000   0.0000   --      --      --         
+yn_data[0]     out     0.0000   0.0000   --      --      --         
+yn_data[1]     out     0.0000   0.0000   --      --      --         
+yn_data[2]     out     0.0000   0.0000   --      --      --         
+yn_data[3]     out     0.0000   0.0000   --      --      --         
+yn_data[4]     out     0.0000   0.0000   --      --      --         
+yn_data[5]     out     0.0000   0.0000   --      --      --         
+yn_data[6]     out     0.0000   0.0000   --      --      --         
+yn_data[7]     out     0.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+n_rst              1      --              --              --        -- 
+xn_data[0]         1      --              --              --        -- 
+xn_data[1]         1      --              --              --        -- 
+xn_data[2]         1      --              --              --        -- 
+xn_data[3]         1      --              --              --        -- 
+xn_data[4]         1      --              --              --        -- 
+xn_data[5]         1      --              --              --        -- 
+xn_data[6]         1      --              --              --        -- 
+xn_data[7]         1      --              --              --        -- 
+yn_data[0]         1      --              --              --        -- 
+yn_data[1]         1      --              --              --        -- 
+yn_data[2]         1      --              --              --        -- 
+yn_data[3]         1      --              --              --        -- 
+yn_data[4]         1      --              --              --        -- 
+yn_data[5]         1      --              --              --        -- 
+yn_data[6]         1      --              --              --        -- 
+yn_data[7]         1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      -- 
+n_rst         --      --      --      --      --      -- 
+xn_data[0]    --      --      3.00    3.00  clk       --    
+xn_data[1]    --      --      3.00    3.00  clk       --    
+xn_data[2]    --      --      3.00    3.00  clk       --    
+xn_data[3]    --      --      3.00    3.00  clk       --    
+xn_data[4]    --      --      3.00    3.00  clk       --    
+xn_data[5]    --      --      3.00    3.00  clk       --    
+xn_data[6]    --      --      3.00    3.00  clk       --    
+xn_data[7]    --      --      3.00    3.00  clk       --    
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+n_rst         --      --     --      --     --      --     --     --        -- 
+xn_data[0]    --      --     --      --     --      --     --     --        -- 
+xn_data[1]    --      --     --      --     --      --     --     --        -- 
+xn_data[2]    --      --     --      --     --      --     --     --        -- 
+xn_data[3]    --      --     --      --     --      --     --     --        -- 
+xn_data[4]    --      --     --      --     --      --     --     --        -- 
+xn_data[5]    --      --     --      --     --      --     --     --        -- 
+xn_data[6]    --      --     --      --     --      --     --     --        -- 
+xn_data[7]    --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+n_rst         --      --      --      -- 
+xn_data[0]    --      --      --      -- 
+xn_data[1]    --      --      --      -- 
+xn_data[2]    --      --      --      -- 
+xn_data[3]    --      --      --      -- 
+xn_data[4]    --      --      --      -- 
+xn_data[5]    --      --      --      -- 
+xn_data[6]    --      --      --      -- 
+xn_data[7]    --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+yn_data[0]    --      --      3.00    3.00  clk       0.00  
+yn_data[1]    --      --      3.00    3.00  clk       0.00  
+yn_data[2]    --      --      3.00    3.00  clk       0.00  
+yn_data[3]    --      --      3.00    3.00  clk       0.00  
+yn_data[4]    --      --      3.00    3.00  clk       0.00  
+yn_data[5]    --      --      3.00    3.00  clk       0.00  
+yn_data[6]    --      --      3.00    3.00  clk       0.00  
+yn_data[7]    --      --      3.00    3.00  clk       0.00  
+
+1
+redirect -append -tee -file rpt/pre_final.rpt {report_clock}
+Information: Updating graph... (UID-83)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:39 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              8.00   {0 4}                         {clk}
+--------------------------------------------------------------------------------
+1
+redirect -append -tee -file rpt/pre_final.rpt {report_clock -skew}
+Information: Changed wire load model for 'DW01_add_width20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_20_20_20' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_19_19_19' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_18_18_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_18_18_18' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_17_17_17' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width7_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_7_7_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_14_1_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_14_14_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW02_mult_A_width8_B_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*MULT_UNS_OP_8_7_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_15_1_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_1_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_15_15_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_7_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clock_skew
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:39 2024
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk              0.00      0.00         -         -         -      0.00
+
+                 Max Source Latency                  Min Source Latency
+            Early    Early    Late    Late      Early    Early    Late    Late
+Object      Rise     Fall     Rise    Fall      Rise     Fall     Rise    Fall
+--------------------------------------------------------------------------------
+clk         0.00     0.00     0.00    0.00         -        -        -       -
+1
+redirect -append -tee -file rpt/pre_final.rpt {check_timing}
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 8 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+xn_data[7]
+xn_data[6]
+xn_data[5]
+xn_data[4]
+xn_data[3]
+xn_data[2]
+xn_data[1]
+xn_data[0]
+1
+set_svf out/top.svf
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+redirect -tee -file rpt/final.rpt {compile_ultra}
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 116 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 9 instances of design 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0'. (OPT-1056)
+Information: Uniquified 9 instances of design 'mul_D_WIDTH19_D_WIDTH28'. (OPT-1056)
+Information: Uniquified 5 instances of design 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0'. (OPT-1056)
+Information: Uniquified 2 instances of design 'add_SIGN_BIT1_INT_BIT16_FLT_BIT0'. (OPT-1056)
+  Simplifying Design 'top'
+
+Loaded alib file './alib-52/saed90nm_max.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy u_add_xn0_xn18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_0_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_0_1_2_3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_01234567 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_final before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn8_xn10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn7_xn11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn6_xn12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn5_xn13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn4_xn14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn3_xn15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn2_xn16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn1_xn17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_8_9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_6_7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_4_5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_2_3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_4_5_6_7 before Pass 1 (OPT-776)
+Information: Ungrouping 28 of 29 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'top'
+Information: The register 'u_mul_hn1/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn6/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn8/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn9/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: In design 'top', the register 'u_mul_hn3/b_sign_d_reg' is removed because it is merged to 'u_mul_hn2/b_sign_d_reg'. (OPT-1215)
+Information: In design 'top', the register 'u_mul_hn4/b_sign_d_reg' is removed because it is merged to 'u_mul_hn2/b_sign_d_reg'. (OPT-1215)
+Information: In design 'top', the register 'xn_data_10_reg[7]' is removed because it is merged to 'u_mul_hn9/a_sign_d_reg'. (OPT-1215)
+ Implement Synthetic for 'top'.
+Information: The register 'u_mul_hn0/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn8/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn6/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn4/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn4/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: Added key list 'DesignWare' to design 'top'. (DDB-72)
+Information: The register 'u_mul_hn1/a_sign_d_reg' will be removed. (OPT-1207)
+Information: The register 'u_mul_hn5/a_sign_d_reg' will be removed. (OPT-1207)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: In design 'top', the register 'xn_data_10_reg[0]' is removed because it is merged to 'u_mul_hn9/mul_abs_reg[0]'. (OPT-1215)
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+Information: The register 'u_mul_hn2/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'top_DP_OP_184J1_122_388_1'
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03   21759.9     14.27     491.0       0.0                           75229968.0000
+    0:00:04   22194.0      6.93     385.1       0.0                           78747176.0000
+    0:00:04   22194.0      6.93     385.1       0.0                           78747176.0000
+    0:00:04   22205.0      6.89     383.8       0.0                           78765760.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:04   21542.4      6.82     349.0       0.0                           73102920.0000
+    0:00:05   21497.2      6.82     348.5       0.0                           72852232.0000
+    0:00:05   21497.2      6.82     348.5       0.0                           72852232.0000
+    0:00:05   21528.6      6.55     345.5       0.0                           72907024.0000
+    0:00:05   21528.6      6.55     345.5       0.0                           72907024.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:05   21532.3      6.54     345.4       0.0                           72924480.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21638.2      5.87     303.7       0.0                           74441584.0000
+    0:00:06   21899.1      5.27     265.5       0.0                           75050632.0000
+    0:00:06   21899.1      5.27     265.5       0.0                           75050632.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06   21899.1      5.27     265.5       0.0                           75050632.0000
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+    0:00:07   21994.9      4.72     234.8       0.0 u_mul_hn6/mul_abs_reg[11]/D 75035896.0000
+    0:00:07   22168.2      4.51     217.1       0.0                           76327184.0000
+    0:00:07   22168.2      4.51     217.1       0.0                           76327184.0000
+    0:00:07   22168.2      4.51     217.1       0.0                           76327184.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.51     219.6       0.0                           75320976.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:07   22104.6      4.50     219.5       0.0                           75329832.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:08   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:09   22227.1      4.30     211.5       0.0                           76502536.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:09   22227.1      4.30     211.5       0.0                           76502536.0000
+    0:00:09   21893.5      4.51     215.8       0.0                           73490704.0000
+    0:00:09   21865.9      4.45     214.5       0.0                           73407424.0000
+    0:00:09   21865.9      4.45     214.5       0.0                           73407424.0000
+    0:00:09   21869.6      4.45     216.2       0.0                           73576680.0000
+    0:00:09   21702.8      4.45     218.0       0.0                           71718136.0000
+    0:00:10   21818.9      4.29     208.3       0.0                           73283392.0000
+    0:00:10   21823.5      4.27     205.3       0.0                           73399664.0000
+    0:00:10   21823.5      4.27     205.3       0.0                           73399664.0000
+    0:00:10   21810.6      4.27     205.2       0.0                           73203120.0000
+Loading db file '/tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+redirect -append -tee -file rpt/final.rpt {compile_ultra -incremental -retime -timing}
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Loaded alib file './alib-52/saed90nm_max.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00   21810.6      4.27     205.2       0.0                           73203120.0000
+    0:00:00   21810.6      4.27     205.2       0.0                           73203120.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+    0:00:01   26434.3      0.00       0.0     281.2                           86960424.0000
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01   25457.4      0.15       0.4       0.0                           81311104.0000
+    0:00:01   25457.4      0.15       0.4       0.0                           81311104.0000
+    0:00:01   25429.7      0.15       0.6       0.0                           81267840.0000
+    0:00:01   25429.7      0.15       0.6       0.0                           81267840.0000
+    0:00:01   25433.4      0.10       0.5       0.0                           81352496.0000
+    0:00:01   25433.4      0.10       0.5       0.0                           81352496.0000
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:01   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+
+Threshold voltage group cell usage:
+>> saed90cell 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02   25450.0      0.00       0.0       0.0                           81530496.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+    0:00:02   25370.7      0.00       0.0       0.0                           80874320.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02   27002.5      0.00       0.0       0.0                           80874320.0000
+    0:00:02   27002.5      0.00       0.0       0.0                           80874320.0000
+    0:00:02   26926.0      0.00       0.0       0.0                           79510400.0000
+    0:00:02   26926.0      0.00       0.0       0.0                           79510400.0000
+    0:00:02   26923.3      0.00       0.0       0.0                           79489952.0000
+Loading db file '/tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+set_app_var verilogout_no_tri true
+true
+redirect -tee -file rpt/post_final.rpt {report_constraint -all}
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:53 2024
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   top                          0.00       26923.26       -26923.26 (VIOLATED)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       89303448.00    -89303448.00
+                                                                    (VIOLATED)
+
+
+1
+redirect -append -tee -file rpt/post_final.rpt {report_timing}
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:53 2024
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: xn_data[0] (input port clocked by clk)
+  Endpoint: R_502 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                35000                 saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  xn_data[0] (in)                          0.00       3.00 f
+  U1506/C1 (HADDX1)                        0.56       3.56 f
+  U1509/CO (FADDX1)                        0.52       4.08 f
+  U1511/CO (FADDX1)                        0.52       4.60 f
+  U1518/CO (FADDX1)                        0.52       5.12 f
+  U1520/CO (FADDX1)                        0.52       5.64 f
+  U1522/CO (FADDX1)                        0.52       6.15 f
+  U1524/CO (FADDX1)                        0.52       6.67 f
+  U1629/S (FADDX1)                         0.54       7.21 f
+  R_502/D (DFFARX1)                        0.03       7.24 f
+  data arrival time                                   7.24
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.00       8.00
+  R_502/CLK (DFFARX1)                      0.00       8.00 r
+  library setup time                      -0.28       7.72
+  data required time                                  7.72
+  -----------------------------------------------------------
+  data required time                                  7.72
+  data arrival time                                  -7.24
+  -----------------------------------------------------------
+  slack (MET)                                         0.48
+
+
+  Startpoint: R_497 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: yn_data[4] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                35000                 saed90nm_max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_497/CLK (DFFASX1)                      0.00       0.00 r
+  R_497/Q (DFFASX1)                        0.71       0.71 f
+  U638/QN (NOR2X0)                         0.21       0.92 r
+  U1431/QN (NOR2X0)                        0.58       1.49 f
+  U1444/QN (AOI21X1)                       0.52       2.01 r
+  U660/Q (OA21X1)                          0.40       2.42 r
+  U821/QN (NAND2X1)                        0.19       2.61 f
+  U1466/CO (FADDX1)                        0.49       3.09 f
+  U1039/QN (NAND2X1)                       0.13       3.23 r
+  U622/QN (NAND2X0)                        0.17       3.40 f
+  U832/Q (AND2X1)                          0.38       3.78 f
+  U866/ZN (INVX0)                          0.36       4.14 r
+  U998/ZN (INVX0)                          0.26       4.40 f
+  U1479/Q (AO21X1)                         0.60       4.99 f
+  yn_data[4] (out)                         0.00       4.99 f
+  data arrival time                                   4.99
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.00       8.00
+  output external delay                   -3.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -4.99
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: u_mul_hn8/mul_abs_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_374 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                35000                 saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_mul_hn8/mul_abs_reg[1]/CLK (DFFARX1)                  0.00       0.00 r
+  u_mul_hn8/mul_abs_reg[1]/QN (DFFARX1)                   0.43       0.43 f
+  U741/Q (AND2X1)                                         0.59       1.02 f
+  U585/QN (NAND2X0)                                       0.18       1.20 r
+  U1113/Q (OR2X1)                                         0.68       1.88 r
+  U1114/QN (NOR2X0)                                       0.51       2.39 f
+  U722/QN (NAND2X0)                                       0.57       2.96 r
+  U966/QN (NOR2X0)                                        0.63       3.60 f
+  U961/QN (NOR2X0)                                        0.44       4.04 r
+  U1321/Q (AND3X1)                                        1.46       5.49 r
+  U1322/Q (AO21X1)                                        0.27       5.76 r
+  U1345/CO (FADDX1)                                       0.51       6.27 r
+  U1350/S (FADDX1)                                        0.66       6.92 f
+  U1340/QN (NOR2X0)                                       0.27       7.19 r
+  U952/Q (OA21X1)                                         0.35       7.54 r
+  U929/QN (NOR2X0)                                        0.15       7.70 f
+  R_374/D (DFFARX1)                                       0.03       7.73 f
+  data arrival time                                                  7.73
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  R_374/CLK (DFFARX1)                                     0.00       8.00 r
+  library setup time                                     -0.27       7.73
+  data required time                                                 7.73
+  --------------------------------------------------------------------------
+  data required time                                                 7.73
+  data arrival time                                                 -7.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+redirect -append -tee -file final_area.rpt {report_area}
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP5-5
+Date   : Wed Jun 19 00:38:53 2024
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /tools/edk/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+Number of ports:                           18
+Number of nets:                          1877
+Number of cells:                         1552
+Number of combinational cells:           1154
+Number of sequential cells:               398
+Number of macros/black boxes:               0
+Number of buf/inv:                        223
+Number of references:                      29
+
+Combinational area:              12518.092822
+Buf/Inv area:                     1247.846431
+Noncombinational area:           12773.376183
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1631.788525
+
+Total cell area:                 25291.469005
+Total area:                      26923.257529
+1
+change_names -rules verilog -hier
+1
+write_sdc ./out/top.sdc
+1
+write_file -f verilog -hier -output ./net/top_net.v
+Writing verilog file '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/syn/net/top_net.v'.
+1
+write_file -f ddc -hier -output mapped/top_mapped.ddc
+Writing ddc file 'mapped/top_mapped.ddc'.
+1
+write_sdf ./net/top.pre.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home1/std6/ASIC/2024_4_1_ASICFrontEnd/lab_fin/fin_rev02/syn/net/top.pre.sdf'. (WT-3)
+1
+set_svf off
+1
+quit
+
+Thank you...

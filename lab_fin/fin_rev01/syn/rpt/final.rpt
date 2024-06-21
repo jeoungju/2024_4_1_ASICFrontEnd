@@ -1,0 +1,425 @@
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 117 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 9 instances of design 'add_SIGN_BIT1_INT_BIT7_FLT_BIT0'. (OPT-1056)
+Information: Uniquified 9 instances of design 'mul_D_WIDTH19_D_WIDTH28'. (OPT-1056)
+Information: Uniquified 5 instances of design 'add_SIGN_BIT1_INT_BIT15_FLT_BIT0'. (OPT-1056)
+Information: Uniquified 2 instances of design 'add_SIGN_BIT1_INT_BIT16_FLT_BIT0'. (OPT-1056)
+  Simplifying Design 'top'
+
+Loaded alib file './alib-52/class.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy u_add_xn0_xn18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_0_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_0_1_2_3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_01234567 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_final before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn8_xn10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn7_xn11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn6_xn12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn5_xn13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn4_xn14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn3_xn15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn2_xn16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_xn1_xn17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_mul_hn1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_8_9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_6_7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_4_5 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_2_3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_add_mul_hn_4_5_6_7 before Pass 1 (OPT-776)
+Information: Ungrouping 28 of 29 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'top'
+Information: The register 'u_mul_hn1/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn1/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn5/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn6/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn8/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn9/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/b_sign_d_reg' is a constant and will be removed. (OPT-1206)
+Information: In design 'top', the register 'u_mul_hn3/b_sign_d_reg' is removed because it is merged to 'u_mul_hn2/b_sign_d_reg'. (OPT-1215)
+Information: In design 'top', the register 'u_mul_hn4/b_sign_d_reg' is removed because it is merged to 'u_mul_hn2/b_sign_d_reg'. (OPT-1215)
+Information: In design 'top', the register 'xn_data_10_reg[7]' is removed because it is merged to 'u_mul_hn9/a_sign_d_reg'. (OPT-1215)
+ Implement Synthetic for 'top'.
+Information: The register 'u_mul_hn0/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn0/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn8/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn7/mul_abs_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn6/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn4/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn4/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn3/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: Added key list 'DesignWare' to design 'top'. (DDB-72)
+Information: The register 'u_mul_hn1/a_sign_d_reg' will be removed. (OPT-1207)
+Information: The register 'u_mul_hn5/a_sign_d_reg' will be removed. (OPT-1207)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Warning: Target library(s) are not characterized for internal power.  Compile with power constraints is NOT recommended. (PWR-13)
+Information: The register 'mul_hn_1_r_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_1_r_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_2_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mul_hn2/mul_abs_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_3_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_3_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_3_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_5_r_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_7_r_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_7_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_7_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_7_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_8_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mul_hn_0_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: In design 'top', the register 'xn_data_10_reg[0]' is removed because it is merged to 'u_mul_hn9/mul_abs_reg[0]'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+Information: In design 'top', the register 'xn_data_11_reg[0]' is removed because it is merged to 'mul_hn_9_r_reg[0]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_4_r_reg[14]' is removed because it is merged to 'mul_hn_4_r_reg[13]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_3_r_reg[15]' is removed because it is merged to 'mul_hn_3_r_reg[13]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_3_r_reg[14]' is removed because it is merged to 'mul_hn_3_r_reg[13]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_2_r_reg[13]' is removed because it is merged to 'mul_hn_2_r_reg[15]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_2_r_reg[14]' is removed because it is merged to 'mul_hn_2_r_reg[15]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_2_r_reg[12]' is removed because it is merged to 'mul_hn_2_r_reg[15]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_0_r_reg[15]' is removed because it is merged to 'mul_hn_0_r_reg[13]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_0_r_reg[14]' is removed because it is merged to 'mul_hn_0_r_reg[13]'. (OPT-1215)
+Information: In design 'top', the register 'mul_hn_0_r_reg[12]' is removed because it is merged to 'mul_hn_0_r_reg[13]'. (OPT-1215)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    8581.0      6.09     208.6       0.0                              0.0000
+    0:00:06    8604.0      4.16     180.6       0.0                              0.0000
+    0:00:06    8604.0      4.16     180.6       0.0                              0.0000
+    0:00:06    8604.0      4.16     180.6       0.0                              0.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:07    8529.0      4.44     170.7       0.0                              0.0000
+    0:00:07    8482.0      4.44     184.8       0.0                              0.0000
+    0:00:07    8482.0      4.44     184.8       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:07    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8513.0      4.15     180.1       0.0                              0.0000
+    0:00:08    8529.0      3.98     177.5       0.0                              0.0000
+    0:00:09    8545.0      3.97     173.4       0.0                              0.0000
+    0:00:09    8545.0      3.96     173.4       0.0                              0.0000
+    0:00:09    8545.0      3.96     173.4       0.0                              0.0000
+    0:00:09    8545.0      3.96     173.4       0.0                              0.0000
+    0:00:09    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:09    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8541.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:10    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+    0:00:11    8540.0      3.96     173.4       0.0                              0.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:12    8534.0      3.96     173.3       0.0                              0.0000
+    0:00:12    8468.0      3.96     166.5       0.0                              0.0000
+    0:00:12    8468.0      3.96     166.5       0.0                              0.0000
+    0:00:12    8468.0      3.96     166.5       0.0                              0.0000
+    0:00:12    8464.0      3.96     171.4       0.0                              0.0000
+    0:00:12    8308.0      3.96     158.2       0.0                              0.0000
+    0:00:12    8312.0      3.94     158.0       0.0                              0.0000
+    0:00:12    8313.0      3.94     157.7       0.0                              0.0000
+    0:00:12    8313.0      3.94     157.7       0.0                              0.0000
+    0:00:12    8272.0      3.94     157.2       0.0                              0.0000
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/class.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Warning: Target library(s) are not characterized for internal power.  Compile with power constraints is NOT recommended. (PWR-13)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    8272.0      3.94     157.2       0.0                              0.0000
+    0:00:01    8272.0      3.94     157.2       0.0                              0.0000
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01    8520.0      2.76     152.3       0.0                              0.0000
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    8520.0      2.76     152.3       0.0                              0.0000
+    0:00:01    8520.0      2.76     152.3       0.0                              0.0000
+    0:00:01    8515.0      2.76     169.3       0.0                              0.0000
+    0:00:01    8515.0      2.76     169.3       0.0                              0.0000
+    0:00:01    8518.0      2.75     168.5       0.0                              0.0000
+    0:00:01    8518.0      2.75     168.5       0.0                              0.0000
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+    0:00:02    8560.0      2.40     142.0       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8556.0      2.40     160.1       0.0                              0.0000
+    0:00:02    8658.0      2.15     109.0       0.0                              0.0000
+    0:00:02    8659.0      2.15     104.9       0.0                              0.0000
+    0:00:02    8632.0      2.15     131.8       0.0                              0.0000
+    0:00:02    8632.0      2.15     131.8       0.0                              0.0000
+    0:00:02    8632.0      2.15     131.8       0.0                              0.0000
+    0:00:02    8632.0      2.15     131.8       0.0                              0.0000
+    0:00:03    8646.0      2.04     125.9       0.0                              0.0000
+    0:00:03    8646.0      2.04     125.9       0.0                              0.0000
+    0:00:03    8646.0      2.04     125.9       0.0                              0.0000
+    0:00:03    8646.0      2.04     125.9       0.0                              0.0000
+    0:00:03    8646.0      2.04     125.9       0.0                              0.0000
+    0:00:03    8644.0      2.04     125.9       0.0                              0.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03    8644.0      2.04     125.9       0.0                              0.0000
+    0:00:03    8640.0      2.04     129.0       0.0                              0.0000
+    0:00:03    8493.0      2.04     102.1       0.0                              0.0000
+    0:00:03    8481.0      2.04      89.4       0.0                              0.0000
+    0:00:03    8480.0      2.03      89.4       0.0                              0.0000
+    0:00:03    8478.0      2.03      81.6       0.0                              0.0000
+    0:00:03    8478.0      2.03      81.6       0.0                              0.0000
+    0:00:03    8474.0      2.03      81.6       0.0                              0.0000
+Loading db file '/tools/synopsys/syn/O-2018.06-SP5-5/libraries/syn/class.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Warning: Main library 'class' does not specify the following unit required for power: 'Leakage Power'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
